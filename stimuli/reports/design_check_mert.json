@@ -1,0 +1,3168 @@
+{
+ "computed_relations": {
+  "title": "MERT motifs + computed relations",
+  "theme": {
+   "T1|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T1|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T1|transpose": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T1|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T1|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T1|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T1|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T1|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T1|invert": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T1|retrograde": {
+    "0.0": true,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T2|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T2|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T2|transpose": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T2|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T2|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T2|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T2|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T2|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T2|invert": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T2|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T3|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T3|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T3|transpose": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T3|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T3|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T3|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T3|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T3|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T3|invert": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T3|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T4|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T4|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T4|transpose": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T4|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T4|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T4|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T4|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T4|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T4|invert": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T4|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T5|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T5|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T5|transpose": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T5|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T5|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T5|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T5|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T5|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T5|invert": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T5|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T6|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T6|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T6|transpose": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T6|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T6|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T6|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T6|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T6|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T6|invert": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T6|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": false
+   },
+   "T7|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T7|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T7|transpose": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T7|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T7|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T7|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T7|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T7|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T7|invert": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T7|retrograde": {
+    "0.0": true,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T8|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T8|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T8|transpose": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T8|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T8|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T8|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T8|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T8|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T8|invert": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T8|retrograde": {
+    "0.0": true,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T9|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T9|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T9|transpose": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T9|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T9|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T9|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T9|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T9|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T9|invert": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T9|retrograde": {
+    "0.0": true,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T10|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T10|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T10|transpose": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T10|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T10|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T10|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T10|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T10|motif_retro": {
+    "0.0": true,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T10|invert": {
+    "0.0": true,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T10|retrograde": {
+    "0.0": true,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T11|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T11|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T11|transpose": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T11|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T11|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T11|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T11|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T11|motif_retro": {
+    "0.0": true,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T11|invert": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T11|retrograde": {
+    "0.0": true,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T12|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T12|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T12|transpose": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T12|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T12|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T12|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T12|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T12|motif_retro": {
+    "0.0": true,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T12|invert": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T12|retrograde": {
+    "0.0": true,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T13|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T13|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T13|transpose": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T13|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T13|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T13|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T13|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T13|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T13|invert": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T13|retrograde": {
+    "0.0": true,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T14|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T14|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T14|transpose": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T14|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T14|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T14|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T14|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T14|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": false
+   },
+   "T14|invert": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T14|retrograde": {
+    "0.0": true,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T15|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T15|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T15|transpose": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T15|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T15|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T15|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T15|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T15|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T15|invert": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T15|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T16|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T16|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T16|transpose": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T16|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T16|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T16|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T16|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T16|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T16|invert": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T16|retrograde": {
+    "0.0": true,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   }
+  },
+  "cross": {
+   "T1>T3": {
+    "sims": [
+     0.903,
+     0.912,
+     0.906,
+     0.905
+    ],
+    "lookalike_rank": 3,
+    "rows": {
+     "0.0": {
+      "perm": [
+       2,
+       0,
+       3,
+       1
+      ],
+      "ok": false
+     },
+     "0.25": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "0.5": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "0.75": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "1.0": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     }
+    }
+   },
+   "T2>T4": {
+    "sims": [
+     0.808,
+     0.818,
+     0.803,
+     0.848
+    ],
+    "lookalike_rank": 3,
+    "rows": {
+     "0.0": {
+      "perm": [
+       0,
+       3,
+       2,
+       1
+      ],
+      "ok": false
+     },
+     "0.25": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "0.5": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "0.75": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "1.0": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     }
+    }
+   },
+   "T5>T6": {
+    "sims": [
+     0.888,
+     0.893,
+     0.858,
+     0.928
+    ],
+    "lookalike_rank": 1,
+    "rows": {
+     "0.0": {
+      "perm": [
+       3,
+       2,
+       0,
+       1
+      ],
+      "ok": false
+     },
+     "0.25": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "0.5": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "0.75": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "1.0": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     }
+    }
+   },
+   "T7>T8": {
+    "sims": [
+     0.908,
+     0.908,
+     0.909,
+     0.916
+    ],
+    "lookalike_rank": 1,
+    "rows": {
+     "0.0": {
+      "perm": [
+       0,
+       2,
+       3,
+       1
+      ],
+      "ok": false
+     },
+     "0.25": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "0.5": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "0.75": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "1.0": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     }
+    }
+   },
+   "T9>T10": {
+    "sims": [
+     0.863,
+     0.864,
+     0.876,
+     0.862
+    ],
+    "lookalike_rank": 2,
+    "rows": {
+     "0.0": {
+      "perm": [
+       0,
+       2,
+       1,
+       3
+      ],
+      "ok": false
+     },
+     "0.25": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "0.5": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "0.75": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "1.0": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     }
+    }
+   },
+   "T11>T12": {
+    "sims": [
+     0.877,
+     0.916,
+     0.884,
+     0.912
+    ],
+    "lookalike_rank": 4,
+    "rows": {
+     "0.0": {
+      "perm": [
+       0,
+       2,
+       1,
+       3
+      ],
+      "ok": false
+     },
+     "0.25": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "0.5": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "0.75": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "1.0": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     }
+    }
+   },
+   "T13>T14": {
+    "sims": [
+     0.852,
+     0.899,
+     0.848,
+     0.939
+    ],
+    "lookalike_rank": 1,
+    "rows": {
+     "0.0": {
+      "perm": [
+       2,
+       0,
+       3,
+       1
+      ],
+      "ok": false
+     },
+     "0.25": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "0.5": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "0.75": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "1.0": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     }
+    }
+   },
+   "T15>T16": {
+    "sims": [
+     0.804,
+     0.828,
+     0.832,
+     0.841
+    ],
+    "lookalike_rank": 4,
+    "rows": {
+     "0.0": {
+      "perm": [
+       1,
+       2,
+       3,
+       0
+      ],
+      "ok": false
+     },
+     "0.25": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "0.5": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "0.75": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     },
+     "1.0": {
+      "perm": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ok": true
+     }
+    }
+   }
+  },
+  "relsim": {
+   "analog_mean": 0.502,
+   "control_mean": 0.279,
+   "role_best": 23,
+   "n_analog": 24,
+   "n_control": 96,
+   "auc": 0.861
+  }
+ },
+ "learned_relations": {
+  "title": "MERT motifs + MERT difference-vector relations (fully learned)",
+  "theme": {
+   "T1|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T1|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T1|transpose": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T1|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T1|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T1|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T1|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T1|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T1|invert": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T1|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T2|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T2|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T2|transpose": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T2|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T2|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T2|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T2|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T2|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T2|invert": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T2|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T3|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T3|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T3|transpose": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T3|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T3|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T3|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T3|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T3|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T3|invert": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T3|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T4|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T4|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T4|transpose": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T4|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T4|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T4|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T4|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T4|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T4|invert": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T4|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T5|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T5|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T5|transpose": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T5|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T5|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T5|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T5|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T5|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T5|invert": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T5|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T6|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T6|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T6|transpose": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T6|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T6|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T6|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T6|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T6|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T6|invert": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T6|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T7|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T7|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T7|transpose": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T7|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T7|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T7|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T7|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T7|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T7|invert": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T7|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T8|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T8|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T8|transpose": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T8|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T8|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T8|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T8|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T8|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T8|invert": {
+    "0.0": false,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T8|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T9|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T9|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T9|transpose": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T9|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T9|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T9|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T9|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T9|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T9|invert": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T9|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T10|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T10|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T10|transpose": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T10|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T10|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T10|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T10|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T10|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T10|invert": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T10|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T11|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T11|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T11|transpose": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T11|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T11|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T11|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T11|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T11|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T11|invert": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T11|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T12|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T12|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T12|transpose": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T12|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T12|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T12|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T12|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T12|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T12|invert": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T12|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T13|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T13|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T13|transpose": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T13|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T13|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T13|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T13|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T13|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T13|invert": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T13|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T14|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T14|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T14|transpose": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T14|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T14|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T14|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T14|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T14|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T14|invert": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T14|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T15|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T15|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T15|transpose": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T15|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T15|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T15|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T15|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T15|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T15|invert": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T15|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T16|timbre": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T16|tempo": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T16|transpose": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T16|mode": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T16|ornament": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T16|augment": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T16|reorder": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T16|motif_retro": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   },
+   "T16|invert": {
+    "0.0": false,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
+   },
+   "T16|retrograde": {
+    "0.0": true,
+    "0.25": true,
+    "0.5": true,
+    "0.75": true,
+    "1.0": true
+   }
+  },
+  "cross": {
+   "T1>T3": {
+    "sims": [
+     0.903,
+     0.912,
+     0.906,
+     0.905
+    ],
+    "lookalike_rank": 3,
+    "rows": {
+     "0.0": {
+      "perm": [
+       2,
+       0,
+       3,
+       1
+      ],
+      "ok": false
+     },
+     "0.25": {
+      "perm": [
+       2,
+       0,
+       3,
+       1
+      ],
+      "ok": false
+     },
+     "0.5": {
+      "perm": [
+       2,
+       0,
+       3,
+       1
+      ],
+      "ok": false
+     },
+     "0.75": {
+      "perm": [
+       2,
+       0,
+       3,
+       1
+      ],
+      "ok": false
+     },
+     "1.0": {
+      "perm": [
+       2,
+       0,
+       3,
+       1
+      ],
+      "ok": false
+     }
+    }
+   },
+   "T2>T4": {
+    "sims": [
+     0.808,
+     0.818,
+     0.803,
+     0.848
+    ],
+    "lookalike_rank": 3,
+    "rows": {
+     "0.0": {
+      "perm": [
+       0,
+       3,
+       2,
+       1
+      ],
+      "ok": false
+     },
+     "0.25": {
+      "perm": [
+       0,
+       3,
+       2,
+       1
+      ],
+      "ok": false
+     },
+     "0.5": {
+      "perm": [
+       0,
+       3,
+       2,
+       1
+      ],
+      "ok": false
+     },
+     "0.75": {
+      "perm": [
+       0,
+       3,
+       2,
+       1
+      ],
+      "ok": false
+     },
+     "1.0": {
+      "perm": [
+       0,
+       3,
+       2,
+       1
+      ],
+      "ok": false
+     }
+    }
+   },
+   "T5>T6": {
+    "sims": [
+     0.888,
+     0.893,
+     0.858,
+     0.928
+    ],
+    "lookalike_rank": 1,
+    "rows": {
+     "0.0": {
+      "perm": [
+       3,
+       2,
+       0,
+       1
+      ],
+      "ok": false
+     },
+     "0.25": {
+      "perm": [
+       3,
+       2,
+       0,
+       1
+      ],
+      "ok": false
+     },
+     "0.5": {
+      "perm": [
+       3,
+       2,
+       1,
+       0
+      ],
+      "ok": false
+     },
+     "0.75": {
+      "perm": [
+       3,
+       2,
+       1,
+       0
+      ],
+      "ok": false
+     },
+     "1.0": {
+      "perm": [
+       3,
+       2,
+       1,
+       0
+      ],
+      "ok": false
+     }
+    }
+   },
+   "T7>T8": {
+    "sims": [
+     0.908,
+     0.908,
+     0.909,
+     0.916
+    ],
+    "lookalike_rank": 1,
+    "rows": {
+     "0.0": {
+      "perm": [
+       0,
+       2,
+       3,
+       1
+      ],
+      "ok": false
+     },
+     "0.25": {
+      "perm": [
+       0,
+       2,
+       3,
+       1
+      ],
+      "ok": false
+     },
+     "0.5": {
+      "perm": [
+       0,
+       2,
+       3,
+       1
+      ],
+      "ok": false
+     },
+     "0.75": {
+      "perm": [
+       0,
+       2,
+       3,
+       1
+      ],
+      "ok": false
+     },
+     "1.0": {
+      "perm": [
+       0,
+       2,
+       3,
+       1
+      ],
+      "ok": false
+     }
+    }
+   },
+   "T9>T10": {
+    "sims": [
+     0.863,
+     0.864,
+     0.876,
+     0.862
+    ],
+    "lookalike_rank": 2,
+    "rows": {
+     "0.0": {
+      "perm": [
+       0,
+       2,
+       1,
+       3
+      ],
+      "ok": false
+     },
+     "0.25": {
+      "perm": [
+       0,
+       2,
+       1,
+       3
+      ],
+      "ok": false
+     },
+     "0.5": {
+      "perm": [
+       0,
+       2,
+       1,
+       3
+      ],
+      "ok": false
+     },
+     "0.75": {
+      "perm": [
+       0,
+       2,
+       1,
+       3
+      ],
+      "ok": false
+     },
+     "1.0": {
+      "perm": [
+       0,
+       2,
+       1,
+       3
+      ],
+      "ok": false
+     }
+    }
+   },
+   "T11>T12": {
+    "sims": [
+     0.877,
+     0.916,
+     0.884,
+     0.912
+    ],
+    "lookalike_rank": 4,
+    "rows": {
+     "0.0": {
+      "perm": [
+       0,
+       2,
+       1,
+       3
+      ],
+      "ok": false
+     },
+     "0.25": {
+      "perm": [
+       2,
+       0,
+       1,
+       3
+      ],
+      "ok": false
+     },
+     "0.5": {
+      "perm": [
+       2,
+       0,
+       1,
+       3
+      ],
+      "ok": false
+     },
+     "0.75": {
+      "perm": [
+       2,
+       0,
+       1,
+       3
+      ],
+      "ok": false
+     },
+     "1.0": {
+      "perm": [
+       2,
+       0,
+       1,
+       3
+      ],
+      "ok": false
+     }
+    }
+   },
+   "T13>T14": {
+    "sims": [
+     0.852,
+     0.899,
+     0.848,
+     0.939
+    ],
+    "lookalike_rank": 1,
+    "rows": {
+     "0.0": {
+      "perm": [
+       2,
+       0,
+       3,
+       1
+      ],
+      "ok": false
+     },
+     "0.25": {
+      "perm": [
+       2,
+       0,
+       3,
+       1
+      ],
+      "ok": false
+     },
+     "0.5": {
+      "perm": [
+       2,
+       0,
+       3,
+       1
+      ],
+      "ok": false
+     },
+     "0.75": {
+      "perm": [
+       2,
+       0,
+       3,
+       1
+      ],
+      "ok": false
+     },
+     "1.0": {
+      "perm": [
+       2,
+       0,
+       3,
+       1
+      ],
+      "ok": false
+     }
+    }
+   },
+   "T15>T16": {
+    "sims": [
+     0.804,
+     0.828,
+     0.832,
+     0.841
+    ],
+    "lookalike_rank": 4,
+    "rows": {
+     "0.0": {
+      "perm": [
+       1,
+       2,
+       3,
+       0
+      ],
+      "ok": false
+     },
+     "0.25": {
+      "perm": [
+       1,
+       2,
+       3,
+       0
+      ],
+      "ok": false
+     },
+     "0.5": {
+      "perm": [
+       1,
+       2,
+       3,
+       0
+      ],
+      "ok": false
+     },
+     "0.75": {
+      "perm": [
+       1,
+       2,
+       3,
+       0
+      ],
+      "ok": false
+     },
+     "1.0": {
+      "perm": [
+       1,
+       2,
+       3,
+       0
+      ],
+      "ok": false
+     }
+    }
+   }
+  },
+  "relsim": {
+   "analog_mean": 0.01,
+   "control_mean": 0.001,
+   "role_best": 1,
+   "n_analog": 24,
+   "n_control": 96,
+   "auc": 0.524
+  }
+ }
+}

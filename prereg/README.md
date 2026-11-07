@@ -21,7 +21,7 @@ Each file follows the field structure of the **OSF Preregistration** template (S
 
 ## Shared methods (identical in every study unless stated)
 
-- **Platform.** jsPsych, hosted on JATOS. *DECISION: UCLA JATOS server or Pavlovia.*
+- **Platform.** jsPsych on Pavlovia. Each study is its own Pavlovia project, which is its own GitLab repository on gitlab.pavlovia.org. That gives every study its own data folder, piloting/running status, session credits and SONA link, and lets its code be frozen at its registration while later studies are still in development. All six projects are built from one shared codebase in this repository (`experiments/`: consent, headphone screen, Gold-MSI, audio player, data saving), so the shared parts are identical across studies.
 - **Headphone screen.** Huggins-pitch test (Milne et al., 2021), 6 trials, pass ≥ 5. Participants who fail end the session and are not counted toward N.
 - **Musical background.** Gold-MSI Musical Training subscale (7 items; Müllensiefen et al., 2014), plus years of formal training and current weekly practice.
 - **Common exclusions.**

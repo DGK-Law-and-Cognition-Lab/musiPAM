@@ -1,6 +1,6 @@
 # musiPAM study plan
 
-Draft 0.1 · 2026-11-06 · D. Kamper (with Claude) · companion to [STIMULUS_SPEC.md](STIMULUS_SPEC.md)
+Draft 0.2 · 2026-11-06 · D. Kamper (with Claude) · companion to [STIMULUS_SPEC.md](STIMULUS_SPEC.md)
 
 musiPAM asks whether listeners map one passage of music onto another by **relational role**, the way PAM (Lu, Ichien & Holyoak, 2022) and visiPAM (Webb et al., 2023) explain verbal and visual analogy. The program has a stimulus-norming study, three similarity experiments that validate the representations PAM needs, and two mapping experiments that test PAM directly.
 
@@ -19,14 +19,14 @@ All sample sizes are provisional. Each will be set by a simulation-based power a
 
 ## How many themes is fair? Sixteen.
 
-**The target is 16 themes: 4 relational skeletons × 4 realizations, plus one spare per skeleton.** The four built so far are the first two realizations of two skeletons.
+**The target is 16 themes: 4 relational skeletons × 4 realizations, plus one spare per skeleton.** All 16 are composed and pass every automated check (2026-11-06); the four spares are not yet written.
 
 | Skeleton | Motif form | Distinctive relations | Realizations |
 |---|---|---|---|
-| Sentence | a a′ b c | a′ = a one step higher; b fragments a's head; c cadences | T1, T3, +2 |
-| Period | a1 b a2 c | a1 = a2 exactly; b half cadence; c restates b, then closes | T2, T4, +2 |
-| Rounded *(new)* | a b c a′ | the opening returns at the end; b and c contrast | 4 new |
-| Sequence chain *(new)* | a a′ a″ b | a restated twice more, each a step lower; b cadences | 4 new |
+| Sentence | a a′ b c | a′ = a one step higher; b fragments a's head; c cadences | T1, T3, T5, T6 |
+| Period | a1 b a2 c | a1 = a2 exactly; b half cadence; c restates b, then closes | T2, T4, T7, T8 |
+| Rounded | a b c a′ | the opening returns at the end; b and c contrast | T9, T10, T11, T12 |
+| Sequence chain | a a′ a″ b | a restated twice more, each a step lower; b cadences | T13, T14, T15, T16 |
 
 **Why more than four.** Four themes cannot support any claim beyond those four tunes. To generalize, themes have to be a random effect, and their variance can't be estimated from four. That is the "language-as-fixed-effect" problem (Clark, 1973). With few stimuli, adding participants barely raises power (Judd, Westfall & Kenny, 2012; Westfall, Kenny & Judd, 2014).
 
@@ -38,7 +38,7 @@ All sample sizes are provisional. Each will be set by a simulation-based power a
 | 8 × 2 | 16 | 8 | 112 | 8 |
 | 2 × 8 | 16 | 56 | 64 | 2 |
 
-The 4 × 4 grid balances both directions of generalization: across skeletons, so the result isn't about "sentence versus period", and across realizations, so it isn't about one pair of tunes. In each skeleton, two of its six analog pairs carry a designed cross-mapping (as T1→T3 and T2→T4 do) and four are clean. That gives Study 3 a cross-mapped-versus-clean contrast for free.
+The 4 × 4 grid balances both directions of generalization: across skeletons, so the result isn't about "sentence versus period", and across realizations, so it isn't about one pair of tunes. In each skeleton, two of its six analog pairs carry a designed cross-mapping (T1→T3 and T5→T6; T2→T4 and T7→T8; T9→T10 and T11→T12; T13→T14 and T15→T16) and four are clean. That gives Study 3 a cross-mapped-versus-clean contrast for free.
 
 **Why not more than sixteen.** Every theme needs composition, your audition, norming, and a designed relational structure. Sixteen already supports by-item random effects, and Study 0's power simulation will say whether more is needed before any main study runs.
 
@@ -46,7 +46,7 @@ The 4 × 4 grid balances both directions of generalization: across skeletons, so
 
 1. **Balance.** Within each skeleton, the four realizations span both modes (two major, two minor) and several meters, tempi, keys and accompaniment idioms. No surface property may predict the skeleton.
 2. **Selection by preregistered criteria.** Compose the 16 plus four spares, and keep a theme only if it passes Study 0's familiarity, naturalness and segmentation criteria. Those criteria are fixed in advance and say nothing about the hypotheses.
-3. **The design check runs on every theme and is reported in full,** including cells that don't come out as predicted (T1's inversion already doesn't).
+3. **The design check runs on every theme and is reported in full,** including cells that don't come out as predicted (T1's inversion doesn't).
 
 ---
 
@@ -160,16 +160,35 @@ The behavioral studies don't depend on any model. The models are the competing *
    - **Learned audio embeddings from a pretrained transformer: MERT-v1-95M** (`m-a-p/MERT-v1-95M` on HuggingFace), trained self-supervised on about 160,000 hours of music, with MusicFM as a robustness check.
 
    The learned code is essential to the argument. PAM maps over Word2Vec and visiPAM over learned visual embeddings. If musiPAM used only features chosen by the people who built the stimuli, a reviewer could call the result circular. MERT embeds the audio participants actually hear, with no knowledge of the design.
-2. **Relation (edge) representations.** The computed symbolic relation vectors, and learned relations from MERT, starting with difference vectors (A′ − A). A trained relation model, a "music BART", comes later. B. Yang's Word2Vec experience maps directly onto this step.
+2. **Relation (edge) representations.** The computed symbolic relation vectors, and learned relations from MERT, starting with difference vectors (A′ − A). A trained relation model, a "music BART", comes later; the plan is in [RELATION_MODEL.md](RELATION_MODEL.md). B. Yang's Word2Vec experience maps directly onto this step.
 3. **Mapping.** The lab's PAM code (H. Lu). The brute-force design check stands in for it until then.
 
-**First MERT results (2026-11-06; `stimuli/reports/design_check_mert.md`):**
+**MERT results on all 16 themes (2026-11-06; `stimuli/reports/design_check_mert.md`):**
 
-- **As a motif code, MERT works within pieces.** It is robust to timbre and tempo changes, but it codes pitch absolutely: tritone transposition breaks object-only matching, and relations repair it.
-- **MERT does not hear the designed look-alikes as similar.** Their match is in contour and rhythm, while MERT weighs key, register and texture. Study 1b now includes a manipulation check that the look-alikes are perceived as similar before Study 3 relies on them.
-- **Raw MERT difference vectors do not capture musical relations.** They don't separate analog pairs from controls. Learned relations therefore need a trained relation model, as BART was trained for words, and the pipeline can generate unlimited labeled training pairs for one.
+- **As a motif code, MERT works within pieces.** It is robust to timbre and tempo changes, but it codes pitch absolutely: tritone transposition breaks object-only matching in all 16 themes, and relations repair it.
+- **MERT barely hears note order.** A retrograde matches its theme on motifs alone in all 16 themes, because a time-averaged audio embedding changes little when a motif runs backwards.
+- **MERT only partly hears the designed look-alikes.** It ranks the look-alike first among the target's four motifs in 3 of the 8 pairs and last in 2. The look-alikes match in contour and rhythm, while MERT weighs key, register and texture. Study 1b includes a manipulation check that listeners hear the look-alikes as similar before Study 3 relies on them.
+- **Raw MERT difference vectors do not capture musical relations.** As relation vectors they leave analogs and controls indistinguishable (AUC 52%). Learned relations therefore need a trained relation model, as BART was trained for words; the plan is in [RELATION_MODEL.md](RELATION_MODEL.md).
 
 So the symbolic and learned codes make genuinely different predictions, which is what makes the preregistered comparisons informative.
+
+### Which learned models
+
+MERT alone is not enough. It is one audio model, so its failures (it codes key and register absolutely, and it doesn't hear contour-and-rhythm look-alikes) could be MERT's own rather than a property of learned representations. The fix is a second learned model that sees the notes rather than the sound. With it, the comparison is hand-built versus learned crossed with audio versus symbolic. The set is small and fixed in advance, so the model comparisons can't become a garden of forking paths.
+
+| Role | Model (HuggingFace) | Input | License | What it adds |
+|---|---|---|---|---|
+| Confirmatory | MERT-v1-95M (`m-a-p/MERT-v1-95M`) | audio | CC BY-NC 4.0 | The standard self-supervised music encoder. Already integrated. |
+| Confirmatory | CLaMP 3, symbolic encoder (`sander-wood/clamp3`) | MIDI or ABC | MIT | A learned code that sees only the notes. It is the fair learned rival to the hand-built key-relative code, and it was trained for retrieval, so its embeddings are meant to measure similarity. |
+| Robustness | MERT-v1-330M (`m-a-p/MERT-v1-330M`) | audio | CC BY-NC 4.0 | Does model size change the answer? |
+| Robustness | MusicFM (`minzwon/MusicFM`) | audio | MIT | A different audio training objective. |
+| Exploratory | MuQ (`OpenMuQ/MuQ-large-msd-iter`) | audio | CC BY-NC 4.0 | A newer audio encoder. |
+| Exploratory | CLAP (`laion/larger_clap_music`) | audio and text | Apache-2.0 | Semantic similarity (genre, mood), a contrast to structure. |
+| Exploratory | Anticipatory Music Transformer (`stanford-crfm/music-medium-800k`) | MIDI | Apache-2.0 | A generative symbolic model; its hidden states were not trained as embeddings. |
+
+The 2024 transformer trained from scratch on MAESTRO is retired. It was small, trained only on piano performances, and is not a published model, so its embeddings would not persuade a reviewer.
+
+Licenses matter for the public repository. The CC BY-NC models' embedding arrays stay out of it, as MERT's do now; the summaries in `reports/` are fine. *DECISION: confirm the confirmatory pair (MERT-v1-95M + CLaMP 3) before the Study 1 preregistrations are registered.*
 
 **All model predictions are computed and frozen before each study's data collection,** recorded with the code version and the stimulus-set DOI. That makes the model comparisons confirmatory rather than post hoc. MERT therefore has to be in place before the Study 1 preregistrations are registered.
 
@@ -177,11 +196,13 @@ So the symbolic and learned codes make genuinely different predictions, which is
 
 ## Order and preregistration workflow
 
-1. **Stimulus bank.** Compose 12 more themes, plus spares. Run the design check on all 16 and compute MERT embeddings.
+1. **Stimulus bank.** Done for the 16 themes (2026-11-06): composed, design-checked, MERT-embedded. Still open: the four spares and motif-level clips for Studies 1b and 1c.
 2. **Study 0.** Then run power simulations (`simr` / `mixedpower`) and finalize the Study 1 preregistrations.
 3. **Studies 1a, 1b and 1c.** Separate samples, which can run in parallel.
 4. **Study 2.**
 5. **Study 3.**
+
+Each study runs as its own Pavlovia project (its own GitLab repository), built from one shared jsPsych codebase in this repository's `experiments/` folder. Separate projects keep each study's data, piloting status, credits and SONA link apart, and let a registered study's code stay frozen while the next one is built. Studies 1a, 1b and 1c are therefore three projects, not one.
 
 A stimulus-set release is archived on Zenodo, through the GitHub repository, before each registration. Each preregistration names that release's DOI, and each is registered on OSF immediately before its data collection.
 

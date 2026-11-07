@@ -8,7 +8,6 @@
   <identification>
     <creator type="composer">musiPAM stimulus pipeline (v2)</creator>
     <encoding>
-      <encoding-date>2026-11-06</encoding-date>
       <software>music21 v.10.5.2</software>
       <supports element="beam" type="yes" />
       <supports element="stem" type="yes" />
@@ -22,39 +21,39 @@
     </scaling>
   </defaults>
   <part-list>
-    <score-part id="P1570907583c1f6c185fc35958abdb9b6">
+    <score-part id="P1">
       <part-name>Clarinet</part-name>
-      <score-instrument id="Id5220b948c09c7d337b11bf1d5971c61">
+      <score-instrument id="P1-I1">
         <instrument-name>Clarinet</instrument-name>
       </score-instrument>
-      <midi-instrument id="Id5220b948c09c7d337b11bf1d5971c61">
+      <midi-instrument id="P1-I1">
         <midi-channel>1</midi-channel>
         <midi-program>72</midi-program>
       </midi-instrument>
     </score-part>
-    <score-part id="Pf9ed540a8d5a50a6840edf677bd2720e">
+    <score-part id="P2">
       <part-name>Piano (upper)</part-name>
-      <score-instrument id="Ib73ab6b5e9b17498086eda81a7fb22f7">
+      <score-instrument id="P2-I1">
         <instrument-name>Piano</instrument-name>
       </score-instrument>
-      <midi-instrument id="Ib73ab6b5e9b17498086eda81a7fb22f7">
+      <midi-instrument id="P2-I1">
         <midi-channel>2</midi-channel>
         <midi-program>1</midi-program>
       </midi-instrument>
     </score-part>
-    <score-part id="P94e42ccb6c241a6b2db13a89218be971">
+    <score-part id="P3">
       <part-name>Piano (bass)</part-name>
-      <score-instrument id="I3358be350be2fc23764817798a5a4fb1">
+      <score-instrument id="P3-I1">
         <instrument-name>Piano</instrument-name>
       </score-instrument>
-      <midi-instrument id="I3358be350be2fc23764817798a5a4fb1">
+      <midi-instrument id="P3-I1">
         <midi-channel>3</midi-channel>
         <midi-program>1</midi-program>
       </midi-instrument>
     </score-part>
   </part-list>
   <!--=========================== Part 1 ===========================-->
-  <part id="P1570907583c1f6c185fc35958abdb9b6">
+  <part id="P1">
     <!--========================= Measure 1 ==========================-->
     <measure implicit="no" number="1">
       <attributes>
@@ -400,7 +399,7 @@
     </measure>
   </part>
   <!--=========================== Part 2 ===========================-->
-  <part id="Pf9ed540a8d5a50a6840edf677bd2720e">
+  <part id="P2">
     <!--========================= Measure 1 ==========================-->
     <measure implicit="no" number="1">
       <attributes>
@@ -1134,7 +1133,7 @@
     </measure>
   </part>
   <!--=========================== Part 3 ===========================-->
-  <part id="P94e42ccb6c241a6b2db13a89218be971">
+  <part id="P3">
     <!--========================= Measure 1 ==========================-->
     <measure implicit="no" number="1">
       <attributes>

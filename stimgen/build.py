@@ -16,6 +16,7 @@ import argparse
 import csv
 import hashlib
 import json
+import re
 import tempfile
 from pathlib import Path
 
@@ -24,7 +25,8 @@ from musipam_stim.arrange import INSTRUMENTS, build_score
 from musipam_stim.graphs import graph_json, stim_graph
 from musipam_stim.render import (LEAD_IN_S, TAIL_S, check_soundfont,
                                  fluidsynth, mix_master)
-from musipam_stim.themes import THEMES, theme_stim
+from musipam_stim.themes import (CROSS_MAPPINGS, THEMES, analog_pairs,
+                                 theme_stim)
 from musipam_stim.transforms import CELL, DESCRIPTION, TRANSFORMS, flat_notes
 from musipam_stim.validate import (check_audio, check_designed_relations,
                                    check_stim)
@@ -60,7 +62,9 @@ def main() -> int:
             checks += check_stim(s, ident)
 
             score = build_score(s)
-            score.write("musicxml", fp=str(tdir / f"{sid}.musicxml"))
+            xml = tdir / f"{sid}.musicxml"
+            score.write("musicxml", fp=str(xml))
+            _drop_encoding_date(xml)
             score.write("midi", fp=str(tdir / f"{sid}.mid"))
 
             g = stim_graph(s)
@@ -118,6 +122,11 @@ def main() -> int:
     return 1 if errors else 0
 
 
+def _drop_encoding_date(path: Path) -> None:
+    """music21 stamps today's date into every MusicXML file; drop it so rebuilds are byte-identical."""
+    path.write_text(re.sub(r"\s*<encoding-date>[^<]*</encoding-date>", "", path.read_text()))
+
+
 def _write_csv(path: Path, rows: list[dict]) -> None:
     keys = list(dict.fromkeys(k for r in rows for k in r))
     with path.open("w", newline="") as f:
@@ -168,31 +177,46 @@ def _design_check(graphs: dict, rdir: Path) -> None:
                                                     for w in W}
             L.append("")
     ident = {tid: graphs[(tid, "identity")] for tid in THEMES}
-    L += ["## Cross-theme mapping of the designed analogs (truth = relational roles)", "",
-          "The label shows where the *cross-mapped* source motif landed: T1's a (whose shape T3's c copies) "
-          "and T2's b (whose shape T4's a1/a2 copy).", "", hdr.replace("condition", "pair"), sep]
-    for src, dst, probe in (("T1", "T3", 0), ("T2", "T4", 1)):
+    L += ["## Cross-mappings (truth = relational roles)", "",
+          "Each row is a designed look-alike pair. The label shows where the source motif whose shape the "
+          "target copies landed in the target theme.", "", hdr.replace("condition", "pair"), sep]
+    for src, si, dst, di in CROSS_MAPPINGS:
         for code in ("rel", "abs"):
             r = dc.evaluate(ident[src], ident[dst], (0, 1, 2, 3), code, norm)
             lb = r["labels_B"]
-            cells = " | ".join(("✓ " if r["rows"][w]["class_ok"] else "✗ ") + lb[r["rows"][w]["perm"][probe]] for w in W)
-            L.append(f"| {src} → {dst} [{code}] | {r['labels_A'][probe]} → ? | {cells} |")
+            cells = " | ".join(("✓ " if r["rows"][w]["class_ok"] else "✗ ") + lb[r["rows"][w]["perm"][si]] for w in W)
+            L.append(f"| {src} → {dst} [{code}] | {r['labels_A'][si]} → ? (look-alike: {lb[di]}) | {cells} |")
             out_json[f"cross|{code}|{src}>{dst}"] = {str(w): {"perm": r["rows"][w]["perm"], "ok": r["rows"][w]["class_ok"]}
                                                      for w in W}
-    L += ["", "## Relational similarity between themes", "",
-          "Mean standardized relation similarity (w = 1). *Role map* aligns motifs by position; *best* is the "
-          "maximum over all 24 alignments. Designed analogs should be the most similar pairs and be best aligned "
-          "by role.", "", "| pair | kind | role map | best | best alignment is the role map |", "|---|---|---|---|---|"]
-    analogs = {("T1", "T3"), ("T2", "T4")}
+
+    analogs = set(analog_pairs())
     tids = list(THEMES)
+    rows = []
     for i, a in enumerate(tids):
         for b in tids[i + 1:]:
             m = dc.match(ident[a], ident[b], "rel", norm)
-            role = m["scores"][(0, 1, 2, 3)][1]
             best_p = max(m["scores"], key=lambda p: m["scores"][p][1])
-            kind = "**designed analog**" if (a, b) in analogs else "different skeleton"
-            L.append(f"| {a} → {b} | {kind} | {role:.2f} | {m['scores'][best_p][1]:.2f} | "
-                     f"{'yes' if best_p == (0, 1, 2, 3) else 'no'} |")
+            rows.append({"a": a, "b": b, "analog": (a, b) in analogs, "skeleton": THEMES[a].skeleton,
+                         "role": m["scores"][(0, 1, 2, 3)][1], "best": m["scores"][best_p][1],
+                         "role_is_best": best_p == (0, 1, 2, 3)})
+    out_json["relsim"] = rows
+    an = [r for r in rows if r["analog"]]
+    ct = [r for r in rows if not r["analog"]]
+    auc = sum((x["role"] > y["role"]) + 0.5 * (x["role"] == y["role"]) for x in an for y in ct) / (len(an) * len(ct))
+    mean = lambda xs: sum(xs) / len(xs)
+    L += ["", "## Relational similarity between themes", "",
+          "Mean standardized relation similarity (w = 1). *Role* aligns motifs by position; *best* is the maximum "
+          "over all 24 alignments. Designed analogs (same skeleton) should be more similar than pairs with "
+          "different skeletons, and best aligned by role.", "",
+          f"- **Designed analogs ({len(an)} pairs):** mean role similarity {mean([r['role'] for r in an]):.2f}; "
+          f"best alignment is the role alignment in {sum(r['role_is_best'] for r in an)}/{len(an)}.",
+          f"- **Different skeletons ({len(ct)} pairs):** mean role similarity {mean([r['role'] for r in ct]):.2f} "
+          f"(max {max(r['role'] for r in ct):.2f}).",
+          f"- **Separation:** a random analog pair beats a random control pair {auc:.0%} of the time (AUC).", "",
+          "| analog pair | skeleton | role | best | best is role |", "|---|---|---|---|---|"]
+    for r in an:
+        L.append(f"| {r['a']} → {r['b']} | {r['skeleton']} | {r['role']:.2f} | {r['best']:.2f} | "
+                 f"{'yes' if r['role_is_best'] else 'no'} |")
     raw13 = dc.evaluate(ident["T1"], ident["T3"], (0, 1, 2, 3), "rel")["truth_edge"]
     raw12 = dc.evaluate(ident["T1"], ident["T2"], (0, 1, 2, 3), "rel")["truth_edge"]
     L += ["", f"Without standardization the relational similarity of the role mapping is {raw13:.2f} (T1→T3) vs "

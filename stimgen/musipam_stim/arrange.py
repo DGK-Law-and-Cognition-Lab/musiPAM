@@ -42,6 +42,18 @@ TEXTURES = {
     # Berceuse (6/8): rocking low-high-mid on every dotted-quarter beat.
     "berceuse": {"unit": 1.5, "bass": (-8, 3), "upper": [(0.5, 0.5, "hi"), (1.0, 0.5, "mid")],
                  "bass_dur": "hold"},
+    # Chorale: bass and a three-voice chord on every beat, smoothly voice-led.
+    "chorale": {"unit": 1.0, "bass": (-5, 6), "chord_window": (3, 17),
+                "upper": [(0.0, 1.0, "chord")], "bass_dur": "hold"},
+    # Barcarolle (6/8): bass on each dotted-quarter beat, chords on the two eighths after it.
+    "barcarolle": {"unit": 1.5, "bass": (-5, 6), "chord_window": (5, 19),
+                   "upper": [(0.5, 0.5, "chord"), (1.0, 0.5, "chord")], "bass_dur": "hold"},
+    # Arpeggio (4/4): bass, then a rising broken chord (third, fifth, octave of the third) in eighths.
+    "arpeggio": {"unit": 2.0, "bass": (-5, 6),
+                 "upper": [(0.5, 0.5, "mid"), (1.0, 0.5, "hi"), (1.5, 0.5, "top")], "bass_dur": "hold"},
+    # Sustained: bass and chord held for each bar, re-struck at every chord change.
+    "sustained": {"unit": "bar", "bass": (-5, 6), "chord_window": (5, 19), "upper": [],
+                  "bass_dur": "hold", "sustain": True},
 }
 
 
@@ -130,7 +142,7 @@ def realize_accompaniment(s: Stim) -> tuple[list, list]:
     tex = TEXTURES[s.texture]
     tl = chord_timeline(s)
     total = s.total_ql
-    unit = tex["unit"]
+    unit = s.bar_ql if tex["unit"] == "bar" else tex["unit"]
     blo, bhi = (s.tonic_ref + x for x in tex["bass"])
 
     # bass: every unit start and every chord change
@@ -145,6 +157,26 @@ def realize_accompaniment(s: Stim) -> tuple[list, list]:
 
     upper = []
     prev_voicing = None
+
+    def voice(rn, fig):
+        nonlocal prev_voicing
+        clo, chi = (s.tonic_ref + x for x in tex["chord_window"])
+        cands = _voicings(_upper_members(rn, 3), clo, chi)
+        if not cands:
+            raise ValueError(f"{s.stim_id}: no voicing for {fig} in [{clo},{chi}]")
+        if prev_voicing is None:
+            centre = (clo + chi) / 2
+            v = min(cands, key=lambda c: abs(sum(p.midi for p in c) / len(c) - centre))
+        else:
+            v = min(cands, key=lambda c: sum(abs(a.midi - b.midi) for a, b in zip(c, prev_voicing)))
+        prev_voicing = v
+        return v
+
+    if tex.get("sustain"):  # chords held with the bass, re-struck at every bass event
+        for t, dur, _ps, fig in bass:
+            upper.append((t, dur, voice(roman.RomanNumeral(fig, s.k), fig), fig))
+        return bass, upper
+
     for u in range(int(round(total / unit))):
         u0 = u * unit
         for off, dur, role in tex["upper"]:
@@ -152,24 +184,19 @@ def realize_accompaniment(s: Stim) -> tuple[list, list]:
             _, cb, fig = _active(tl, t)
             dur = min(dur, cb - t)  # never sound a chord tone into the next chord
             rn = roman.RomanNumeral(fig, s.k)
-            if role in ("hi", "mid"):
+            if role in ("hi", "mid", "top"):
                 b = [ps[0] for (bt, _bd, ps, _f) in bass if bt <= t + 1e-9][-1]  # bass sounding at t
                 ups = sorted((_above(p, b.midi) for p in _upper_members(rn, 2)), key=lambda q: q.midi)
                 if len(ups) < 2:
                     ups = ups + [_above(ups[0], ups[0].midi)]
-                upper.append((t, dur, [ups[1] if role == "hi" else ups[0]], fig))
-            else:
-                clo, chi = (s.tonic_ref + x for x in tex["chord_window"])
-                cands = _voicings(_upper_members(rn, 3), clo, chi)
-                if not cands:
-                    raise ValueError(f"{s.stim_id}: no voicing for {fig} in [{clo},{chi}]")
-                if prev_voicing is None:
-                    centre = (clo + chi) / 2
-                    v = min(cands, key=lambda c: abs(sum(p.midi for p in c) / len(c) - centre))
+                if role == "top":  # the lower upper voice an octave higher
+                    note_p = copy.deepcopy(ups[0])
+                    note_p.octave += 1
                 else:
-                    v = min(cands, key=lambda c: sum(abs(a.midi - b.midi) for a, b in zip(c, prev_voicing)))
-                prev_voicing = v
-                upper.append((t, dur, v, fig))
+                    note_p = ups[1] if role == "hi" else ups[0]
+                upper.append((t, dur, [note_p], fig))
+            else:
+                upper.append((t, dur, voice(rn, fig), fig))
     return bass, upper
 
 
@@ -197,11 +224,14 @@ def _metric_velocity(offset: float, meter_str: str, base: int) -> int:
 # --------------------------------------------------------------------------
 # score
 # --------------------------------------------------------------------------
-def _part(name: str, inst_name: str, s: Stim, clef_obj=None) -> stream.Part:
+def _part(name: str, inst_name: str, s: Stim, pid: str, clef_obj=None) -> stream.Part:
     p = stream.Part()
     p.id = name
     p.partName = name
-    p.insert(0, make_instrument(inst_name))
+    inst = make_instrument(inst_name)
+    # Fixed MusicXML ids; music21 otherwise draws random ones on every export.
+    inst.partId, inst.instrumentId = pid, f"{pid}-I1"
+    p.insert(0, inst)
     if clef_obj is not None:
         p.insert(0, clef_obj)
     p.insert(0, s.k.__class__(s.k.tonic.name, s.k.mode))
@@ -218,7 +248,7 @@ def build_score(s: Stim, parts=("melody", "accomp"), annotate: bool = True) -> s
     sc.insert(0, _metadata(s))
     bar_ql = s.bar_ql
     if "melody" in parts:
-        mel = _part(INSTRUMENTS[s.melody_inst][1], s.melody_inst, s, clef.TrebleClef())
+        mel = _part(INSTRUMENTS[s.melody_inst][1], s.melody_inst, s, "P1", clef.TrebleClef())
         t = 0.0
         for seg in s.segments:
             if annotate:
@@ -234,8 +264,8 @@ def build_score(s: Stim, parts=("melody", "accomp"), annotate: bool = True) -> s
     if "accomp" in parts:
         bass_ev, up_ev = realize_accompaniment(s)
         acc_label = INSTRUMENTS[s.accomp_inst][1]
-        up = _part(f"{acc_label} (upper)", s.accomp_inst, s)
-        lo = _part(f"{acc_label} (bass)", s.accomp_inst, s, clef.BassClef())
+        up = _part(f"{acc_label} (upper)", s.accomp_inst, s, "P2")
+        lo = _part(f"{acc_label} (bass)", s.accomp_inst, s, "P3", clef.BassClef())
         last_fig = None
         for t, d, ps, fig in bass_ev:
             n = note.Note(copy.deepcopy(ps[0]), quarterLength=d)

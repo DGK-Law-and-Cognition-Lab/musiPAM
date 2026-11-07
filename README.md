@@ -16,15 +16,16 @@ David G. Kamper · Department of Psychology, UCLA · [ORCID 0000-0003-0362-759X]
 ```
 docs/STUDY_PLAN.md        every study, one by one, and why 16 themes
 docs/STIMULUS_SPEC.md     themes, transformation grid, rendering, validation, provenance
+docs/RELATION_MODEL.md    plan for a learned relation model ("music BART")
 prereg/                   OSF-format preregistration drafts (Studies 0, 1a, 1b, 1c, 2, 3)
 stimgen/                  the generator: themes, transformations, arrangement, rendering, graphs, checks
-stimuli/T1 … T4/          per stimulus: score (.musicxml), .mid, .mp3, motif graph (.graph.json)
+stimuli/T1 … T16/         per stimulus: score (.musicxml), .mid, .mp3, motif graph (.graph.json)
 stimuli/manifest.csv      one row per stimulus, including the SHA-256 of its WAV master
 stimuli/note_events.csv   every melody note with its motif label
 stimuli/reports/          validation report and design checks (symbolic and MERT)
 ```
 
-The current set has **4 themes × 11 conditions = 44 stimuli**. The plan is 16 themes (see `docs/STUDY_PLAN.md`).
+The current set has **16 themes × 11 conditions = 176 stimuli**: four relational skeletons (sentence, period, rounded, sequence chain), each realized by four themes, with eight designed cross-mapping pairs (see `docs/STIMULUS_SPEC.md`).
 
 ## Rebuild the stimuli
 

@@ -6,7 +6,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 from .theory import KeyInfo, chord_pcs
-from .themes import STRONG_BEATS, THEMES, Stim
+from .themes import CROSS_MAPPINGS, STRONG_BEATS, THEMES, Stim
 from .transforms import flat_notes, note_chord_figs
 
 RANGES = {"clarinet": (50, 94), "violin": (55, 100)}  # comfortable sounding ranges (MIDI)
@@ -117,36 +117,59 @@ def check_designed_relations(stims: dict[str, Stim]) -> list[Check]:
     def steps(notes):
         return [b.p.diatonicNoteNum - a.p.diatonicNoteNum for a, b in zip(notes, notes[1:])]
 
-    for tid in ("T1", "T3"):
-        a, a2, b = (stims[tid].segments[i].notes for i in (0, 1, 2))
-        out.append(Check(tid, "a'_is_a_up_one_diatonic_step",
-                         len(a) == len(a2) and all(y.p.diatonicNoteNum - x.p.diatonicNoteNum == 1 and x.dur == y.dur
-                                                   for x, y in zip(a, a2))))
-        head = [n.dur for n in a][: 3 if tid == "T1" else 2]
-        bd = [n.dur for n in b]
-        k = len(head)
-        out.append(Check(tid, "b_fragments_a_head_rhythm",
-                         bd[: 3 * k] == head * 3, f"head {head}, b {bd}"))
-    # periods: identical a1/a2; c shares b's rhythm and opening notes, then closes elsewhere
-    for tid, k in (("T2", 5), ("T4", 2)):
-        segs = stims[tid].segments
-        out.append(Check(tid, "a1_equals_a2", [(n.p.midi, n.dur) for n in segs[0].notes] ==
-                         [(n.p.midi, n.dur) for n in segs[2].notes]))
-        b, c = segs[1].notes, segs[3].notes
-        out.append(Check(tid, "c_restates_b_then_cadences",
-                         [n.dur for n in b] == [n.dur for n in c]
-                         and [n.p.midi for n in b[:k]] == [n.p.midi for n in c[:k]]
-                         and b[-1].p.midi != c[-1].p.midi, f"shared opening notes: {k}"))
+    def shifted(x, y, k):  # y is x moved k diatonic steps, same rhythm
+        return len(x) == len(y) and all(b.p.diatonicNoteNum - a.p.diatonicNoteNum == k and a.dur == b.dur
+                                        for a, b in zip(x, y))
 
-    # cross-mappings: a motif in one role copies the shape of the partner theme's motif in another
-    for (src, si), (dst, di), name in ((("T1", 0), ("T3", 3), "cross_mapping_T3c_has_T1a_shape"),
-                                       (("T2", 1), ("T4", 0), "cross_mapping_T4a_has_T2b_shape")):
-        x, y = stims[src].segments[si].notes, stims[dst].segments[di].notes
-        out.append(Check(f"{src}/{dst}", name, [n.dur for n in x] == [n.dur for n in y] and steps(x) == steps(y),
-                         f"steps {steps(x)}"))
-    for a, b, name in (("T1", "T3", "T3a_differs_from_T1a"), ("T2", "T4", "T4a_differs_from_T2a")):
-        x, y = stims[a].segments[0].notes, stims[b].segments[0].notes
-        out.append(Check(f"{a}/{b}", name, [n.dur for n in x] != [n.dur for n in y] and steps(x) != steps(y)))
+    def pd(notes):
+        return [(n.p.midi, n.dur) for n in notes]
+
+    def bar(notes, i, bar_ql):
+        t, sel = 0.0, []
+        for n in notes:
+            if i * bar_ql - 1e-9 <= t < (i + 1) * bar_ql - 1e-9:
+                sel.append(n)
+            t += n.dur
+        return sel
+
+    for tid, s in stims.items():
+        th, seg, ki = THEMES[tid], [g.notes for g in s.segments], KeyInfo(s.k)
+
+        def add(name, ok, detail=""):
+            out.append(Check(tid, name, bool(ok), detail))
+
+        if th.skeleton == "sentence":
+            add("a'_is_a_up_one_diatonic_step", shifted(seg[0], seg[1], 1))
+            head, bd = [n.dur for n in seg[0]][: th.head], [n.dur for n in seg[2]]
+            add("b_fragments_a_head_rhythm", th.head > 0 and bd[: 3 * th.head] == head * 3, f"head {head}, b {bd}")
+        elif th.skeleton == "period":
+            b, c, k = seg[1], seg[3], th.shared_k
+            add("a1_equals_a2", pd(seg[0]) == pd(seg[2]))
+            add("c_restates_b_then_cadences",
+                k > 0 and [n.dur for n in b] == [n.dur for n in c]
+                and [n.p.midi for n in b[:k]] == [n.p.midi for n in c[:k]] and b[-1].p.midi != c[-1].p.midi,
+                f"shared opening notes: {k}")
+        elif th.skeleton == "rounded":
+            add("return_keeps_first_bar", pd(bar(seg[0], 0, s.bar_ql)) == pd(bar(seg[3], 0, s.bar_ql)))
+            add("return_changes_second_bar", pd(bar(seg[0], 1, s.bar_ql)) != pd(bar(seg[3], 1, s.bar_ql)))
+            add("return_closes_on_tonic_a_does_not",
+                ki.degree_of(seg[3][-1].p) == 0 and ki.degree_of(seg[0][-1].p) != 0)
+        elif th.skeleton == "chain":
+            add("a'_is_a_down_one_diatonic_step", shifted(seg[0], seg[1], -1))
+            add("a''_is_a_down_two_diatonic_steps", shifted(seg[0], seg[2], -2))
+            add("b_closes_on_tonic", ki.degree_of(seg[3][-1].p) == 0)
+        else:
+            add("skeleton_declared", False, repr(th.skeleton))
+
+    # cross-mappings: the target motif copies the source motif's rhythm and steps in another role,
+    # while the target motif that shares the source motif's role looks different
+    for src, si, dst, di in CROSS_MAPPINGS:
+        S, D = stims[src].segments, stims[dst].segments
+        x, y, r = S[si].notes, D[di].notes, D[si].notes
+        out.append(Check(f"{src}/{dst}", f"lookalike_{dst}.{D[di].label}_copies_{src}.{S[si].label}",
+                         [n.dur for n in x] == [n.dur for n in y] and steps(x) == steps(y), f"steps {steps(x)}"))
+        out.append(Check(f"{src}/{dst}", f"role_match_{dst}.{D[si].label}_differs_from_{src}.{S[si].label}",
+                         [n.dur for n in x] != [n.dur for n in r] and steps(x) != steps(r)))
     return out
 
 

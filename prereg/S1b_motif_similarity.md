@@ -18,7 +18,7 @@
 
 - **H1.** The key-relative code predicts similarity ratings better than the absolute code.
 - **H2 (contour).** A motif and its transposition are rated more similar than the same motif and its inversion, and more similar than the same motif and its retrograde (Dowling, 1978).
-- **H3 (manipulation check for Study 3).** Each designed look-alike pair is rated more similar than the corresponding role-matched pair. For example, T1.a against T3.c, which share rhythm and contour, is rated above T1.a against T3.a, which share only their role. This must hold for Study 3's cross-mappings to pit look against role for listeners. The MERT code does *not* rank the look-alikes highest (`reports/design_check_mert.md`), so the outcome is not guaranteed. If H3 fails, the look-alikes are redesigned (closer register, texture and key) and re-tested before Study 3.
+- **H3 (manipulation check for Study 3).** Each designed look-alike pair is rated more similar than the corresponding role-matched pair. For example, T1.a against T3.c, which share rhythm and contour, is rated above T1.a against T3.a, which share only their role. This must hold for Study 3's cross-mappings to pit look against role for listeners. The MERT code ranks the look-alike first among the target theme's four motifs in only 3 of the 8 pairs (`reports/design_check_mert.md`), so the outcome is not guaranteed. If H3 fails, the look-alikes are redesigned (closer register, texture and key) and re-tested before Study 3.
 
 **Research question RQ1.** How does the MERT code compare with the symbolic codes?
 

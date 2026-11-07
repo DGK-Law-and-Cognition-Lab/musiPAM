@@ -46,7 +46,7 @@ Same exact matcher as design_check.md (a proxy, not PAM), with motif nodes coded
 | augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
-| invert | nodes + edges | ✗ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| invert | nodes + edges | ✗ a | ✗ a | ✓ a | ✓ a | ✓ a |
 | retrograde | nodes + edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 
 **T4**
@@ -61,26 +61,207 @@ Same exact matcher as design_check.md (a proxy, not PAM), with motif nodes coded
 | augment | probe: time coding | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
 | reorder | temporal edges | ✓ a1 | ✓ a2 | ✓ a2 | ✓ a2 | ✓ a2 |
 | motif_retro | temporal edges | ✓ a2 | ✓ a2 | ✓ a2 | ✓ a2 | ✓ a2 |
-| invert | nodes + edges | ✗ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| invert | nodes + edges | ✗ a1 | ✗ c | ✗ c | ✗ c | ✗ c |
 | retrograde | nodes + edges | ✓ a1 | ✓ a2 | ✓ a2 | ✓ a2 | ✓ a2 |
 
-**Cross-theme analogs** (label = where the cross-mapped source motif landed)
+**T5**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ a' | ✓ a | ✓ a | ✓ a | ✓ a |
+| mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| invert | nodes + edges | ✗ c | ✗ b | ✗ b | ✗ b | ✗ b |
+| retrograde | nodes + edges | ✓ a | ✓ a | ✗ a | ✗ a | ✗ a |
+
+**T6**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ b | ✓ a | ✓ a | ✓ a | ✓ a |
+| mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| invert | nodes + edges | ✗ a | ✗ a | ✗ a | ✗ a | ✗ a |
+| retrograde | nodes + edges | ✓ a | ✓ a | ✓ a | ✓ a | ✗ c |
+
+**T7**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| tempo | surface | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| transpose | probe: pitch coding | ✗ b | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| mode | nodes only | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| ornament | nodes only | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| augment | probe: time coding | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| reorder | temporal edges | ✓ a1 | ✓ a2 | ✓ a2 | ✓ a2 | ✓ a2 |
+| motif_retro | temporal edges | ✓ a1 | ✓ a2 | ✓ a2 | ✓ a2 | ✓ a2 |
+| invert | nodes + edges | ✗ a2 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| retrograde | nodes + edges | ✓ a2 | ✗ c | ✗ c | ✗ c | ✗ c |
+
+**T8**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a2 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| tempo | surface | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| transpose | probe: pitch coding | ✗ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| mode | nodes only | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| ornament | nodes only | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| augment | probe: time coding | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| reorder | temporal edges | ✓ a1 | ✓ a2 | ✓ a2 | ✓ a2 | ✓ a2 |
+| motif_retro | temporal edges | ✓ a2 | ✓ a2 | ✓ a2 | ✓ a2 | ✓ a2 |
+| invert | nodes + edges | ✗ a1 | ✗ c | ✗ c | ✗ c | ✗ c |
+| retrograde | nodes + edges | ✓ a1 | ✗ c | ✗ c | ✗ c | ✗ c |
+
+**T9**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ b | ✓ a | ✓ a | ✓ a | ✓ a |
+| mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| invert | nodes + edges | ✗ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| retrograde | nodes + edges | ✓ a | ✗ a' | ✗ a' | ✗ a' | ✗ a' |
+
+**T10**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ b | ✓ a | ✓ a | ✓ a | ✓ a |
+| mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| motif_retro | temporal edges | ✓ a | ✗ a' | ✗ a' | ✗ a' | ✗ a' |
+| invert | nodes + edges | ✓ a | ✗ a | ✗ a | ✗ a | ✗ a |
+| retrograde | nodes + edges | ✓ a | ✗ a' | ✗ a' | ✗ a' | ✗ a' |
+
+**T11**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| motif_retro | temporal edges | ✓ a | ✗ a' | ✗ a' | ✗ a' | ✗ a' |
+| invert | nodes + edges | ✗ a' | ✓ a | ✓ a | ✓ a | ✓ a |
+| retrograde | nodes + edges | ✓ a | ✗ a' | ✗ a' | ✗ a' | ✗ a' |
+
+**T12**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ c | ✓ a | ✓ a | ✓ a | ✓ a |
+| mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| motif_retro | temporal edges | ✓ a | ✗ a' | ✗ a' | ✗ a' | ✗ a' |
+| invert | nodes + edges | ✗ b | ✓ a | ✓ a | ✓ a | ✓ a |
+| retrograde | nodes + edges | ✓ a | ✗ a' | ✗ a' | ✗ a' | ✗ a' |
+
+**T13**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ b | ✓ a | ✓ a | ✓ a | ✓ a |
+| mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✗ a'' | ✗ a'' | ✗ a'' |
+| invert | nodes + edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| retrograde | nodes + edges | ✓ a | ✗ b | ✗ b | ✗ b | ✗ b |
+
+**T14**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ b | ✓ a | ✓ a | ✓ a | ✓ a |
+| mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✗ a'' |
+| invert | nodes + edges | ✗ a'' | ✗ a'' | ✓ a | ✓ a | ✓ a |
+| retrograde | nodes + edges | ✓ a | ✗ b | ✗ b | ✗ b | ✗ b |
+
+**T15**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ a'' | ✓ a | ✓ a | ✓ a | ✓ a |
+| mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| invert | nodes + edges | ✗ a' | ✓ a | ✓ a | ✓ a | ✓ a |
+| retrograde | nodes + edges | ✓ a | ✓ a | ✗ a' | ✗ a' | ✗ a' |
+
+**T16**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ a'' | ✓ a | ✓ a | ✓ a | ✓ a |
+| mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✗ a'' | ✗ a'' | ✗ a'' |
+| invert | nodes + edges | ✗ a' | ✓ a | ✓ a | ✓ a | ✓ a |
+| retrograde | nodes + edges | ✓ a | ✗ a | ✗ a | ✗ a | ✗ a |
+
+**Cross-mappings** (label = where the source motif landed; look-alike in brackets)
 
 | pair | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
 |---|---|---|---|---|---|---|
-| T1 → T3 | a → ? | ✗ b | ✓ a | ✓ a | ✓ a | ✓ a |
-| T2 → T4 | b → ? | ✗ c | ✓ b | ✓ b | ✓ b | ✓ b |
+| T1 → T3 | a → ? [c, MERT rank 3] | ✗ b | ✓ a | ✓ a | ✓ a | ✓ a |
+| T2 → T4 | b → ? [a1, MERT rank 3] | ✗ c | ✓ b | ✓ b | ✓ b | ✓ b |
+| T5 → T6 | a → ? [c, MERT rank 1] | ✗ c | ✓ a | ✓ a | ✓ a | ✓ a |
+| T7 → T8 | a1 → ? [c, MERT rank 1] | ✗ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| T9 → T10 | c → ? [b, MERT rank 2] | ✗ b | ✓ c | ✓ c | ✓ c | ✓ c |
+| T11 → T12 | b → ? [a, MERT rank 4] | ✗ c | ✓ b | ✓ b | ✓ b | ✓ b |
+| T13 → T14 | a'' → ? [b, MERT rank 1] | ✗ b | ✓ a'' | ✓ a'' | ✓ a'' | ✓ a'' |
+| T15 → T16 | b → ? [a, MERT rank 4] | ✗ a | ✓ b | ✓ b | ✓ b | ✓ b |
 
-**Relational similarity between themes** (role alignment / best of 24)
+**Relational similarity between themes** (w = 1)
 
-| pair | kind | role | best | best is role |
-|---|---|---|---|---|
-| T1 → T2 | different skeleton | 0.20 | 0.26 | no |
-| T1 → T3 | **analog** | 0.39 | 0.39 | yes |
-| T1 → T4 | different skeleton | 0.07 | 0.21 | no |
-| T2 → T3 | different skeleton | 0.16 | 0.16 | yes |
-| T2 → T4 | **analog** | 0.58 | 0.58 | yes |
-| T3 → T4 | different skeleton | 0.10 | 0.30 | no |
+- Designed analogs (24): mean role similarity 0.50; role alignment is best in 23/24.
+- Different skeletons (96): mean role similarity 0.28.
+- Separation (AUC): 86%.
 
 ## MERT motifs + MERT difference-vector relations (fully learned)
 
@@ -144,21 +325,202 @@ Same exact matcher as design_check.md (a proxy, not PAM), with motif nodes coded
 | invert | nodes + edges | ✗ a1 | ✗ a1 | ✗ a1 | ✗ a1 | ✗ a1 |
 | retrograde | nodes + edges | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
 
-**Cross-theme analogs** (label = where the cross-mapped source motif landed)
+**T5**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ a' | ✗ a' | ✗ a' | ✗ a' | ✗ a' |
+| mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| invert | nodes + edges | ✗ c | ✗ c | ✗ c | ✗ c | ✗ c |
+| retrograde | nodes + edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+
+**T6**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ b | ✗ b | ✗ b | ✗ b | ✗ b |
+| mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| invert | nodes + edges | ✗ a | ✗ a | ✗ a | ✗ a | ✗ a |
+| retrograde | nodes + edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+
+**T7**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| tempo | surface | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| transpose | probe: pitch coding | ✗ b | ✓ a2 | ✓ a2 | ✓ a2 | ✓ a2 |
+| mode | nodes only | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| ornament | nodes only | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| augment | probe: time coding | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| reorder | temporal edges | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| motif_retro | temporal edges | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| invert | nodes + edges | ✗ a2 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| retrograde | nodes + edges | ✓ a2 | ✓ a2 | ✓ a2 | ✓ a2 | ✓ a2 |
+
+**T8**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a2 | ✓ a2 | ✓ a2 | ✓ a2 | ✓ a2 |
+| tempo | surface | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| transpose | probe: pitch coding | ✗ a1 | ✗ a1 | ✗ a1 | ✗ a1 | ✗ a1 |
+| mode | nodes only | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| ornament | nodes only | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| augment | probe: time coding | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| reorder | temporal edges | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| motif_retro | temporal edges | ✓ a2 | ✓ a2 | ✓ a2 | ✓ a2 | ✓ a2 |
+| invert | nodes + edges | ✗ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+| retrograde | nodes + edges | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
+
+**T9**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ b | ✗ c | ✗ c | ✗ c | ✗ c |
+| mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| invert | nodes + edges | ✗ a | ✗ a | ✗ a | ✗ a | ✗ a |
+| retrograde | nodes + edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+
+**T10**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ b | ✗ b | ✗ b | ✗ b | ✗ b |
+| mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| invert | nodes + edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| retrograde | nodes + edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+
+**T11**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ a | ✗ a | ✗ a | ✗ a | ✗ a |
+| mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| invert | nodes + edges | ✗ a' | ✗ a' | ✗ a' | ✗ a' | ✗ a' |
+| retrograde | nodes + edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+
+**T12**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ c | ✗ c | ✗ c | ✗ c | ✗ c |
+| mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| invert | nodes + edges | ✗ b | ✗ b | ✗ b | ✗ b | ✗ b |
+| retrograde | nodes + edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+
+**T13**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ b | ✗ b | ✗ b | ✗ b | ✗ b |
+| mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| invert | nodes + edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| retrograde | nodes + edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+
+**T14**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ b | ✗ b | ✗ b | ✗ b | ✗ a'' |
+| mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| invert | nodes + edges | ✗ a'' | ✗ a'' | ✗ a'' | ✗ a'' | ✗ a'' |
+| retrograde | nodes + edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+
+**T15**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ a'' | ✗ a' | ✗ a' | ✗ a' | ✗ a' |
+| mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| invert | nodes + edges | ✗ a' | ✗ a' | ✗ a' | ✗ a' | ✗ a' |
+| retrograde | nodes + edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+
+**T16**
+
+| condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
+|---|---|---|---|---|---|---|
+| timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ a'' | ✗ a'' | ✗ a'' | ✗ a'' | ✗ a'' |
+| mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| invert | nodes + edges | ✗ a' | ✗ a' | ✗ a' | ✗ a' | ✗ a' |
+| retrograde | nodes + edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+
+**Cross-mappings** (label = where the source motif landed; look-alike in brackets)
 
 | pair | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
 |---|---|---|---|---|---|---|
-| T1 → T3 | a → ? | ✗ b | ✗ a | ✗ a | ✗ a | ✗ a |
-| T2 → T4 | b → ? | ✗ c | ✗ c | ✗ c | ✗ c | ✗ c |
+| T1 → T3 | a → ? [c, MERT rank 3] | ✗ b | ✗ b | ✗ b | ✗ b | ✗ b |
+| T2 → T4 | b → ? [a1, MERT rank 3] | ✗ c | ✗ c | ✗ c | ✗ c | ✗ c |
+| T5 → T6 | a → ? [c, MERT rank 1] | ✗ c | ✗ c | ✗ c | ✗ c | ✗ c |
+| T7 → T8 | a1 → ? [c, MERT rank 1] | ✗ a1 | ✗ a1 | ✗ a1 | ✗ a1 | ✗ a1 |
+| T9 → T10 | c → ? [b, MERT rank 2] | ✗ b | ✗ b | ✗ b | ✗ b | ✗ b |
+| T11 → T12 | b → ? [a, MERT rank 4] | ✗ c | ✗ a | ✗ a | ✗ a | ✗ a |
+| T13 → T14 | a'' → ? [b, MERT rank 1] | ✗ b | ✗ b | ✗ b | ✗ b | ✗ b |
+| T15 → T16 | b → ? [a, MERT rank 4] | ✗ a | ✗ a | ✗ a | ✗ a | ✗ a |
 
-**Relational similarity between themes** (role alignment / best of 24)
+**Relational similarity between themes** (w = 1)
 
-| pair | kind | role | best | best is role |
-|---|---|---|---|---|
-| T1 → T2 | different skeleton | -0.01 | 0.14 | no |
-| T1 → T3 | **analog** | -0.03 | 0.11 | no |
-| T1 → T4 | different skeleton | -0.15 | 0.11 | no |
-| T2 → T3 | different skeleton | -0.15 | 0.24 | no |
-| T2 → T4 | **analog** | 0.12 | 0.16 | no |
-| T3 → T4 | different skeleton | -0.02 | 0.21 | no |
+- Designed analogs (24): mean role similarity 0.01; role alignment is best in 1/24.
+- Different skeletons (96): mean role similarity 0.00.
+- Separation (AUC): 52%.
 

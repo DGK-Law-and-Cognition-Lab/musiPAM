@@ -8,7 +8,7 @@
 
 **Authors.** David G. Kamper, Hongjing Lu, Keith J. Holyoak (UCLA). *DECISION: author list.*
 
-**Description.** Two different themes can share a relational skeleton (for example, both are sentences) while sharing no motifs. In half of the analog pairs, the target theme contains a **look-alike**: a motif with the shape of a source motif but a different role. This is the classic cross-mapping design (Gentner & Toupin, 1986; Markman & Gentner, 1993; Richland, Morrison & Holyoak, 2006). Listeners mark which part of the target corresponds to a probed part of the source.
+**Description.** Two different themes can share a relational skeleton (for example, both are sentences) while sharing no motifs. In 8 of the 24 analog pairs (two per skeleton), the target theme contains a **look-alike**: a motif with the shape of a source motif but a different role. This is the classic cross-mapping design (Gentner & Toupin, 1986; Markman & Gentner, 1993; Richland, Morrison & Holyoak, 2006). Listeners mark which part of the target corresponds to a probed part of the source.
 
 **Hypotheses.**
 

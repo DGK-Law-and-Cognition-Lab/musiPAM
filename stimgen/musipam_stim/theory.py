@@ -207,4 +207,12 @@ def minor_alterations(dnns: list[int], chord_pc_sets: list[set[int]], ki: KeyInf
             up = i + 1 < n and dnns[i + 1] == dnns[i] + 1 and alters[i + 1] == 1
             down = i > 0 and dnns[i - 1] == dnns[i] + 1 and alters[i - 1] == 1
             alters[i] = int(up or down)
+    # A raised 7th the harmony doesn't require must not sit a step from a lowered 6th
+    # (that would be an augmented second): use the natural 7th instead.
+    for i in range(n):
+        if degs[i] != 6 or alters[i] != 1 or r7 in chord_pc_sets[i]:
+            continue
+        for j in (i - 1, i + 1):
+            if 0 <= j < n and degs[j] == 5 and alters[j] == 0 and abs(dnns[j] - dnns[i]) == 1:
+                alters[i] = 0
     return alters
