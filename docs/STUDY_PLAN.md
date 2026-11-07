@@ -160,7 +160,7 @@ The behavioral studies don't depend on any model. The models are the competing *
    - **Learned audio embeddings from a pretrained transformer: MERT-v1-95M** (`m-a-p/MERT-v1-95M` on HuggingFace), trained self-supervised on about 160,000 hours of music, with MusicFM as a robustness check.
 
    The learned code is essential to the argument. PAM maps over Word2Vec and visiPAM over learned visual embeddings. If musiPAM used only features chosen by the people who built the stimuli, a reviewer could call the result circular. MERT embeds the audio participants actually hear, with no knowledge of the design.
-2. **Relation (edge) representations.** The computed symbolic relation vectors, and learned relations from MERT, starting with difference vectors (A′ − A). A trained relation model, a "music BART", comes later; the plan is in [RELATION_MODEL.md](RELATION_MODEL.md). B. Yang's Word2Vec experience maps directly onto this step.
+2. **Relation (edge) representations.** The computed symbolic relation vectors, and learned relations from MERT, starting with difference vectors (A′ − A). A trained relation model, a "music BART", is the step after that. Its plan is in [RELATION_MODEL.md](RELATION_MODEL.md), and a first version, trained on folk tunes, is in `relations/`: as musiPAM's edges it already separates analogs from controls better than the hand-built relations. B. Yang's Word2Vec experience maps directly onto this step.
 3. **Mapping.** The lab's PAM code (H. Lu). The brute-force design check stands in for it until then.
 
 **MERT results on all 16 themes (2026-11-06; `stimuli/reports/design_check_mert.md`):**

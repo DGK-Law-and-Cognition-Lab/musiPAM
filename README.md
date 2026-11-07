@@ -17,6 +17,7 @@ David G. Kamper · Department of Psychology, UCLA · [ORCID 0000-0003-0362-759X]
 docs/STUDY_PLAN.md        every study, one by one, and why 16 themes
 docs/STIMULUS_SPEC.md     themes, transformation grid, rendering, validation, provenance
 docs/RELATION_MODEL.md    plan for a learned relation model ("music BART")
+relations/                the learned relation model ("music BART"): pair generator, model, tests
 prereg/                   OSF-format preregistration drafts (Studies 0, 1a, 1b, 1c, 2, 3)
 stimgen/                  the generator: themes, transformations, arrangement, rendering, graphs, checks
 stimuli/T1 … T16/         per stimulus: score (.musicxml), .mid, .mp3, motif graph (.graph.json)
@@ -46,8 +47,8 @@ The themes were drafted with AI assistance (Anthropic Claude) to a written speci
 
 ## License
 
-- **Code** (`stimgen/`): MIT. See [LICENSE](LICENSE).
-- **Stimuli, documentation and preregistrations** (`stimuli/`, `docs/`, `prereg/`): CC BY 4.0. See [LICENSE-CC-BY-4.0.md](LICENSE-CC-BY-4.0.md).
+- **Code** (`stimgen/`, `relations/`): MIT. See [LICENSE](LICENSE).
+- **Stimuli, documentation, reports and preregistrations** (`stimuli/`, `docs/`, `prereg/`, `relations/reports/`): CC BY 4.0. See [LICENSE-CC-BY-4.0.md](LICENSE-CC-BY-4.0.md). The relation model's training data come from folk-tune collections bundled with music21 and are not redistributed; `relations/build_corpus.py` regenerates them.
 - **Third-party credits** (the soundfont, MERT): see [NOTICE.md](NOTICE.md).
 
 ## Citation

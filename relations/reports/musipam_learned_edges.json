@@ -1,0 +1,1070 @@
+{
+ "variants": {
+  "computed": {
+   "cross": {
+    "T1>T3": {
+     "lands": [
+      "c",
+      "c",
+      "a",
+      "a",
+      "a"
+     ],
+     "ok": [
+      false,
+      false,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.5
+    },
+    "T2>T4": {
+     "lands": [
+      "a1",
+      "a2",
+      "a2",
+      "b",
+      "b"
+     ],
+     "ok": [
+      false,
+      false,
+      false,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.75
+    },
+    "T5>T6": {
+     "lands": [
+      "c",
+      "a",
+      "a",
+      "a",
+      "a"
+     ],
+     "ok": [
+      false,
+      true,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.25
+    },
+    "T7>T8": {
+     "lands": [
+      "b",
+      "b",
+      "b",
+      "a1",
+      "a1"
+     ],
+     "ok": [
+      false,
+      false,
+      false,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.75
+    },
+    "T9>T10": {
+     "lands": [
+      "b",
+      "b",
+      "b",
+      "b",
+      "c"
+     ],
+     "ok": [
+      false,
+      false,
+      false,
+      false,
+      true
+     ],
+     "works": true,
+     "role_from": 1.0
+    },
+    "T11>T12": {
+     "lands": [
+      "a",
+      "b",
+      "b",
+      "b",
+      "b"
+     ],
+     "ok": [
+      false,
+      true,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.25
+    },
+    "T13>T14": {
+     "lands": [
+      "b",
+      "a''",
+      "a''",
+      "a''",
+      "a''"
+     ],
+     "ok": [
+      false,
+      true,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.25
+    },
+    "T15>T16": {
+     "lands": [
+      "a'",
+      "a''",
+      "b",
+      "b",
+      "b"
+     ],
+     "ok": [
+      false,
+      false,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.5
+    }
+   },
+   "cross_working": 8,
+   "relsim": {
+    "auc": 0.8606770833333334,
+    "analog_mean": 0.5023905566632837,
+    "control_mean": 0.2793594760692397,
+    "role_best": 23
+   },
+   "theme": {
+    "transpose": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "mode": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "ornament": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "augment": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "reorder": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "motif_retro": {
+     "relations_only": 10,
+     "any_weight": 16
+    },
+    "invert": {
+     "relations_only": 10,
+     "any_weight": 10
+    },
+    "retrograde": {
+     "relations_only": 3,
+     "any_weight": 8
+    }
+   }
+  },
+  "learned": {
+   "cross": {
+    "T1>T3": {
+     "lands": [
+      "c",
+      "c",
+      "b",
+      "b",
+      "b"
+     ],
+     "ok": [
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "works": false,
+     "role_from": null
+    },
+    "T2>T4": {
+     "lands": [
+      "a1",
+      "a1",
+      "a1",
+      "b",
+      "b"
+     ],
+     "ok": [
+      false,
+      false,
+      false,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.75
+    },
+    "T5>T6": {
+     "lands": [
+      "c",
+      "a",
+      "a",
+      "a",
+      "a"
+     ],
+     "ok": [
+      false,
+      true,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.25
+    },
+    "T7>T8": {
+     "lands": [
+      "b",
+      "b",
+      "b",
+      "a1",
+      "a1"
+     ],
+     "ok": [
+      false,
+      false,
+      false,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.75
+    },
+    "T9>T10": {
+     "lands": [
+      "b",
+      "b",
+      "b",
+      "b",
+      "b"
+     ],
+     "ok": [
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "works": false,
+     "role_from": null
+    },
+    "T11>T12": {
+     "lands": [
+      "a",
+      "b",
+      "b",
+      "b",
+      "b"
+     ],
+     "ok": [
+      false,
+      true,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.25
+    },
+    "T13>T14": {
+     "lands": [
+      "b",
+      "a''",
+      "a''",
+      "a''",
+      "a''"
+     ],
+     "ok": [
+      false,
+      true,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.25
+    },
+    "T15>T16": {
+     "lands": [
+      "a'",
+      "a''",
+      "a''",
+      "b",
+      "b"
+     ],
+     "ok": [
+      false,
+      false,
+      false,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.75
+    }
+   },
+   "cross_working": 6,
+   "relsim": {
+    "auc": 0.8802083333333334,
+    "analog_mean": 0.393148385527143,
+    "control_mean": 0.10279693946037527,
+    "role_best": 13
+   },
+   "theme": {
+    "transpose": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "mode": {
+     "relations_only": 13,
+     "any_weight": 16
+    },
+    "ornament": {
+     "relations_only": 14,
+     "any_weight": 16
+    },
+    "augment": {
+     "relations_only": 15,
+     "any_weight": 16
+    },
+    "reorder": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "motif_retro": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "invert": {
+     "relations_only": 8,
+     "any_weight": 8
+    },
+    "retrograde": {
+     "relations_only": 12,
+     "any_weight": 13
+    }
+   }
+  },
+  "learned + order": {
+   "cross": {
+    "T1>T3": {
+     "lands": [
+      "c",
+      "c",
+      "a",
+      "a",
+      "a"
+     ],
+     "ok": [
+      false,
+      false,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.5
+    },
+    "T2>T4": {
+     "lands": [
+      "a1",
+      "a2",
+      "a1",
+      "b",
+      "b"
+     ],
+     "ok": [
+      false,
+      false,
+      false,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.75
+    },
+    "T5>T6": {
+     "lands": [
+      "c",
+      "a",
+      "a",
+      "a",
+      "a"
+     ],
+     "ok": [
+      false,
+      true,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.25
+    },
+    "T7>T8": {
+     "lands": [
+      "b",
+      "c",
+      "a1",
+      "a1",
+      "a1"
+     ],
+     "ok": [
+      false,
+      false,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.5
+    },
+    "T9>T10": {
+     "lands": [
+      "b",
+      "b",
+      "c",
+      "c",
+      "c"
+     ],
+     "ok": [
+      false,
+      false,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.5
+    },
+    "T11>T12": {
+     "lands": [
+      "a",
+      "b",
+      "b",
+      "b",
+      "b"
+     ],
+     "ok": [
+      false,
+      true,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.25
+    },
+    "T13>T14": {
+     "lands": [
+      "b",
+      "a''",
+      "a''",
+      "a''",
+      "a''"
+     ],
+     "ok": [
+      false,
+      true,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.25
+    },
+    "T15>T16": {
+     "lands": [
+      "a'",
+      "a'",
+      "b",
+      "b",
+      "b"
+     ],
+     "ok": [
+      false,
+      false,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.5
+    }
+   },
+   "cross_working": 8,
+   "relsim": {
+    "auc": 0.9314236111111112,
+    "analog_mean": 0.6016125582867239,
+    "control_mean": 0.3654747292484768,
+    "role_best": 24
+   },
+   "theme": {
+    "transpose": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "mode": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "ornament": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "augment": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "reorder": {
+     "relations_only": 9,
+     "any_weight": 16
+    },
+    "motif_retro": {
+     "relations_only": 6,
+     "any_weight": 16
+    },
+    "invert": {
+     "relations_only": 12,
+     "any_weight": 12
+    },
+    "retrograde": {
+     "relations_only": 3,
+     "any_weight": 7
+    }
+   }
+  },
+  "raw differences": {
+   "cross": {
+    "T1>T3": {
+     "lands": [
+      "c",
+      "c",
+      "b",
+      "b",
+      "b"
+     ],
+     "ok": [
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "works": false,
+     "role_from": null
+    },
+    "T2>T4": {
+     "lands": [
+      "a1",
+      "a1",
+      "a2",
+      "a2",
+      "a2"
+     ],
+     "ok": [
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "works": false,
+     "role_from": null
+    },
+    "T5>T6": {
+     "lands": [
+      "c",
+      "c",
+      "c",
+      "c",
+      "c"
+     ],
+     "ok": [
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "works": false,
+     "role_from": null
+    },
+    "T7>T8": {
+     "lands": [
+      "b",
+      "b",
+      "b",
+      "b",
+      "b"
+     ],
+     "ok": [
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "works": false,
+     "role_from": null
+    },
+    "T9>T10": {
+     "lands": [
+      "b",
+      "b",
+      "b",
+      "b",
+      "b"
+     ],
+     "ok": [
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "works": false,
+     "role_from": null
+    },
+    "T11>T12": {
+     "lands": [
+      "a",
+      "b",
+      "b",
+      "a'",
+      "a'"
+     ],
+     "ok": [
+      false,
+      true,
+      true,
+      false,
+      false
+     ],
+     "works": true,
+     "role_from": 0.25
+    },
+    "T13>T14": {
+     "lands": [
+      "b",
+      "a''",
+      "a''",
+      "a''",
+      "a''"
+     ],
+     "ok": [
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "works": false,
+     "role_from": null
+    },
+    "T15>T16": {
+     "lands": [
+      "a'",
+      "a'",
+      "a'",
+      "a''",
+      "a''"
+     ],
+     "ok": [
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "works": false,
+     "role_from": null
+    }
+   },
+   "cross_working": 1,
+   "relsim": {
+    "auc": 0.5872395833333334,
+    "analog_mean": 0.12116790098524792,
+    "control_mean": 0.05645608419138246,
+    "role_best": 6
+   },
+   "theme": {
+    "transpose": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "mode": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "ornament": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "augment": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "reorder": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "motif_retro": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "invert": {
+     "relations_only": 0,
+     "any_weight": 0
+    },
+    "retrograde": {
+     "relations_only": 10,
+     "any_weight": 10
+    }
+   }
+  }
+ },
+ "designed": [
+  {
+   "theme": "T1",
+   "skeleton": "sentence",
+   "edge": "a \u2192 a\u2032",
+   "expected": "seq_up_1",
+   "top": "seq_up_1",
+   "p_top": 0.9998879432678223,
+   "second": "seq_up_3",
+   "p_expected": 0.9998879432678223,
+   "rank_expected": 1
+  },
+  {
+   "theme": "T2",
+   "skeleton": "period",
+   "edge": "a\u2081 \u2192 a\u2082",
+   "expected": "repeat",
+   "top": "repeat",
+   "p_top": 0.99045729637146,
+   "second": "seq_up_2",
+   "p_expected": 0.99045729637146,
+   "rank_expected": 1
+  },
+  {
+   "theme": "T2",
+   "skeleton": "period",
+   "edge": "b \u2192 c",
+   "expected": "consequent",
+   "top": "pitch_new",
+   "p_top": 0.6715812087059021,
+   "second": "consequent",
+   "p_expected": 0.006096637342125177,
+   "rank_expected": 2
+  },
+  {
+   "theme": "T3",
+   "skeleton": "sentence",
+   "edge": "a \u2192 a\u2032",
+   "expected": "seq_up_1",
+   "top": "seq_up_1",
+   "p_top": 0.031660374253988266,
+   "second": "seq_up_3",
+   "p_expected": 0.031660374253988266,
+   "rank_expected": 1
+  },
+  {
+   "theme": "T4",
+   "skeleton": "period",
+   "edge": "a\u2081 \u2192 a\u2082",
+   "expected": "repeat",
+   "top": "repeat",
+   "p_top": 0.9949723482131958,
+   "second": "pitch_new",
+   "p_expected": 0.9949723482131958,
+   "rank_expected": 1
+  },
+  {
+   "theme": "T4",
+   "skeleton": "period",
+   "edge": "b \u2192 c",
+   "expected": "consequent",
+   "top": "inversion",
+   "p_top": 0.9246312379837036,
+   "second": "pitch_new",
+   "p_expected": 7.129176810849458e-05,
+   "rank_expected": 4
+  },
+  {
+   "theme": "T5",
+   "skeleton": "sentence",
+   "edge": "a \u2192 a\u2032",
+   "expected": "seq_up_1",
+   "top": "seq_up_2",
+   "p_top": 0.13500161468982697,
+   "second": "seq_up_1",
+   "p_expected": 0.001982759451493621,
+   "rank_expected": 2
+  },
+  {
+   "theme": "T6",
+   "skeleton": "sentence",
+   "edge": "a \u2192 a\u2032",
+   "expected": "seq_up_1",
+   "top": "seq_up_1",
+   "p_top": 0.9978395700454712,
+   "second": "seq_up_2",
+   "p_expected": 0.9978395700454712,
+   "rank_expected": 1
+  },
+  {
+   "theme": "T7",
+   "skeleton": "period",
+   "edge": "a\u2081 \u2192 a\u2082",
+   "expected": "repeat",
+   "top": "repeat",
+   "p_top": 0.9991752505302429,
+   "second": "seq_up_2",
+   "p_expected": 0.9991752505302429,
+   "rank_expected": 1
+  },
+  {
+   "theme": "T7",
+   "skeleton": "period",
+   "edge": "b \u2192 c",
+   "expected": "consequent",
+   "top": "consequent",
+   "p_top": 0.9817250370979309,
+   "second": "pitch_new",
+   "p_expected": 0.9817250370979309,
+   "rank_expected": 1
+  },
+  {
+   "theme": "T8",
+   "skeleton": "period",
+   "edge": "a\u2081 \u2192 a\u2082",
+   "expected": "repeat",
+   "top": "repeat",
+   "p_top": 0.9971708655357361,
+   "second": "seq_down_1",
+   "p_expected": 0.9971708655357361,
+   "rank_expected": 1
+  },
+  {
+   "theme": "T8",
+   "skeleton": "period",
+   "edge": "b \u2192 c",
+   "expected": "consequent",
+   "top": "consequent",
+   "p_top": 0.9919100403785706,
+   "second": "pitch_new",
+   "p_expected": 0.9919100403785706,
+   "rank_expected": 1
+  },
+  {
+   "theme": "T9",
+   "skeleton": "rounded",
+   "edge": "a \u2192 a\u2032",
+   "expected": "consequent",
+   "top": "consequent",
+   "p_top": 0.9993799924850464,
+   "second": "retrograde",
+   "p_expected": 0.9993799924850464,
+   "rank_expected": 1
+  },
+  {
+   "theme": "T10",
+   "skeleton": "rounded",
+   "edge": "a \u2192 a\u2032",
+   "expected": "consequent",
+   "top": "consequent",
+   "p_top": 0.26656976342201233,
+   "second": "fragment",
+   "p_expected": 0.26656976342201233,
+   "rank_expected": 1
+  },
+  {
+   "theme": "T11",
+   "skeleton": "rounded",
+   "edge": "a \u2192 a\u2032",
+   "expected": "consequent",
+   "top": "consequent",
+   "p_top": 0.996364176273346,
+   "second": "fragment",
+   "p_expected": 0.996364176273346,
+   "rank_expected": 1
+  },
+  {
+   "theme": "T12",
+   "skeleton": "rounded",
+   "edge": "a \u2192 a\u2032",
+   "expected": "consequent",
+   "top": "consequent",
+   "p_top": 0.9901304841041565,
+   "second": "pitch_new",
+   "p_expected": 0.9901304841041565,
+   "rank_expected": 1
+  },
+  {
+   "theme": "T13",
+   "skeleton": "chain",
+   "edge": "a \u2192 a\u2032",
+   "expected": "seq_down_1",
+   "top": "seq_down_1",
+   "p_top": 0.9983443021774292,
+   "second": "seq_down_2",
+   "p_expected": 0.9983443021774292,
+   "rank_expected": 1
+  },
+  {
+   "theme": "T13",
+   "skeleton": "chain",
+   "edge": "a\u2032 \u2192 a\u2033",
+   "expected": "seq_down_1",
+   "top": "seq_down_1",
+   "p_top": 0.8587537407875061,
+   "second": "seq_down_2",
+   "p_expected": 0.8587537407875061,
+   "rank_expected": 1
+  },
+  {
+   "theme": "T13",
+   "skeleton": "chain",
+   "edge": "a \u2192 a\u2033",
+   "expected": "seq_down_2",
+   "top": "seq_down_2",
+   "p_top": 0.8668326139450073,
+   "second": "seq_down_1",
+   "p_expected": 0.8668326139450073,
+   "rank_expected": 1
+  },
+  {
+   "theme": "T14",
+   "skeleton": "chain",
+   "edge": "a \u2192 a\u2032",
+   "expected": "seq_down_1",
+   "top": "seq_down_1",
+   "p_top": 0.9996129870414734,
+   "second": "real_down",
+   "p_expected": 0.9996129870414734,
+   "rank_expected": 1
+  },
+  {
+   "theme": "T14",
+   "skeleton": "chain",
+   "edge": "a\u2032 \u2192 a\u2033",
+   "expected": "seq_down_1",
+   "top": "real_down",
+   "p_top": 1.0,
+   "second": "seq_down_2",
+   "p_expected": 3.538759916971483e-27,
+   "rank_expected": 25
+  },
+  {
+   "theme": "T14",
+   "skeleton": "chain",
+   "edge": "a \u2192 a\u2033",
+   "expected": "seq_down_2",
+   "top": "seq_down_2",
+   "p_top": 0.7976550459861755,
+   "second": "retro_inversion",
+   "p_expected": 0.7976550459861755,
+   "rank_expected": 1
+  },
+  {
+   "theme": "T15",
+   "skeleton": "chain",
+   "edge": "a \u2192 a\u2032",
+   "expected": "seq_down_1",
+   "top": "real_down",
+   "p_top": 0.9997426867485046,
+   "second": "mode_change",
+   "p_expected": 1.750411783474488e-18,
+   "rank_expected": 21
+  },
+  {
+   "theme": "T15",
+   "skeleton": "chain",
+   "edge": "a\u2032 \u2192 a\u2033",
+   "expected": "seq_down_1",
+   "top": "seq_down_3",
+   "p_top": 0.9999752044677734,
+   "second": "seq_down_2",
+   "p_expected": 7.831167897313918e-14,
+   "rank_expected": 16
+  },
+  {
+   "theme": "T15",
+   "skeleton": "chain",
+   "edge": "a \u2192 a\u2033",
+   "expected": "seq_down_2",
+   "top": "real_down",
+   "p_top": 0.9999997615814209,
+   "second": "mode_change",
+   "p_expected": 6.479418516391888e-05,
+   "rank_expected": 3
+  },
+  {
+   "theme": "T16",
+   "skeleton": "chain",
+   "edge": "a \u2192 a\u2032",
+   "expected": "seq_down_1",
+   "top": "seq_down_1",
+   "p_top": 0.986549437046051,
+   "second": "seq_down_2",
+   "p_expected": 0.986549437046051,
+   "rank_expected": 1
+  },
+  {
+   "theme": "T16",
+   "skeleton": "chain",
+   "edge": "a\u2032 \u2192 a\u2033",
+   "expected": "seq_down_1",
+   "top": "seq_down_1",
+   "p_top": 0.9949055910110474,
+   "second": "seq_down_2",
+   "p_expected": 0.9949055910110474,
+   "rank_expected": 1
+  },
+  {
+   "theme": "T16",
+   "skeleton": "chain",
+   "edge": "a \u2192 a\u2033",
+   "expected": "seq_down_2",
+   "top": "seq_down_2",
+   "p_top": 0.5793599486351013,
+   "second": "seq_down_3",
+   "p_expected": 0.5793599486351013,
+   "rank_expected": 1
+  }
+ ]
+}

@@ -4,6 +4,24 @@ Draft 0.1 · 2026-11-06 · D. Kamper (with Claude) · for discussion with B. Yan
 
 ---
 
+## Status (2026-11-06): Track A v0 is built and works
+
+The code is in [`../relations/`](../relations) (run instructions in its README). The model is trained on 100,278 generated pairs from Essen tunes, using the symbolic motif code. It never saw a musiPAM motif.
+
+| Test | Result | Reference |
+|---|---|---|
+| Relation recognized, new Essen tunes | 96% | chance 4% |
+| Relation recognized, new collection (Irish and Scottish) | 89% | chance 4% |
+| Leak check: a model that sees only A | 6–7% | chance 4% |
+| Four-term analogies (new tunes / new collection) | 99% / 95% | raw differences: 64% / 64% |
+| Relations found in real tunes | 77% / 73% | repeats ~100%, kept openings 40–50% |
+| Compositions never seen in training | mostly poor | a linear model doesn't combine relations; see Track B |
+| musiPAM: the designed relations named correctly (top choice) | 21 of 28 | misses are mainly in the minor-key chains |
+| musiPAM design check, learned relations + position | all 8 cross-mappings; analogs vs controls 93%; 24/24 aligned by role | hand-built relations: 8/8, 86%, 23/24 |
+| musiPAM design check, raw differences | 1/8 cross-mappings; 59% | — |
+
+Learned relations, from a model that never saw the stimuli, separate analogs from controls better than the relations we built by hand. The main open problem is chromaticism: in minor keys the stimuli's harmony-driven raised 6ths and 7ths make some sequences look like real transpositions (T14, T15). Training on harmonic-minor variants should fix that. The motif code underneath is still ours, so the next step is Track A on MERT and CLaMP 3 inputs. Reports: `relations/reports/track_a_symbolic.md` and `relations/reports/musipam_learned_edges.md`.
+
 ## 1. The problem
 
 PAM maps one graph onto another. Each graph needs two kinds of vectors:
@@ -90,7 +108,7 @@ As with every model in the program, predictions are frozen before a study's regi
 
 - **Circularity** ("the model just learned your generator"). Labels come from music theory, training motifs from public collections, and the 64 stimulus motifs are held out. The decisive tests are natural pairs and listeners, not our stimuli.
 - **Too-clean training pairs.** Generated relations are perfect; real ones are not. Add noise (stray ornaments, small rhythmic changes) to training pairs, and judge the model on natural pairs.
-- **Shortcuts.** Balance every relation across keys, meters and collections. Run a one-motif baseline: a model that sees only A or only B must perform at chance, or the labels leak.
+- **Shortcuts.** Balance every relation across keys, meters and collections. Run a one-motif baseline: a model that sees only the base motif A must stay near chance, or the labels leak. (In v0 it reaches 6–7% against 4% chance, because some relations can't be applied to every motif.)
 - **Licensing.** The corpora are not redistributed. The repository gets the factory code, and trained weights only if the training data's terms allow.
 
 ## 8. A first project for B. Yang (one quarter)
