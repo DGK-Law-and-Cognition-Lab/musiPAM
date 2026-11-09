@@ -200,14 +200,15 @@ THEMES: dict[str, Theme] = {
         theme_id="T6", title="Barcarolle", key="A", meter="6/8", bpm=84,
         form="sentence (a a' b c)", texture="barcarolle", tonic_ref=48, tritone_key="E-",
         skeleton="sentence", head=2,
-        character="Major-key barcarolle in 6/8 with the sentence skeleton, closing with a "
-                  "cadential hemiola. Cross-mapping: its cadence c has exactly the rhythm and "
-                  "contour of T5's opening idea a.",
+        character="Major-key barcarolle in 6/8 with the sentence skeleton: a falling tonic "
+                  "arpeggio that climbs back to the 7th over the dominant, its sequence a step "
+                  "higher, and a close with a cadential hemiola. Cross-mapping: its cadence c has "
+                  "exactly the rhythm and contour of T5's opening idea a.",
         motifs=[
-            ("a",  "A4/q C#5/e F#5/q. | E5/q D5/e C#5/q.",
-                   "I:1.5 vi:1.5 | V:1.5 I:1.5"),
-            ("a'", "B4/q D5/e G#5/q. | F#5/q E5/e D5/q.",
-                   "ii:1.5 viio6:1.5 | vi:1.5 ii:1.5"),
+            ("a",  "E5/q C#5/e A4/q. | B4/q C#5/e D5/q.",
+                   "I:3 | V:1.5 V7:1.5"),
+            ("a'", "F#5/q D5/e B4/q. | C#5/q D5/e E5/q.",
+                   "ii:3 | vi:1.5 V:1.5"),
             ("b",  "C#5/q E5/e D5/q F#5/e | E5/q G#5/e B5/q.",
                    "I6:1.5 ii6:1.5 | V:1.5 V7:1.5"),
             ("c",  "F#4/e G#4/e A4/e C#5/q. | B4/q G#4/q A4/q",
@@ -307,13 +308,14 @@ THEMES: dict[str, Theme] = {
         theme_id="T12", title="Chorale", key="A-", meter="4/4", bpm=92,
         form="rounded (a b c a')", texture="chorale", tonic_ref=48, tritone_key="D",
         skeleton="rounded",
-        character="Major-key chorale in rounded form. Cross-mapping: its opening idea (and so the "
-                  "start of its return) has exactly the rhythm and contour of T11's b.",
+        character="Major-key chorale in rounded form; its contrast b steps down from the 5th "
+                  "and leaps back to it over the dominant. Cross-mapping: its opening idea (and so "
+                  "the start of its return) has exactly the rhythm and contour of T11's b.",
         motifs=[
             ("a",  "Eb5/q. G5/e F5/q Eb5/q | Db5/q. Eb5/e C5/h",
                    "I:2 ii:1 V7:1 | V7:2 I:2"),
-            ("b",  "C5/q F5/q Eb5/q Db5/q | Bb4/w",
-                   "vi:2 I:1 IV:1 | ii:4"),
+            ("b",  "Eb5/q Db5/q C5/q Bb4/q | Eb5/w",
+                   "I:1 V7:1 vi:1 V:1 | V:4"),
             ("c",  "Bb4/q C5/q Db5/q Eb5/q | G5/h Eb5/h",
                    "ii:3 V:1 | V7:4"),
             ("a'", "Eb5/q. G5/e F5/q Eb5/q | Db5/q. C5/e Ab4/h",

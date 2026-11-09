@@ -1,0 +1,10064 @@
+{
+ "weights": [
+  0.0,
+  0.25,
+  0.5,
+  1.0,
+  2.0,
+  4.0
+ ],
+ "results": {
+  "rel+computed": {
+   "cross": {
+    "T1>T3": [
+     {
+      "w": 0.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T2>T4": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 2.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "a1",
+      "p": 0.5,
+      "kind": "look-alike"
+     }
+    ],
+    "T5>T6": [
+     {
+      "w": 0.0,
+      "lands": "c",
+      "p": 0.996,
+      "kind": "look-alike"
+     },
+     {
+      "w": 0.25,
+      "lands": "c",
+      "p": 0.999,
+      "kind": "look-alike"
+     },
+     {
+      "w": 0.5,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 1.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 2.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T7>T8": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T9>T10": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 0.997,
+      "kind": "look-alike"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T11>T12": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 2.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T13>T14": [
+     {
+      "w": 0.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T15>T16": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 2.0,
+      "lands": "a'",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "a'",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ]
+   },
+   "variation": {
+    "T1>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T1>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T2>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T2>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T3>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>motif_retro": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T3>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T3>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T4>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T4>retrograde": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T5>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T5>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T5>retrograde": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T6>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>motif_retro": [
+     false,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T6>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T7>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>invert": [
+     true,
+     true,
+     true,
+     false,
+     false,
+     false
+    ],
+    "T7>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T8>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T8>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T9>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>motif_retro": [
+     false,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T9>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T10>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T10>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T10>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T11>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T11>invert": [
+     true,
+     true,
+     true,
+     false,
+     false,
+     false
+    ],
+    "T11>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T12>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>reorder": [
+     false,
+     false,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T12>invert": [
+     true,
+     true,
+     true,
+     false,
+     false,
+     false
+    ],
+    "T12>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T13>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>motif_retro": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T13>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T13>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T14>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>motif_retro": [
+     false,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>invert": [
+     true,
+     true,
+     true,
+     false,
+     false,
+     false
+    ],
+    "T14>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T15>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>reorder": [
+     false,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T15>retrograde": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T16>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>motif_retro": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T16>invert": [
+     true,
+     true,
+     true,
+     false,
+     false,
+     false
+    ],
+    "T16>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ]
+   },
+   "pairs": {
+    "0.0": {
+     "auc": 0.6749131944444444,
+     "role_aligned": 16,
+     "n_analog": 24
+    },
+    "0.25": {
+     "auc": 0.6684027777777778,
+     "role_aligned": 16,
+     "n_analog": 24
+    },
+    "0.5": {
+     "auc": 0.6545138888888888,
+     "role_aligned": 15,
+     "n_analog": 24
+    },
+    "1.0": {
+     "auc": 0.6414930555555556,
+     "role_aligned": 9,
+     "n_analog": 24
+    },
+    "2.0": {
+     "auc": 0.6241319444444444,
+     "role_aligned": 7,
+     "n_analog": 24
+    },
+    "4.0": {
+     "auc": 0.5993923611111112,
+     "role_aligned": 5,
+     "n_analog": 24
+    }
+   },
+   "summary": {
+    "cross_role_at_0": 5,
+    "cross_full": 5,
+    "variation": {
+     "transpose": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      15
+     ],
+     "mode": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      15
+     ],
+     "ornament": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+     ],
+     "augment": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      15
+     ],
+     "reorder": [
+      14,
+      15,
+      16,
+      16,
+      16,
+      15
+     ],
+     "motif_retro": [
+      7,
+      10,
+      10,
+      13,
+      14,
+      15
+     ],
+     "invert": [
+      7,
+      7,
+      7,
+      2,
+      0,
+      0
+     ],
+     "retrograde": [
+      1,
+      1,
+      1,
+      3,
+      4,
+      6
+     ]
+    }
+   }
+  },
+  "rel+computed_std": {
+   "cross": {
+    "T1>T3": [
+     {
+      "w": 0.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T2>T4": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 2.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "a1",
+      "p": 0.5,
+      "kind": "look-alike"
+     }
+    ],
+    "T5>T6": [
+     {
+      "w": 0.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 2.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T7>T8": [
+     {
+      "w": 0.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T9>T10": [
+     {
+      "w": 0.0,
+      "lands": "c",
+      "p": 0.999,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T11>T12": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T13>T14": [
+     {
+      "w": 0.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T15>T16": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "a'",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ]
+   },
+   "variation": {
+    "T1>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T1>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T2>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T2>retrograde": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T3>retrograde": [
+     false,
+     false,
+     false,
+     true,
+     false,
+     false
+    ],
+    "T4>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T4>retrograde": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T5>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T5>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T6>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T6>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T7>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T7>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T8>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T8>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T9>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T9>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T10>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T10>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T10>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T11>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T11>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T11>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T12>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>reorder": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T12>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T12>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T12>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T13>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>motif_retro": [
+     false,
+     false,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T13>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T14>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>invert": [
+     true,
+     true,
+     true,
+     false,
+     false,
+     false
+    ],
+    "T14>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T15>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T15>retrograde": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T16>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>motif_retro": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T16>invert": [
+     true,
+     true,
+     true,
+     false,
+     false,
+     false
+    ],
+    "T16>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     false
+    ]
+   },
+   "pairs": {
+    "0.0": {
+     "auc": 0.8020833333333334,
+     "role_aligned": 21,
+     "n_analog": 24
+    },
+    "0.25": {
+     "auc": 0.7764756944444444,
+     "role_aligned": 20,
+     "n_analog": 24
+    },
+    "0.5": {
+     "auc": 0.7855902777777778,
+     "role_aligned": 19,
+     "n_analog": 24
+    },
+    "1.0": {
+     "auc": 0.6770833333333334,
+     "role_aligned": 15,
+     "n_analog": 24
+    },
+    "2.0": {
+     "auc": 0.6549479166666666,
+     "role_aligned": 9,
+     "n_analog": 24
+    },
+    "4.0": {
+     "auc": 0.6393229166666666,
+     "role_aligned": 5,
+     "n_analog": 24
+    }
+   },
+   "summary": {
+    "cross_role_at_0": 8,
+    "cross_full": 8,
+    "variation": {
+     "transpose": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      15
+     ],
+     "mode": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      15
+     ],
+     "ornament": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+     ],
+     "augment": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      15
+     ],
+     "reorder": [
+      15,
+      15,
+      15,
+      16,
+      16,
+      15
+     ],
+     "motif_retro": [
+      11,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "invert": [
+      7,
+      7,
+      7,
+      5,
+      2,
+      0
+     ],
+     "retrograde": [
+      2,
+      2,
+      2,
+      4,
+      5,
+      5
+     ]
+    }
+   }
+  },
+  "rel+learned": {
+   "cross": {
+    "T1>T3": [
+     {
+      "w": 0.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T2>T4": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 2.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "a1",
+      "p": 0.5,
+      "kind": "look-alike"
+     }
+    ],
+    "T5>T6": [
+     {
+      "w": 0.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "a'",
+      "p": 1.0,
+      "kind": "other"
+     }
+    ],
+    "T7>T8": [
+     {
+      "w": 0.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T9>T10": [
+     {
+      "w": 0.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T11>T12": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T13>T14": [
+     {
+      "w": 0.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T15>T16": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "a'",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ]
+   },
+   "variation": {
+    "T1>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>reorder": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T1>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T1>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T1>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T2>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T2>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T2>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T3>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>reorder": [
+     false,
+     false,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T3>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T3>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T4>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>reorder": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T4>motif_retro": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T4>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T4>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T5>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T5>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>reorder": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     false
+    ],
+    "T5>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T5>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T5>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T6>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>reorder": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T6>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T6>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T6>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T7>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>reorder": [
+     false,
+     false,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T7>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T7>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T8>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>reorder": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T8>motif_retro": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T8>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T8>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T9>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>reorder": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T9>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T9>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T9>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T10>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>reorder": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T10>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T10>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T10>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T11>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>reorder": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T11>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T11>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T11>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T12>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>reorder": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T12>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T12>invert": [
+     true,
+     true,
+     true,
+     false,
+     false,
+     false
+    ],
+    "T12>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T13>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>reorder": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T13>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T13>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T13>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T14>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>reorder": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T14>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T14>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T14>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T15>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>reorder": [
+     false,
+     false,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T15>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T15>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T16>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>reorder": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T16>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T16>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T16>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ]
+   },
+   "pairs": {
+    "0.0": {
+     "auc": 0.7296006944444444,
+     "role_aligned": 24,
+     "n_analog": 24
+    },
+    "0.25": {
+     "auc": 0.7239583333333334,
+     "role_aligned": 24,
+     "n_analog": 24
+    },
+    "0.5": {
+     "auc": 0.7057291666666666,
+     "role_aligned": 24,
+     "n_analog": 24
+    },
+    "1.0": {
+     "auc": 0.640625,
+     "role_aligned": 23,
+     "n_analog": 24
+    },
+    "2.0": {
+     "auc": 0.5698784722222222,
+     "role_aligned": 15,
+     "n_analog": 24
+    },
+    "4.0": {
+     "auc": 0.5598958333333334,
+     "role_aligned": 6,
+     "n_analog": 24
+    }
+   },
+   "summary": {
+    "cross_role_at_0": 8,
+    "cross_full": 7,
+    "variation": {
+     "transpose": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      15
+     ],
+     "mode": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      15
+     ],
+     "ornament": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+     ],
+     "augment": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      15
+     ],
+     "reorder": [
+      1,
+      1,
+      4,
+      8,
+      14,
+      15
+     ],
+     "motif_retro": [
+      0,
+      0,
+      0,
+      2,
+      5,
+      13
+     ],
+     "invert": [
+      16,
+      16,
+      16,
+      15,
+      1,
+      0
+     ],
+     "retrograde": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  },
+  "rel+learned_p5": {
+   "cross": {
+    "T1>T3": [
+     {
+      "w": 0.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     }
+    ],
+    "T2>T4": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 2.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "a1",
+      "p": 0.5,
+      "kind": "look-alike"
+     }
+    ],
+    "T5>T6": [
+     {
+      "w": 0.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "a'",
+      "p": 1.0,
+      "kind": "other"
+     }
+    ],
+    "T7>T8": [
+     {
+      "w": 0.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T9>T10": [
+     {
+      "w": 0.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T11>T12": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T13>T14": [
+     {
+      "w": 0.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T15>T16": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "a'",
+      "p": 0.5,
+      "kind": "look-alike"
+     }
+    ]
+   },
+   "variation": {
+    "T1>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>reorder": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T1>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T1>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T1>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T2>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>reorder": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T2>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T2>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T2>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T3>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>reorder": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T3>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T3>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T3>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T4>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>reorder": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T4>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T4>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T4>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T5>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T5>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>reorder": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     false
+    ],
+    "T5>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T5>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T5>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T6>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>reorder": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T6>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T6>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T6>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T7>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>reorder": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T7>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T7>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T7>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T8>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>reorder": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T8>motif_retro": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T8>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T8>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T9>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>reorder": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T9>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T9>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T9>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T10>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>reorder": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T10>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T10>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T10>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T11>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>reorder": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T11>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T11>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T11>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T12>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>reorder": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T12>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T12>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T12>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T13>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>reorder": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T13>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T13>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T13>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T14>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>reorder": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T14>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T14>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T14>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T15>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>reorder": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T15>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T15>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T15>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T16>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>reorder": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T16>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T16>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T16>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ]
+   },
+   "pairs": {
+    "0.0": {
+     "auc": 0.7096354166666666,
+     "role_aligned": 24,
+     "n_analog": 24
+    },
+    "0.25": {
+     "auc": 0.7057291666666666,
+     "role_aligned": 24,
+     "n_analog": 24
+    },
+    "0.5": {
+     "auc": 0.6805555555555556,
+     "role_aligned": 24,
+     "n_analog": 24
+    },
+    "1.0": {
+     "auc": 0.5950520833333334,
+     "role_aligned": 23,
+     "n_analog": 24
+    },
+    "2.0": {
+     "auc": 0.5394965277777778,
+     "role_aligned": 15,
+     "n_analog": 24
+    },
+    "4.0": {
+     "auc": 0.5577256944444444,
+     "role_aligned": 6,
+     "n_analog": 24
+    }
+   },
+   "summary": {
+    "cross_role_at_0": 8,
+    "cross_full": 6,
+    "variation": {
+     "transpose": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      15
+     ],
+     "mode": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      15
+     ],
+     "ornament": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+     ],
+     "augment": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      15
+     ],
+     "reorder": [
+      0,
+      0,
+      0,
+      7,
+      14,
+      15
+     ],
+     "motif_retro": [
+      0,
+      0,
+      0,
+      1,
+      4,
+      13
+     ],
+     "invert": [
+      16,
+      16,
+      16,
+      16,
+      1,
+      0
+     ],
+     "retrograde": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2
+     ]
+    }
+   }
+  },
+  "abs+computed_std": {
+   "cross": {
+    "T1>T3": [
+     {
+      "w": 0.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     }
+    ],
+    "T2>T4": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     }
+    ],
+    "T5>T6": [
+     {
+      "w": 0.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T7>T8": [
+     {
+      "w": 0.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T9>T10": [
+     {
+      "w": 0.0,
+      "lands": "c",
+      "p": 0.999,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T11>T12": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "other"
+     }
+    ],
+    "T13>T14": [
+     {
+      "w": 0.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     }
+    ],
+    "T15>T16": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     }
+    ]
+   },
+   "variation": {
+    "T1>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T1>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T1>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T2>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T2>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T2>retrograde": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T3>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T3>retrograde": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T4>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T4>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T4>retrograde": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T5>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T5>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T5>retrograde": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T6>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T6>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T6>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T7>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T7>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T8>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T8>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T8>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T9>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T9>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T9>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T10>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T10>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T10>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T11>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T11>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>motif_retro": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T11>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T11>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T12>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T12>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>reorder": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T12>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T12>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T12>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T13>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T13>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>motif_retro": [
+     false,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T14>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T14>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>invert": [
+     true,
+     true,
+     true,
+     false,
+     false,
+     false
+    ],
+    "T14>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T15>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T15>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T15>retrograde": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T16>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T16>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>motif_retro": [
+     false,
+     false,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T16>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ]
+   },
+   "pairs": {
+    "0.0": {
+     "auc": 0.8020833333333334,
+     "role_aligned": 21,
+     "n_analog": 24
+    },
+    "0.25": {
+     "auc": 0.8025173611111112,
+     "role_aligned": 21,
+     "n_analog": 24
+    },
+    "0.5": {
+     "auc": 0.8020833333333334,
+     "role_aligned": 20,
+     "n_analog": 24
+    },
+    "1.0": {
+     "auc": 0.7599826388888888,
+     "role_aligned": 19,
+     "n_analog": 24
+    },
+    "2.0": {
+     "auc": 0.6345486111111112,
+     "role_aligned": 14,
+     "n_analog": 24
+    },
+    "4.0": {
+     "auc": 0.4479166666666667,
+     "role_aligned": 5,
+     "n_analog": 24
+    }
+   },
+   "summary": {
+    "cross_role_at_0": 8,
+    "cross_full": 3,
+    "variation": {
+     "transpose": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      2
+     ],
+     "mode": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+     ],
+     "ornament": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      15
+     ],
+     "augment": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      15
+     ],
+     "reorder": [
+      15,
+      15,
+      15,
+      16,
+      16,
+      15
+     ],
+     "motif_retro": [
+      11,
+      12,
+      13,
+      14,
+      16,
+      15
+     ],
+     "invert": [
+      7,
+      7,
+      7,
+      6,
+      4,
+      2
+     ],
+     "retrograde": [
+      2,
+      2,
+      2,
+      5,
+      9,
+      13
+     ]
+    }
+   }
+  },
+  "mert+computed_std": {
+   "cross": {
+    "T1>T3": [
+     {
+      "w": 0.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     }
+    ],
+    "T2>T4": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     }
+    ],
+    "T5>T6": [
+     {
+      "w": 0.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T7>T8": [
+     {
+      "w": 0.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     }
+    ],
+    "T9>T10": [
+     {
+      "w": 0.0,
+      "lands": "c",
+      "p": 0.999,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "look-alike"
+     }
+    ],
+    "T11>T12": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     }
+    ],
+    "T13>T14": [
+     {
+      "w": 0.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     }
+    ],
+    "T15>T16": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     }
+    ]
+   },
+   "variation": {
+    "T1>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T1>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T2>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T2>retrograde": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T3>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T4>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T4>retrograde": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T5>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T5>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T5>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T5>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T5>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T5>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T5>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T5>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T6>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T6>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T7>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T8>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T8>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T9>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T9>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T10>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T10>invert": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T10>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T11>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T11>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T12>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>reorder": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     true
+    ],
+    "T12>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T12>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T13>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>motif_retro": [
+     false,
+     false,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T14>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T14>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T15>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>motif_retro": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T16>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>reorder": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T16>invert": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "T16>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ]
+   },
+   "pairs": {
+    "0.0": {
+     "auc": 0.8020833333333334,
+     "role_aligned": 21,
+     "n_analog": 24
+    },
+    "0.25": {
+     "auc": 0.8012152777777778,
+     "role_aligned": 21,
+     "n_analog": 24
+    },
+    "0.5": {
+     "auc": 0.8051215277777778,
+     "role_aligned": 21,
+     "n_analog": 24
+    },
+    "1.0": {
+     "auc": 0.7764756944444444,
+     "role_aligned": 19,
+     "n_analog": 24
+    },
+    "2.0": {
+     "auc": 0.7582465277777778,
+     "role_aligned": 18,
+     "n_analog": 24
+    },
+    "4.0": {
+     "auc": 0.7113715277777778,
+     "role_aligned": 15,
+     "n_analog": 24
+    }
+   },
+   "summary": {
+    "cross_role_at_0": 8,
+    "cross_full": 2,
+    "variation": {
+     "transpose": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+     ],
+     "mode": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+     ],
+     "ornament": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+     ],
+     "augment": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+     ],
+     "reorder": [
+      15,
+      15,
+      15,
+      16,
+      16,
+      16
+     ],
+     "motif_retro": [
+      11,
+      11,
+      12,
+      12,
+      13,
+      13
+     ],
+     "invert": [
+      7,
+      7,
+      7,
+      7,
+      5,
+      5
+     ],
+     "retrograde": [
+      2,
+      2,
+      2,
+      2,
+      4,
+      7
+     ]
+    }
+   }
+  },
+  "mert+learned_p5": {
+   "cross": {
+    "T1>T3": [
+     {
+      "w": 0.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     }
+    ],
+    "T2>T4": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     }
+    ],
+    "T5>T6": [
+     {
+      "w": 0.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "a",
+      "p": 1.0,
+      "kind": "role"
+     }
+    ],
+    "T7>T8": [
+     {
+      "w": 0.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "a1",
+      "p": 1.0,
+      "kind": "role"
+     }
+    ],
+    "T9>T10": [
+     {
+      "w": 0.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "c",
+      "p": 1.0,
+      "kind": "role"
+     }
+    ],
+    "T11>T12": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     }
+    ],
+    "T13>T14": [
+     {
+      "w": 0.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "a''",
+      "p": 1.0,
+      "kind": "role"
+     }
+    ],
+    "T15>T16": [
+     {
+      "w": 0.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.25,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 0.5,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 1.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 2.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     },
+     {
+      "w": 4.0,
+      "lands": "b",
+      "p": 1.0,
+      "kind": "role"
+     }
+    ]
+   },
+   "variation": {
+    "T1>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>reorder": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T1>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T1>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T1>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T2>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>reorder": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T2>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T2>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T2>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T3>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T3>reorder": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T3>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T3>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T3>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T4>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>reorder": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T4>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T4>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T4>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T5>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T5>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T5>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T5>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T5>reorder": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T5>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T5>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T5>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T6>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T6>reorder": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T6>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T6>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T6>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T7>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>reorder": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T7>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T7>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T7>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T8>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>reorder": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T8>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T8>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T8>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T9>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>reorder": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T9>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T9>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T9>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T10>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>reorder": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T10>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T10>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T10>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T11>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>reorder": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T11>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T11>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T11>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T12>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>reorder": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T12>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T12>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T12>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T13>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>reorder": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T13>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T13>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T13>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T14>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T14>reorder": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T14>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T14>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T14>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T15>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T15>reorder": [
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "T15>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T15>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "T15>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T16>transpose": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>mode": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>ornament": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>augment": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>reorder": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     true
+    ],
+    "T16>motif_retro": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "T16>invert": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "T16>retrograde": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ]
+   },
+   "pairs": {
+    "0.0": {
+     "auc": 0.7096354166666666,
+     "role_aligned": 24,
+     "n_analog": 24
+    },
+    "0.25": {
+     "auc": 0.7105034722222222,
+     "role_aligned": 24,
+     "n_analog": 24
+    },
+    "0.5": {
+     "auc": 0.7105034722222222,
+     "role_aligned": 24,
+     "n_analog": 24
+    },
+    "1.0": {
+     "auc": 0.7092013888888888,
+     "role_aligned": 24,
+     "n_analog": 24
+    },
+    "2.0": {
+     "auc": 0.7200520833333334,
+     "role_aligned": 24,
+     "n_analog": 24
+    },
+    "4.0": {
+     "auc": 0.7378472222222222,
+     "role_aligned": 24,
+     "n_analog": 24
+    }
+   },
+   "summary": {
+    "cross_role_at_0": 8,
+    "cross_full": 0,
+    "variation": {
+     "transpose": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+     ],
+     "mode": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+     ],
+     "ornament": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+     ],
+     "augment": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+     ],
+     "reorder": [
+      0,
+      0,
+      0,
+      0,
+      4,
+      12
+     ],
+     "motif_retro": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "invert": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      11
+     ],
+     "retrograde": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    }
+   }
+  }
+ }
+}

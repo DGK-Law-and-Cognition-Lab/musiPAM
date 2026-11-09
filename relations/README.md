@@ -9,7 +9,7 @@ Music has one advantage over words: a relation is an operation on a score, so co
 - It recognizes the relation of a new pair 96% of the time on new Essen tunes, and 89% on the Irish and Scottish collections (chance 4%).
 - It solves four-term analogies 99% and 95% of the time; raw differences between motif codes manage 64%.
 - It names 21 of the 28 relations the musiPAM skeletons were built on, though it never saw a musiPAM motif.
-- As musiPAM's edges (with the three positional features), it makes all eight cross-mappings work and separates analogs from controls better than the hand-built relations (AUC 93% vs 86%; 24/24 analog pairs aligned by role vs 23/24).
+- As musiPAM's edges (with the three positional features), it makes all eight cross-mappings work and separates analogs from controls better than the hand-built relations (AUC 92% vs 87%; all 24 analog pairs aligned by role with either).
 - It does not yet recognize two relations applied together, and in minor keys it mistakes some sequences for real transpositions.
 
 Details: [`reports/track_a_symbolic.md`](reports/track_a_symbolic.md) and [`reports/musipam_learned_edges.md`](reports/musipam_learned_edges.md).

@@ -736,7 +736,7 @@ Objective checks only. Musical quality, naturalness and unfamiliarity are *not* 
 | T6_identity | no_augmented_seconds | pass | none |
 | T6_identity | notes_identical | pass |  |
 | T6_identity | loudness_on_target | pass | -20.00 LUFS |
-| T6_identity | no_clipping | pass | peak -10.97 dBFS |
+| T6_identity | no_clipping | pass | peak -10.37 dBFS |
 | T6_identity | peak_limiting_not_needed | pass |  |
 | T6_identity | duration_as_expected | pass | 18.74s vs 18.74s |
 | T6_timbre | whole_bars | pass | 24.0 ql = 8 bars |
@@ -748,7 +748,7 @@ Objective checks only. Musical quality, naturalness and unfamiliarity are *not* 
 | T6_timbre | no_augmented_seconds | pass | none |
 | T6_timbre | notes_identical | pass |  |
 | T6_timbre | loudness_on_target | pass | -20.00 LUFS |
-| T6_timbre | no_clipping | pass | peak -9.91 dBFS |
+| T6_timbre | no_clipping | pass | peak -10.39 dBFS |
 | T6_timbre | peak_limiting_not_needed | pass |  |
 | T6_timbre | duration_as_expected | pass | 18.74s vs 18.74s |
 | T6_tempo | whole_bars | pass | 24.0 ql = 8 bars |
@@ -760,7 +760,7 @@ Objective checks only. Musical quality, naturalness and unfamiliarity are *not* 
 | T6_tempo | no_augmented_seconds | pass | none |
 | T6_tempo | notes_identical | pass |  |
 | T6_tempo | loudness_on_target | pass | -20.00 LUFS |
-| T6_tempo | no_clipping | pass | peak -11.21 dBFS |
+| T6_tempo | no_clipping | pass | peak -11.23 dBFS |
 | T6_tempo | peak_limiting_not_needed | pass |  |
 | T6_tempo | duration_as_expected | pass | 14.81s vs 14.81s |
 | T6_transpose | whole_bars | pass | 24.0 ql = 8 bars |
@@ -772,7 +772,7 @@ Objective checks only. Musical quality, naturalness and unfamiliarity are *not* 
 | T6_transpose | no_augmented_seconds | pass | none |
 | T6_transpose | exact_tritone_shift | pass |  |
 | T6_transpose | loudness_on_target | pass | -20.00 LUFS |
-| T6_transpose | no_clipping | pass | peak -11.35 dBFS |
+| T6_transpose | no_clipping | pass | peak -11.13 dBFS |
 | T6_transpose | peak_limiting_not_needed | pass |  |
 | T6_transpose | duration_as_expected | pass | 18.74s vs 18.74s |
 | T6_mode | whole_bars | pass | 24.0 ql = 8 bars |
@@ -782,9 +782,9 @@ Objective checks only. Musical quality, naturalness and unfamiliarity are *not* 
 | T6_mode | strong_beat_chord_tones | pass | 15/15 = 100% (accented dissonances are by design) |
 | T6_mode | melody_in_range | pass | 65-83 vs clarinet 50-94 |
 | T6_mode | no_augmented_seconds | pass | none |
-| T6_mode | only_degrees_3_6_7_move_one_semitone | pass | 11 notes altered |
+| T6_mode | only_degrees_3_6_7_move_one_semitone | pass | 10 notes altered |
 | T6_mode | loudness_on_target | pass | -20.00 LUFS |
-| T6_mode | no_clipping | pass | peak -11.23 dBFS |
+| T6_mode | no_clipping | pass | peak -11.40 dBFS |
 | T6_mode | peak_limiting_not_needed | pass |  |
 | T6_mode | duration_as_expected | pass | 18.74s vs 18.74s |
 | T6_ornament | whole_bars | pass | 24.0 ql = 8 bars |
@@ -794,9 +794,9 @@ Objective checks only. Musical quality, naturalness and unfamiliarity are *not* 
 | T6_ornament | strong_beat_chord_tones | pass | 15/15 = 100% (accented dissonances are by design) |
 | T6_ornament | melody_in_range | pass | 66-83 vs clarinet 50-94 |
 | T6_ornament | no_augmented_seconds | pass | none |
-| T6_ornament | structural_tones_keep_onsets | pass | +6 ornamental notes |
+| T6_ornament | structural_tones_keep_onsets | pass | +8 ornamental notes |
 | T6_ornament | loudness_on_target | pass | -20.00 LUFS |
-| T6_ornament | no_clipping | pass | peak -11.52 dBFS |
+| T6_ornament | no_clipping | pass | peak -10.13 dBFS |
 | T6_ornament | peak_limiting_not_needed | pass |  |
 | T6_ornament | duration_as_expected | pass | 18.74s vs 18.74s |
 | T6_augment | whole_bars | pass | 30.0 ql = 10 bars |
@@ -809,7 +809,7 @@ Objective checks only. Musical quality, naturalness and unfamiliarity are *not* 
 | T6_augment | motif2_durations_doubled | pass |  |
 | T6_augment | other_motifs_untouched | pass |  |
 | T6_augment | loudness_on_target | pass | -20.00 LUFS |
-| T6_augment | no_clipping | pass | peak -11.08 dBFS |
+| T6_augment | no_clipping | pass | peak -10.55 dBFS |
 | T6_augment | peak_limiting_not_needed | pass |  |
 | T6_augment | duration_as_expected | pass | 23.03s vs 23.03s |
 | T6_reorder | whole_bars | pass | 24.0 ql = 8 bars |
@@ -821,7 +821,7 @@ Objective checks only. Musical quality, naturalness and unfamiliarity are *not* 
 | T6_reorder | no_augmented_seconds | pass | none |
 | T6_reorder | motifs_intact | pass | a b a' c |
 | T6_reorder | loudness_on_target | pass | -20.00 LUFS |
-| T6_reorder | no_clipping | pass | peak -10.79 dBFS |
+| T6_reorder | no_clipping | pass | peak -10.37 dBFS |
 | T6_reorder | peak_limiting_not_needed | pass |  |
 | T6_reorder | duration_as_expected | pass | 18.74s vs 18.74s |
 | T6_motif_retro | whole_bars | pass | 24.0 ql = 8 bars |
@@ -833,7 +833,7 @@ Objective checks only. Musical quality, naturalness and unfamiliarity are *not* 
 | T6_motif_retro | no_augmented_seconds | pass | none |
 | T6_motif_retro | motifs_intact | pass | c b a' a |
 | T6_motif_retro | loudness_on_target | pass | -20.00 LUFS |
-| T6_motif_retro | no_clipping | pass | peak -10.77 dBFS |
+| T6_motif_retro | no_clipping | pass | peak -10.86 dBFS |
 | T6_motif_retro | peak_limiting_not_needed | pass |  |
 | T6_motif_retro | duration_as_expected | pass | 18.74s vs 18.74s |
 | T6_invert | whole_bars | pass | 24.0 ql = 8 bars |
@@ -845,7 +845,7 @@ Objective checks only. Musical quality, naturalness and unfamiliarity are *not* 
 | T6_invert | no_augmented_seconds | pass | none |
 | T6_invert | diatonic_intervals_negated | pass | axis C#5 |
 | T6_invert | loudness_on_target | pass | -20.00 LUFS |
-| T6_invert | no_clipping | pass | peak -11.18 dBFS |
+| T6_invert | no_clipping | pass | peak -10.60 dBFS |
 | T6_invert | peak_limiting_not_needed | pass |  |
 | T6_invert | duration_as_expected | pass | 18.74s vs 18.74s |
 | T6_retrograde | whole_bars | pass | 24.0 ql = 8 bars |
@@ -857,7 +857,7 @@ Objective checks only. Musical quality, naturalness and unfamiliarity are *not* 
 | T6_retrograde | no_augmented_seconds | pass | none |
 | T6_retrograde | exact_reversal | pass |  |
 | T6_retrograde | loudness_on_target | pass | -20.00 LUFS |
-| T6_retrograde | no_clipping | pass | peak -10.97 dBFS |
+| T6_retrograde | no_clipping | pass | peak -10.82 dBFS |
 | T6_retrograde | peak_limiting_not_needed | pass |  |
 | T6_retrograde | duration_as_expected | pass | 18.74s vs 18.74s |
 | T7_identity | whole_bars | pass | 32.0 ql = 8 bars |
@@ -1534,7 +1534,7 @@ Objective checks only. Musical quality, naturalness and unfamiliarity are *not* 
 | T12_identity | no_augmented_seconds | pass | none |
 | T12_identity | notes_identical | pass |  |
 | T12_identity | loudness_on_target | pass | -20.00 LUFS |
-| T12_identity | no_clipping | pass | peak -10.47 dBFS |
+| T12_identity | no_clipping | pass | peak -10.51 dBFS |
 | T12_identity | peak_limiting_not_needed | pass |  |
 | T12_identity | duration_as_expected | pass | 22.47s vs 22.47s |
 | T12_timbre | whole_bars | pass | 32.0 ql = 8 bars |
@@ -1546,7 +1546,7 @@ Objective checks only. Musical quality, naturalness and unfamiliarity are *not* 
 | T12_timbre | no_augmented_seconds | pass | none |
 | T12_timbre | notes_identical | pass |  |
 | T12_timbre | loudness_on_target | pass | -20.00 LUFS |
-| T12_timbre | no_clipping | pass | peak -9.49 dBFS |
+| T12_timbre | no_clipping | pass | peak -9.91 dBFS |
 | T12_timbre | peak_limiting_not_needed | pass |  |
 | T12_timbre | duration_as_expected | pass | 22.47s vs 22.47s |
 | T12_tempo | whole_bars | pass | 32.0 ql = 8 bars |
@@ -1558,7 +1558,7 @@ Objective checks only. Musical quality, naturalness and unfamiliarity are *not* 
 | T12_tempo | no_augmented_seconds | pass | none |
 | T12_tempo | notes_identical | pass |  |
 | T12_tempo | loudness_on_target | pass | -20.00 LUFS |
-| T12_tempo | no_clipping | pass | peak -10.01 dBFS |
+| T12_tempo | no_clipping | pass | peak -10.29 dBFS |
 | T12_tempo | peak_limiting_not_needed | pass |  |
 | T12_tempo | duration_as_expected | pass | 17.60s vs 17.60s |
 | T12_transpose | whole_bars | pass | 32.0 ql = 8 bars |
@@ -1580,9 +1580,9 @@ Objective checks only. Musical quality, naturalness and unfamiliarity are *not* 
 | T12_mode | strong_beat_chord_tones | pass | 15/15 = 100% (accented dissonances are by design) |
 | T12_mode | melody_in_range | pass | 68-79 vs clarinet 50-94 |
 | T12_mode | no_augmented_seconds | pass | none |
-| T12_mode | only_degrees_3_6_7_move_one_semitone | pass | 9 notes altered |
+| T12_mode | only_degrees_3_6_7_move_one_semitone | pass | 8 notes altered |
 | T12_mode | loudness_on_target | pass | -20.00 LUFS |
-| T12_mode | no_clipping | pass | peak -10.39 dBFS |
+| T12_mode | no_clipping | pass | peak -10.48 dBFS |
 | T12_mode | peak_limiting_not_needed | pass |  |
 | T12_mode | duration_as_expected | pass | 22.47s vs 22.47s |
 | T12_ornament | whole_bars | pass | 32.0 ql = 8 bars |
@@ -1592,9 +1592,9 @@ Objective checks only. Musical quality, naturalness and unfamiliarity are *not* 
 | T12_ornament | strong_beat_chord_tones | pass | 15/15 = 100% (accented dissonances are by design) |
 | T12_ornament | melody_in_range | pass | 68-79 vs clarinet 50-94 |
 | T12_ornament | no_augmented_seconds | pass | none |
-| T12_ornament | structural_tones_keep_onsets | pass | +11 ornamental notes |
+| T12_ornament | structural_tones_keep_onsets | pass | +9 ornamental notes |
 | T12_ornament | loudness_on_target | pass | -20.00 LUFS |
-| T12_ornament | no_clipping | pass | peak -10.31 dBFS |
+| T12_ornament | no_clipping | pass | peak -10.05 dBFS |
 | T12_ornament | peak_limiting_not_needed | pass |  |
 | T12_ornament | duration_as_expected | pass | 22.47s vs 22.47s |
 | T12_augment | whole_bars | pass | 40.0 ql = 10 bars |
@@ -1607,7 +1607,7 @@ Objective checks only. Musical quality, naturalness and unfamiliarity are *not* 
 | T12_augment | motif2_durations_doubled | pass |  |
 | T12_augment | other_motifs_untouched | pass |  |
 | T12_augment | loudness_on_target | pass | -20.00 LUFS |
-| T12_augment | no_clipping | pass | peak -9.74 dBFS |
+| T12_augment | no_clipping | pass | peak -9.83 dBFS |
 | T12_augment | peak_limiting_not_needed | pass |  |
 | T12_augment | duration_as_expected | pass | 27.69s vs 27.69s |
 | T12_reorder | whole_bars | pass | 32.0 ql = 8 bars |
@@ -1619,7 +1619,7 @@ Objective checks only. Musical quality, naturalness and unfamiliarity are *not* 
 | T12_reorder | no_augmented_seconds | pass | none |
 | T12_reorder | motifs_intact | pass | a c b a' |
 | T12_reorder | loudness_on_target | pass | -20.00 LUFS |
-| T12_reorder | no_clipping | pass | peak -9.89 dBFS |
+| T12_reorder | no_clipping | pass | peak -9.55 dBFS |
 | T12_reorder | peak_limiting_not_needed | pass |  |
 | T12_reorder | duration_as_expected | pass | 22.47s vs 22.47s |
 | T12_motif_retro | whole_bars | pass | 32.0 ql = 8 bars |
@@ -1631,7 +1631,7 @@ Objective checks only. Musical quality, naturalness and unfamiliarity are *not* 
 | T12_motif_retro | no_augmented_seconds | pass | none |
 | T12_motif_retro | motifs_intact | pass | a' c b a |
 | T12_motif_retro | loudness_on_target | pass | -20.00 LUFS |
-| T12_motif_retro | no_clipping | pass | peak -9.90 dBFS |
+| T12_motif_retro | no_clipping | pass | peak -9.56 dBFS |
 | T12_motif_retro | peak_limiting_not_needed | pass |  |
 | T12_motif_retro | duration_as_expected | pass | 22.47s vs 22.47s |
 | T12_invert | whole_bars | pass | 32.0 ql = 8 bars |
@@ -1655,7 +1655,7 @@ Objective checks only. Musical quality, naturalness and unfamiliarity are *not* 
 | T12_retrograde | no_augmented_seconds | pass | none |
 | T12_retrograde | exact_reversal | pass |  |
 | T12_retrograde | loudness_on_target | pass | -20.00 LUFS |
-| T12_retrograde | no_clipping | pass | peak -9.95 dBFS |
+| T12_retrograde | no_clipping | pass | peak -10.05 dBFS |
 | T12_retrograde | peak_limiting_not_needed | pass |  |
 | T12_retrograde | duration_as_expected | pass | 22.47s vs 22.47s |
 | T13_identity | whole_bars | pass | 32.0 ql = 8 bars |

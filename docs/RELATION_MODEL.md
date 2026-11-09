@@ -17,10 +17,10 @@ The code is in [`../relations/`](../relations) (run instructions in its README).
 | Relations found in real tunes | 77% / 73% | repeats ~100%, kept openings 40–50% |
 | Compositions never seen in training | mostly poor | a linear model doesn't combine relations; see Track B |
 | musiPAM: the designed relations named correctly (top choice) | 21 of 28 | misses are mainly in the minor-key chains |
-| musiPAM design check, learned relations + position | all 8 cross-mappings; analogs vs controls 93%; 24/24 aligned by role | hand-built relations: 8/8, 86%, 23/24 |
-| musiPAM design check, raw differences | 1/8 cross-mappings; 59% | — |
+| musiPAM design check, learned relations + position | all 8 cross-mappings; analogs vs controls 92%; 24/24 aligned by role | hand-built relations: 8/8, 87%, 24/24 |
+| musiPAM design check, raw differences | 0/8 cross-mappings; 60% | — |
 
-Learned relations, from a model that never saw the stimuli, separate analogs from controls better than the relations we built by hand. Under the lab's PAM itself (`v2/pam/`), they map all 24 same-skeleton theme pairs by role, against 19 with the computed relations. The main open problem is chromaticism: in minor keys the stimuli's harmony-driven raised 6ths and 7ths make some sequences look like real transpositions (T14, T15). Training on harmonic-minor variants should fix that. The motif code underneath is still ours, so the next step is Track A on MERT and CLaMP 3 inputs. Reports: `relations/reports/track_a_symbolic.md` and `relations/reports/musipam_learned_edges.md`.
+Learned relations, from a model that never saw the stimuli, separate analogs from controls better than the relations we built by hand. Under the lab's PAM itself (`v2/pam/`), they map all 24 same-skeleton theme pairs by role, against 21 with the computed relations. The main open problem is chromaticism: in minor keys the stimuli's harmony-driven raised 6ths and 7ths make some sequences look like real transpositions (T14, T15). Training on harmonic-minor variants should fix that. The motif code underneath is still ours, so the next step is Track A on MERT and CLaMP 3 inputs. Reports: `relations/reports/track_a_symbolic.md` and `relations/reports/musipam_learned_edges.md`.
 
 ## 1. The problem
 
@@ -29,7 +29,7 @@ PAM maps one graph onto another. Each graph needs two kinds of vectors:
 - **Nodes.** In the verbal model these are word embeddings (Word2Vec). In musiPAM they are motif codes: the symbolic key-relative and absolute codes, or MERT.
 - **Edges.** In the verbal model these are relation vectors from BART, which was *trained* to recognize relations. In musiPAM they are 16 relation features that we computed by hand from the score (§6 of [STIMULUS_SPEC.md](STIMULUS_SPEC.md)).
 
-The hand-built edges work in the design check, but a reviewer can fairly say they were designed alongside the stimuli. The obvious learned substitute, the difference between two MERT embeddings (B − A), fails: as relation vectors, these differences leave analog pairs and controls indistinguishable (AUC 52%, chance; `reports/design_check_mert.md`). The reason is that an audio embedding moves for every reason at once (pitch content, register, rhythm, texture), so the difference reflects how much changed rather than how it changed. Word2Vec differences are a weak relation code for words for the same reason (Ichien, Lu & Holyoak, 2022).
+The hand-built edges work in the design check, but a reviewer can fairly say they were designed alongside the stimuli. The obvious learned substitute, the difference between two MERT embeddings (B − A), fails: as relation vectors, these differences leave analog pairs and controls indistinguishable (AUC 55%, chance; `reports/design_check_mert.md`). The reason is that an audio embedding moves for every reason at once (pitch content, register, rhythm, texture), so the difference reflects how much changed rather than how it changed. Word2Vec differences are a weak relation code for words for the same reason (Ichien, Lu & Holyoak, 2022).
 
 **Goal:** a model whose output for an ordered motif pair (A, B) is similar for pairs related in the same way, whatever the motifs are. With it, musiPAM's edges come from learning, and the whole graph (learned nodes and learned edges) matches what PAM does for words.
 
@@ -56,7 +56,7 @@ The music version keeps all three. Music has one advantage over words: we can *g
 - *Inputs.* v0 classifies the pair code [a, b, b − a, |b − a|, a · b] of a symbolic motif code whose features are already disentangled (contour, rhythm, pitch classes), so ranking adds little there. Add BART's difference ranking for MERT and CLaMP 3 inputs, whose features are entangled like Word2Vec's.
 - *Estimation.* v0 uses L2-regularized logistic regression. Add elastic-net selection and the Bayesian contrast prior, so the method is BART's own.
 - *Direction.* v0 has no role vector. Direction is built into the inventory instead, as inverse pairs (augmentation and diminution, ornament and reduction, up and down).
-- *Power transform.* Tested on the musiPAM edges: it lowered analog-versus-control separation from 93% to 87% under our per-dimension standardization. Retest with PAM's own normalization.
+- *Power transform.* Tested on the musiPAM edges: it lowered analog-versus-control separation from 92% to 84% under our per-dimension standardization. Retest with PAM's own normalization.
 
 ## 3. The relation inventory
 

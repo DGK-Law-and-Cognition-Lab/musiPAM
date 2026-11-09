@@ -19,3 +19,10 @@ The motif embeddings are computed with **MERT-v1-95M** (Li et al., 2024; https:/
 ## Software
 
 The stimuli are built with music21, NumPy, SciPy, pyloudnorm, soundfile, FluidSynth and ffmpeg, each under its own license.
+
+## PAM
+
+`pam/pam.py` is a Python port of `TestMapping_PAMfunc.m` from the PAM code of Hongjing Lu, Nicholas Ichien and Keith J. Holyoak, included with the authors' permission. It reproduces the MATLAB original to machine precision (`pam/validate.py`). If you use it, cite:
+
+Lu, H., Ichien, N., & Holyoak, K. J. (2022). Probabilistic analogical mapping with semantic relation networks. *Psychological Review, 129*(5), 1078–1103. https://doi.org/10.1037/rev0000358
+

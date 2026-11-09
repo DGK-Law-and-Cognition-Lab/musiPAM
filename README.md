@@ -18,7 +18,7 @@ docs/STUDY_PLAN.md        every study, one by one, and why 16 themes
 docs/STIMULUS_SPEC.md     themes, transformation grid, rendering, validation, provenance
 docs/RELATION_MODEL.md    plan for a learned relation model ("music BART")
 relations/                the learned relation model ("music BART"): pair generator, model, tests
-                          (PAM itself runs from the lab's code; that adapter is not yet public)
+pam/                      PAM (Lu, Ichien & Holyoak, 2022) on the stimuli: Python port validated against the lab's MATLAB code
 prereg/                   OSF-format preregistration drafts (Studies 0, 1a, 1b, 1c, 2, 3)
 stimgen/                  the generator: themes, transformations, arrangement, rendering, graphs, checks
 stimuli/T1 … T16/         per stimulus: score (.musicxml), .mid, .mp3, motif graph (.graph.json)

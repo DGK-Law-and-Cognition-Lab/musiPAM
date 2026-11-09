@@ -405,8 +405,8 @@
     "0.0": true,
     "0.25": true,
     "0.5": true,
-    "0.75": true,
-    "1.0": true
+    "0.75": false,
+    "1.0": false
    },
    "T6|invert": {
     "0.0": false,
@@ -417,9 +417,9 @@
    },
    "T6|retrograde": {
     "0.0": true,
-    "0.25": true,
-    "0.5": true,
-    "0.75": true,
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
     "1.0": false
    },
    "T7|timbre": {
@@ -627,7 +627,7 @@
    },
    "T9|retrograde": {
     "0.0": true,
-    "0.25": false,
+    "0.25": true,
     "0.5": false,
     "0.75": false,
     "1.0": false
@@ -753,7 +753,7 @@
    },
    "T11|motif_retro": {
     "0.0": true,
-    "0.25": false,
+    "0.25": true,
     "0.5": false,
     "0.75": false,
     "1.0": false
@@ -816,10 +816,10 @@
    },
    "T12|reorder": {
     "0.0": true,
-    "0.25": true,
-    "0.5": true,
-    "0.75": true,
-    "1.0": true
+    "0.25": false,
+    "0.5": false,
+    "0.75": false,
+    "1.0": false
    },
    "T12|motif_retro": {
     "0.0": true,
@@ -1238,18 +1238,18 @@
    },
    "T5>T6": {
     "sims": [
-     0.888,
-     0.893,
-     0.858,
+     0.933,
+     0.898,
+     0.857,
      0.928
     ],
-    "lookalike_rank": 1,
+    "lookalike_rank": 2,
     "rows": {
      "0.0": {
       "perm": [
        3,
-       2,
        0,
+       2,
        1
       ],
       "ok": false
@@ -1406,18 +1406,18 @@
    },
    "T11>T12": {
     "sims": [
-     0.877,
-     0.916,
-     0.884,
-     0.912
+     0.878,
+     0.83,
+     0.885,
+     0.913
     ],
-    "lookalike_rank": 4,
+    "lookalike_rank": 3,
     "rows": {
      "0.0": {
       "perm": [
+       1,
        0,
        2,
-       1,
        3
       ],
       "ok": false
@@ -1574,12 +1574,12 @@
    }
   },
   "relsim": {
-   "analog_mean": 0.502,
-   "control_mean": 0.279,
-   "role_best": 23,
+   "analog_mean": 0.497,
+   "control_mean": 0.28,
+   "role_best": 24,
    "n_analog": 24,
    "n_control": 96,
-   "auc": 0.861
+   "auc": 0.873
   }
  },
  "learned_relations": {
@@ -2821,18 +2821,18 @@
    },
    "T5>T6": {
     "sims": [
-     0.888,
-     0.893,
-     0.858,
+     0.933,
+     0.898,
+     0.857,
      0.928
     ],
-    "lookalike_rank": 1,
+    "lookalike_rank": 2,
     "rows": {
      "0.0": {
       "perm": [
        3,
-       2,
        0,
+       2,
        1
       ],
       "ok": false
@@ -2840,8 +2840,8 @@
      "0.25": {
       "perm": [
        3,
-       2,
        0,
+       2,
        1
       ],
       "ok": false
@@ -2849,27 +2849,27 @@
      "0.5": {
       "perm": [
        3,
+       0,
        2,
-       1,
-       0
+       1
       ],
       "ok": false
      },
      "0.75": {
       "perm": [
        3,
+       0,
        2,
-       1,
-       0
+       1
       ],
       "ok": false
      },
      "1.0": {
       "perm": [
        3,
+       0,
        2,
-       1,
-       0
+       1
       ],
       "ok": false
      }
@@ -2989,55 +2989,55 @@
    },
    "T11>T12": {
     "sims": [
-     0.877,
-     0.916,
-     0.884,
-     0.912
+     0.878,
+     0.83,
+     0.885,
+     0.913
     ],
-    "lookalike_rank": 4,
+    "lookalike_rank": 3,
     "rows": {
      "0.0": {
       "perm": [
+       1,
        0,
        2,
-       1,
        3
       ],
       "ok": false
      },
      "0.25": {
       "perm": [
-       2,
-       0,
        1,
-       3
+       3,
+       0,
+       2
       ],
       "ok": false
      },
      "0.5": {
       "perm": [
-       2,
-       0,
        1,
-       3
+       3,
+       0,
+       2
       ],
       "ok": false
      },
      "0.75": {
       "perm": [
-       2,
-       0,
        1,
-       3
+       3,
+       0,
+       2
       ],
       "ok": false
      },
      "1.0": {
       "perm": [
-       2,
-       0,
        1,
-       3
+       3,
+       0,
+       2
       ],
       "ok": false
      }
@@ -3157,12 +3157,12 @@
    }
   },
   "relsim": {
-   "analog_mean": 0.01,
-   "control_mean": 0.001,
+   "analog_mean": 0.019,
+   "control_mean": -0.001,
    "role_best": 1,
    "n_analog": 24,
    "n_control": 96,
-   "auc": 0.524
+   "auc": 0.547
   }
  }
 }

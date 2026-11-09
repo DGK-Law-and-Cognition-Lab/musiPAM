@@ -85,14 +85,14 @@ Same exact matcher as design_check.md (a proxy, not PAM), with motif nodes coded
 |---|---|---|---|---|---|---|
 | timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
-| transpose | probe: pitch coding | ✗ b | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ a' | ✓ a | ✓ a | ✓ a | ✓ a |
 | mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
-| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
-| invert | nodes + edges | ✗ a | ✗ a | ✗ a | ✗ a | ✗ a |
-| retrograde | nodes + edges | ✓ a | ✓ a | ✓ a | ✓ a | ✗ c |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✗ a' | ✗ a' |
+| invert | nodes + edges | ✗ a' | ✗ a | ✗ a | ✗ a | ✗ a |
+| retrograde | nodes + edges | ✓ a | ✗ b | ✗ b | ✗ b | ✗ b |
 
 **T7**
 
@@ -137,7 +137,7 @@ Same exact matcher as design_check.md (a proxy, not PAM), with motif nodes coded
 | reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | invert | nodes + edges | ✗ a | ✓ a | ✓ a | ✓ a | ✓ a |
-| retrograde | nodes + edges | ✓ a | ✗ a' | ✗ a' | ✗ a' | ✗ a' |
+| retrograde | nodes + edges | ✓ a | ✓ a | ✗ a' | ✗ a' | ✗ a' |
 
 **T10**
 
@@ -165,7 +165,7 @@ Same exact matcher as design_check.md (a proxy, not PAM), with motif nodes coded
 | ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
-| motif_retro | temporal edges | ✓ a | ✗ a' | ✗ a' | ✗ a' | ✗ a' |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✗ a' | ✗ a' | ✗ a' |
 | invert | nodes + edges | ✗ a' | ✓ a | ✓ a | ✓ a | ✓ a |
 | retrograde | nodes + edges | ✓ a | ✗ a' | ✗ a' | ✗ a' | ✗ a' |
 
@@ -179,9 +179,9 @@ Same exact matcher as design_check.md (a proxy, not PAM), with motif nodes coded
 | mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
-| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✗ a | ✗ a | ✗ a | ✗ a |
 | motif_retro | temporal edges | ✓ a | ✗ a' | ✗ a' | ✗ a' | ✗ a' |
-| invert | nodes + edges | ✗ b | ✓ a | ✓ a | ✓ a | ✓ a |
+| invert | nodes + edges | ✗ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | retrograde | nodes + edges | ✓ a | ✗ a' | ✗ a' | ✗ a' | ✗ a' |
 
 **T13**
@@ -250,18 +250,18 @@ Same exact matcher as design_check.md (a proxy, not PAM), with motif nodes coded
 |---|---|---|---|---|---|---|
 | T1 → T3 | a → ? [c, MERT rank 3] | ✗ b | ✓ a | ✓ a | ✓ a | ✓ a |
 | T2 → T4 | b → ? [a1, MERT rank 3] | ✗ c | ✓ b | ✓ b | ✓ b | ✓ b |
-| T5 → T6 | a → ? [c, MERT rank 1] | ✗ c | ✓ a | ✓ a | ✓ a | ✓ a |
+| T5 → T6 | a → ? [c, MERT rank 2] | ✗ c | ✓ a | ✓ a | ✓ a | ✓ a |
 | T7 → T8 | a1 → ? [c, MERT rank 1] | ✗ a1 | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
 | T9 → T10 | c → ? [b, MERT rank 2] | ✗ b | ✓ c | ✓ c | ✓ c | ✓ c |
-| T11 → T12 | b → ? [a, MERT rank 4] | ✗ c | ✓ b | ✓ b | ✓ b | ✓ b |
+| T11 → T12 | b → ? [a, MERT rank 3] | ✗ a | ✓ b | ✓ b | ✓ b | ✓ b |
 | T13 → T14 | a'' → ? [b, MERT rank 1] | ✗ b | ✓ a'' | ✓ a'' | ✓ a'' | ✓ a'' |
 | T15 → T16 | b → ? [a, MERT rank 4] | ✗ a | ✓ b | ✓ b | ✓ b | ✓ b |
 
 **Relational similarity between themes** (w = 1)
 
-- Designed analogs (24): mean role similarity 0.50; role alignment is best in 23/24.
+- Designed analogs (24): mean role similarity 0.50; role alignment is best in 24/24.
 - Different skeletons (96): mean role similarity 0.28.
-- Separation (AUC): 86%.
+- Separation (AUC): 87%.
 
 ## MERT motifs + MERT difference-vector relations (fully learned)
 
@@ -346,13 +346,13 @@ Same exact matcher as design_check.md (a proxy, not PAM), with motif nodes coded
 |---|---|---|---|---|---|---|
 | timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
-| transpose | probe: pitch coding | ✗ b | ✗ b | ✗ b | ✗ b | ✗ b |
+| transpose | probe: pitch coding | ✗ a' | ✗ b | ✗ b | ✗ b | ✗ a |
 | mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
-| invert | nodes + edges | ✗ a | ✗ a | ✗ a | ✗ a | ✗ a |
+| invert | nodes + edges | ✗ a' | ✗ a' | ✗ a' | ✗ a' | ✗ a' |
 | retrograde | nodes + edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 
 **T7**
@@ -436,13 +436,13 @@ Same exact matcher as design_check.md (a proxy, not PAM), with motif nodes coded
 |---|---|---|---|---|---|---|
 | timbre | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | tempo | surface | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
-| transpose | probe: pitch coding | ✗ c | ✗ c | ✗ c | ✗ c | ✗ c |
+| transpose | probe: pitch coding | ✗ c | ✗ a' | ✗ a' | ✗ a' | ✗ a' |
 | mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
-| invert | nodes + edges | ✗ b | ✗ b | ✗ b | ✗ b | ✗ b |
+| invert | nodes + edges | ✗ a | ✗ a | ✗ a | ✗ a | ✗ a |
 | retrograde | nodes + edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 
 **T13**
@@ -511,16 +511,16 @@ Same exact matcher as design_check.md (a proxy, not PAM), with motif nodes coded
 |---|---|---|---|---|---|---|
 | T1 → T3 | a → ? [c, MERT rank 3] | ✗ b | ✗ b | ✗ b | ✗ b | ✗ b |
 | T2 → T4 | b → ? [a1, MERT rank 3] | ✗ c | ✗ c | ✗ c | ✗ c | ✗ c |
-| T5 → T6 | a → ? [c, MERT rank 1] | ✗ c | ✗ c | ✗ c | ✗ c | ✗ c |
+| T5 → T6 | a → ? [c, MERT rank 2] | ✗ c | ✗ c | ✗ c | ✗ c | ✗ c |
 | T7 → T8 | a1 → ? [c, MERT rank 1] | ✗ a1 | ✗ a1 | ✗ a1 | ✗ a1 | ✗ a1 |
 | T9 → T10 | c → ? [b, MERT rank 2] | ✗ b | ✗ b | ✗ b | ✗ b | ✗ b |
-| T11 → T12 | b → ? [a, MERT rank 4] | ✗ c | ✗ a | ✗ a | ✗ a | ✗ a |
+| T11 → T12 | b → ? [a, MERT rank 3] | ✗ a | ✗ a' | ✗ a' | ✗ a' | ✗ a' |
 | T13 → T14 | a'' → ? [b, MERT rank 1] | ✗ b | ✗ b | ✗ b | ✗ b | ✗ b |
 | T15 → T16 | b → ? [a, MERT rank 4] | ✗ a | ✗ a | ✗ a | ✗ a | ✗ a |
 
 **Relational similarity between themes** (w = 1)
 
-- Designed analogs (24): mean role similarity 0.01; role alignment is best in 1/24.
-- Different skeletons (96): mean role similarity 0.00.
-- Separation (AUC): 52%.
+- Designed analogs (24): mean role similarity 0.02; role alignment is best in 1/24.
+- Different skeletons (96): mean role similarity -0.00.
+- Separation (AUC): 55%.
 

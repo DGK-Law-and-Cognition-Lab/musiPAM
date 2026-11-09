@@ -80,9 +80,9 @@ Cell entries: **✓** = the theme's motifs map onto their own transformed selves
 | ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
-| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
-| invert | nodes + edges | ✗ c | ✗ a | ✗ a | ✗ a | ✗ a |
-| retrograde | nodes + edges | ✓ a | ✓ a | ✓ a | ✓ a | ✗ c |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✗ a' | ✗ a' |
+| invert | nodes + edges | ✗ b | ✗ b | ✗ b | ✗ b | ✗ a |
+| retrograde | nodes + edges | ✗ a | ✗ a | ✗ b | ✗ b | ✗ b |
 
 **T7**
 
@@ -157,10 +157,10 @@ Cell entries: **✓** = the theme's motifs map onto their own transformed selves
 | mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
-| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✗ a | ✗ a |
 | motif_retro | temporal edges | ✓ a | ✓ a | ✗ a' | ✗ a' | ✗ a' |
-| invert | nodes + edges | ✗ a' | ✗ a | ✓ a | ✓ a | ✓ a |
-| retrograde | nodes + edges | ✗ a | ✗ c | ✗ a' | ✗ a' | ✗ a' |
+| invert | nodes + edges | ✗ c | ✗ c | ✗ c | ✓ a | ✓ a |
+| retrograde | nodes + edges | ✗ b | ✗ b | ✗ b | ✗ a' | ✗ a' |
 
 **T13**
 
@@ -285,14 +285,14 @@ Cell entries: **✓** = the theme's motifs map onto their own transformed selves
 
 | condition | grid cell | w=0 | w=0.25 | w=0.5 | w=0.75 | w=1 |
 |---|---|---|---|---|---|---|
-| transpose | probe: pitch coding | ✗ b | ✓ a | ✓ a | ✓ a | ✓ a |
+| transpose | probe: pitch coding | ✗ c | ✓ a | ✓ a | ✓ a | ✓ a |
 | mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
-| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
-| invert | nodes + edges | ✗ a | ✗ a | ✗ a | ✗ a | ✗ a |
-| retrograde | nodes + edges | ✓ a | ✓ a | ✓ a | ✓ a | ✗ c |
+| motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✗ a' |
+| invert | nodes + edges | ✗ b | ✗ b | ✗ b | ✗ b | ✗ a |
+| retrograde | nodes + edges | ✓ a | ✗ a | ✗ a | ✗ b | ✗ b |
 
 **T7**
 
@@ -367,10 +367,10 @@ Cell entries: **✓** = the theme's motifs map onto their own transformed selves
 | mode | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | ornament | nodes only | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
 | augment | probe: time coding | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
-| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| reorder | temporal edges | ✓ a | ✓ a | ✓ a | ✗ a | ✗ a |
 | motif_retro | temporal edges | ✓ a | ✓ a | ✓ a | ✗ a' | ✗ a' |
-| invert | nodes + edges | ✗ b | ✓ a | ✓ a | ✓ a | ✓ a |
-| retrograde | nodes + edges | ✗ c | ✓ a | ✗ a' | ✗ a' | ✗ a' |
+| invert | nodes + edges | ✗ a | ✓ a | ✓ a | ✓ a | ✓ a |
+| retrograde | nodes + edges | ✗ c | ✗ b | ✗ a' | ✗ a' | ✗ a' |
 
 **T13**
 
@@ -434,14 +434,14 @@ Each row is a designed look-alike pair. The label shows where the source motif w
 | T1 → T3 [abs] | a → ? (look-alike: c) | ✗ a' | ✓ a | ✓ a | ✓ a | ✓ a |
 | T2 → T4 [rel] | b → ? (look-alike: a1) | ✗ a1 | ✗ a2 | ✗ a2 | ✓ b | ✓ b |
 | T2 → T4 [abs] | b → ? (look-alike: a1) | ✗ c | ✓ b | ✓ b | ✓ b | ✓ b |
-| T5 → T6 [rel] | a → ? (look-alike: c) | ✗ c | ✓ a | ✓ a | ✓ a | ✓ a |
-| T5 → T6 [abs] | a → ? (look-alike: c) | ✗ c | ✗ c | ✗ c | ✓ a | ✓ a |
+| T5 → T6 [rel] | a → ? (look-alike: c) | ✗ c | ✗ c | ✓ a | ✓ a | ✓ a |
+| T5 → T6 [abs] | a → ? (look-alike: c) | ✗ c | ✓ a | ✓ a | ✓ a | ✓ a |
 | T7 → T8 [rel] | a1 → ? (look-alike: c) | ✗ b | ✗ b | ✗ b | ✓ a1 | ✓ a1 |
 | T7 → T8 [abs] | a1 → ? (look-alike: c) | ✗ b | ✓ a1 | ✓ a1 | ✓ a1 | ✓ a1 |
 | T9 → T10 [rel] | c → ? (look-alike: b) | ✗ b | ✗ b | ✗ b | ✗ b | ✓ c |
 | T9 → T10 [abs] | c → ? (look-alike: b) | ✗ b | ✗ b | ✗ b | ✓ c | ✓ c |
-| T11 → T12 [rel] | b → ? (look-alike: a) | ✗ a | ✓ b | ✓ b | ✓ b | ✓ b |
-| T11 → T12 [abs] | b → ? (look-alike: a) | ✗ c | ✓ b | ✓ b | ✓ b | ✓ b |
+| T11 → T12 [rel] | b → ? (look-alike: a) | ✗ a | ✗ a | ✓ b | ✓ b | ✓ b |
+| T11 → T12 [abs] | b → ? (look-alike: a) | ✗ b | ✓ b | ✓ b | ✓ b | ✓ b |
 | T13 → T14 [rel] | a'' → ? (look-alike: b) | ✗ b | ✓ a'' | ✓ a'' | ✓ a'' | ✓ a'' |
 | T13 → T14 [abs] | a'' → ? (look-alike: b) | ✗ b | ✓ a'' | ✓ a'' | ✓ a'' | ✓ a'' |
 | T15 → T16 [rel] | b → ? (look-alike: a) | ✗ a' | ✗ a'' | ✓ b | ✓ b | ✓ b |
@@ -451,30 +451,30 @@ Each row is a designed look-alike pair. The label shows where the source motif w
 
 Mean standardized relation similarity (w = 1). *Role* aligns motifs by position; *best* is the maximum over all 24 alignments. Designed analogs (same skeleton) should be more similar than pairs with different skeletons, and best aligned by role.
 
-- **Designed analogs (24 pairs):** mean role similarity 0.50; best alignment is the role alignment in 23/24.
-- **Different skeletons (96 pairs):** mean role similarity 0.28 (max 0.65).
-- **Separation:** a random analog pair beats a random control pair 86% of the time (AUC).
+- **Designed analogs (24 pairs):** mean role similarity 0.50; best alignment is the role alignment in 24/24.
+- **Different skeletons (96 pairs):** mean role similarity 0.28 (max 0.58).
+- **Separation:** a random analog pair beats a random control pair 87% of the time (AUC).
 
 | analog pair | skeleton | role | best | best is role |
 |---|---|---|---|---|
 | T1 → T3 | sentence | 0.32 | 0.32 | yes |
 | T1 → T5 | sentence | 0.92 | 0.92 | yes |
-| T1 → T6 | sentence | 0.43 | 0.43 | yes |
+| T1 → T6 | sentence | 0.36 | 0.36 | yes |
 | T2 → T4 | period | 0.50 | 0.50 | yes |
-| T2 → T7 | period | 0.55 | 0.55 | yes |
-| T2 → T8 | period | 0.52 | 0.52 | yes |
+| T2 → T7 | period | 0.54 | 0.54 | yes |
+| T2 → T8 | period | 0.51 | 0.51 | yes |
 | T3 → T5 | sentence | 0.36 | 0.36 | yes |
-| T3 → T6 | sentence | 0.26 | 0.30 | no |
-| T4 → T7 | period | 0.50 | 0.50 | yes |
+| T3 → T6 | sentence | 0.39 | 0.39 | yes |
+| T4 → T7 | period | 0.49 | 0.49 | yes |
 | T4 → T8 | period | 0.26 | 0.26 | yes |
 | T5 → T6 | sentence | 0.41 | 0.41 | yes |
 | T7 → T8 | period | 0.50 | 0.50 | yes |
 | T9 → T10 | rounded | 0.44 | 0.44 | yes |
 | T9 → T11 | rounded | 0.60 | 0.60 | yes |
-| T9 → T12 | rounded | 0.56 | 0.56 | yes |
+| T9 → T12 | rounded | 0.47 | 0.47 | yes |
 | T10 → T11 | rounded | 0.37 | 0.37 | yes |
-| T10 → T12 | rounded | 0.36 | 0.36 | yes |
-| T11 → T12 | rounded | 0.79 | 0.79 | yes |
+| T10 → T12 | rounded | 0.48 | 0.48 | yes |
+| T11 → T12 | rounded | 0.61 | 0.61 | yes |
 | T13 → T14 | chain | 0.52 | 0.52 | yes |
 | T13 → T15 | chain | 0.71 | 0.71 | yes |
 | T13 → T16 | chain | 0.75 | 0.75 | yes |

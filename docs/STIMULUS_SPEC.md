@@ -69,11 +69,11 @@ In each skeleton, two of the six analog pairs carry a designed cross-mapping. Th
 | Pair | Skeleton | Probe | Look-alike | Role match | Similarity to the probe (key-relative code): look-alike vs role match |
 |---|---|---|---|---|---|
 | T1 → T3 | sentence | T1.a | T3.c | T3.a | 0.84 vs 0.32 |
-| T5 → T6 | sentence | T5.a | T6.c | T6.a | 0.76 vs 0.67 |
+| T5 → T6 | sentence | T5.a | T6.c | T6.a | 0.76 vs 0.16 |
 | T2 → T4 | period | T2.b | T4.a1 (= a2) | T4.b | 0.96 vs 0.23 |
 | T7 → T8 | period | T7.a1 | T8.c | T8.a1 | 0.79 vs 0.23 |
 | T9 → T10 | rounded | T9.c | T10.b | T10.c | 0.68 vs 0.29 |
-| T11 → T12 | rounded | T11.b | T12.a | T12.b | 0.82 vs 0.73 |
+| T11 → T12 | rounded | T11.b | T12.a | T12.b | 0.82 vs 0.19 |
 | T13 → T14 | chain | T13.a″ | T14.b | T14.a″ | 0.81 vs 0.47 |
 | T15 → T16 | chain | T15.b | T16.a | T16.b | 0.77 vs 0.36 |
 
@@ -86,6 +86,8 @@ Where the skeleton itself creates extra look-alikes:
 - **T15 → T16.** T16's a, a′ and a″ all carry the look-alike's shape. a′ is the closest of the three (0.99).
 
 **T10 was revised on 2026-11-06** so that its pair would work; its look-alike b is unchanged. T10 used to open with a falling line, like T9's b, so the matcher swapped T10's a and b at every weight and the pair tested nothing. T10 now opens with a rising arpeggio, and its lead-back phrase c ends with a leap up to the leading tone, as T9's c ends high on the dominant.
+
+**T6 and T12 were revised on 2026-11-09**, for PAM (§6). Their role matches had been nearly as similar to the probe as the look-alikes were (0.67 and 0.73), and PAM's normalization then never lets motif similarity win. T6 now opens with a falling tonic arpeggio that climbs back to the 7th over the dominant (its a′ follows a step higher); T12's contrast b steps down from the 5th and leaps back to it over the dominant. The look-alikes are unchanged.
 
 ## 3. The transformation grid
 
@@ -170,24 +172,24 @@ These are computed from the score, as visiPAM computed spatial relations. A lear
 **Design check** (`reports/design_check.md`). This is an exact brute-force graph matcher over 24 permutations. It is a proxy for PAM, not PAM. It scores each permutation as (1 − w) × node similarity + w × relation similarity, so w = 0 is object-only matching and w = 1 is relation-only matching. The results:
 
 1. **Transposition with absolute codes.** Object-only matching fails in all 16 themes; any relation weight (w ≥ 0.25) recovers the mapping. With key-relative codes it is invariant. This is the predicted diagnostic for absolute versus relative pitch coding.
-2. **All eight cross-mappings work.** In each, object-only matching sends the probe to a look-alike, and the full role mapping wins once relations carry enough weight: from w = 0.25 (T5 → T6, T11 → T12, T13 → T14), w = 0.5 (T1 → T3, T15 → T16), w = 0.75 (T2 → T4, T7 → T8) or w = 1 (T9 → T10). The crossover varies by pair, so the relation weight is identifiable, and fitting it per listener group is the analysis PAM was built for.
-3. **Same-skeleton pairs are the most relationally similar.** Their mean role similarity is 0.50 (24 pairs), against 0.28 for different-skeleton pairs (96 pairs). A random analog pair beats a random control pair 86% of the time (AUC). For 23 of the 24 analogs the best of all 24 alignments is the role alignment; the exception is T3 → T6 (0.30 for the best alignment against 0.26 for the role alignment). The most similar control pair is T6 and T10 (0.65), both in 6/8; it rose from 0.27 when T10 was revised.
+2. **All eight cross-mappings work.** In each, object-only matching sends the probe to a look-alike, and the full role mapping wins once relations carry enough weight: from w = 0.25 (T13 → T14), w = 0.5 (T1 → T3, T5 → T6, T11 → T12, T15 → T16), w = 0.75 (T2 → T4, T7 → T8) or w = 1 (T9 → T10). The crossover varies by pair, so the relation weight is identifiable, and fitting it per listener group is the analysis PAM was built for.
+3. **Same-skeleton pairs are the most relationally similar.** Their mean role similarity is 0.50 (24 pairs), against 0.28 for different-skeleton pairs (96 pairs, at most 0.58). A random analog pair beats a random control pair 87% of the time (AUC). For all 24 analogs the best of all 24 alignments is the role alignment.
 4. **Relation vectors must be standardized.** Unstandardized, T1→T3 and T1→T2 give 0.48 versus 0.47, because positional relations are identical for any two 4-motif passages and swamp the derivational ones. The real PAM implementation will need an equivalent normalization.
 5. **The remaining cells** (key-relative code):
    - Mode, ornament and augmentation leave identity recoverable under any weighting in all 16 themes. They are graded node changes, suited to the similarity ratings of Study 1a.
    - Inversion breaks object-only matching in all 16. Relation weighting recovers 10 of them at some weight, but never T1, T4, T5, T6, T8 or T10.
-   - Retrograde is matched at every weighting only in T2 and at no weighting in T1, T7, T8, T9, T10, T11, T12 and T16; the rest are matched at some weights.
+   - Retrograde is matched at every weighting only in T2 and at no weighting in T1, T6, T7, T8, T9, T10, T11, T12 and T16; the rest are matched at some weights.
    - Reordering is matched at every weight in every theme (see "A correction to the original grid" in §3).
-   - Reversing the motif order breaks relation-only matching (w = 1) in six themes, all rounded or chain (T10, T11, T12, T13, T14, T16). In sentences and periods the true mapping survives at every weight.
+   - Reversing the motif order breaks relation-only matching (w = 1) in seven themes: T6, and every rounded and chain theme except T9 and T15 (T10, T11, T12, T13, T14, T16). In periods the true mapping survives at every weight.
 
-**PAM itself** (`pam/reports/pam_check.md`, 2026-11-09). The lab's PAM, run on the same graphs, is stricter than the exhaustive matcher above. With relations alone it maps every cross-mapping probe to its role match, but only 6 of the 8 pairs switch to the look-alike as motif weight rises. T5 → T6 and T11 → T12 don't switch: their role matches are nearly as similar to the probe as the look-alikes (0.67 vs 0.76, and 0.73 vs 0.82, key-relative code). PAM's normalization discounts a motif that is similar to every candidate, so a look-alike has to stand out clearly. Making those two role matches less like their probes is the next design fix.
+**PAM itself** (`pam/reports/pam_check.md`, 2026-11-09). The lab's PAM, run on the same graphs, is stricter than the exhaustive matcher above: its normalization discounts a motif that is similar to every candidate, so a look-alike has to stand out clearly from the role match. After the T6 and T12 revisions (§2), PAM with relations alone maps every probe to its role match, and every pair switches to its look-alike as motif weight rises, at α = 0.5 to 4 depending on the pair (key-relative motifs, standardized computed relations). With the learned relations, all 24 same-skeleton pairs are mapped by role.
 
 **Learned motif codes** (`reports/design_check_mert.md`). The same matcher with motifs coded by MERT-v1-95M embeddings of the audio:
 
 - MERT is robust to timbre and tempo (all 16 themes match at w = 0). It codes pitch absolutely: tritone transposition breaks object-only matching in all 16, and relations repair it.
 - MERT barely registers note order. Retrograde matches at w = 0 in all 16 themes, because a time-averaged audio embedding of a motif changes little when the motif runs backwards.
-- With MERT motifs and the computed relations, every cross-mapping maps by role from w = 0.25. With motifs only, MERT sends the probe to a look-alike in 4 of the 8 pairs (T5 → T6, T9 → T10, T13 → T14, T15 → T16). It ranks the look-alike first among the target's four motifs in 3 pairs and last in 2, because the look-alikes match in contour and rhythm while MERT weighs key, register and texture.
-- With relations taken as MERT difference vectors, nothing maps: analogs and controls are indistinguishable (AUC 52%). Learned relations need a trained relation model ([RELATION_MODEL.md](RELATION_MODEL.md)).
+- With MERT motifs and the computed relations, every cross-mapping maps by role from w = 0.25. With motifs only, MERT sends the probe to a look-alike in 5 of the 8 pairs (T5 → T6, T9 → T10, T11 → T12, T13 → T14, T15 → T16). It ranks the look-alike first among the target's four motifs in only 2 pairs, because the look-alikes match in contour and rhythm while MERT weighs key, register and texture.
+- With relations taken as MERT difference vectors, nothing maps: analogs and controls are indistinguishable (AUC 55%). Learned relations need a trained relation model ([RELATION_MODEL.md](RELATION_MODEL.md)).
 
 ## 7. Validation (`reports/validation_report.md`)
 
@@ -242,9 +244,8 @@ A SHA-256 hash of every WAV file is recorded in `manifest.csv`. Builds are deter
 ## 9. Next steps
 
 1. **Audition T4–T16** (D. Kamper): familiarity ("nothing resembles"), naturalness, and whether each look-alike sounds like its probe. Edit `themes.py` directly; the whole set rebuilds in about 20 minutes, or 35 seconds without audio.
-2. **Sharpen T5 → T6 and T11 → T12** for PAM: make T6.a and T12.b less similar to their probes, so that motif weight can pull the mapping to the look-alike.
-3. **Spares.** Compose one more theme per skeleton for Study 0's selection.
-4. **Motif-level clips** for Studies 1b and 1c, rendered from the same pipeline.
-5. **Muse Sounds.** Try route 1 in §5, then route 2.
-6. **Pilot** with three measures: naturalness and familiarity ratings, boundary tapping, and a first Study 1a run.
-7. **Models.** PAM now runs on the stimuli (`pam/`); add the second learned code (see STUDY_PLAN.md, "Which learned models").
+2. **Spares.** Compose one more theme per skeleton for Study 0's selection.
+3. **Motif-level clips** for Studies 1b and 1c, rendered from the same pipeline.
+4. **Muse Sounds.** Try route 1 in §5, then route 2.
+5. **Pilot** with three measures: naturalness and familiarity ratings, boundary tapping, and a first Study 1a run.
+6. **Models.** PAM now runs on the stimuli (`pam/`); add the second learned code (see STUDY_PLAN.md, "Which learned models").

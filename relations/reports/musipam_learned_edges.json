@@ -41,20 +41,20 @@
     "T5>T6": {
      "lands": [
       "c",
-      "a",
+      "c",
       "a",
       "a",
       "a"
      ],
      "ok": [
       false,
-      true,
+      false,
       true,
       true,
       true
      ],
      "works": true,
-     "role_from": 0.25
+     "role_from": 0.5
     },
     "T7>T8": {
      "lands": [
@@ -95,20 +95,20 @@
     "T11>T12": {
      "lands": [
       "a",
-      "b",
+      "a",
       "b",
       "b",
       "b"
      ],
      "ok": [
       false,
-      true,
+      false,
       true,
       true,
       true
      ],
      "works": true,
-     "role_from": 0.25
+     "role_from": 0.5
     },
     "T13>T14": {
      "lands": [
@@ -149,10 +149,10 @@
    },
    "cross_working": 8,
    "relsim": {
-    "auc": 0.8606770833333334,
-    "analog_mean": 0.5023905566632837,
-    "control_mean": 0.2793594760692397,
-    "role_best": 23
+    "auc": 0.8728298611111112,
+    "analog_mean": 0.49683229053952127,
+    "control_mean": 0.2803081926653023,
+    "role_best": 24
    },
    "theme": {
     "transpose": {
@@ -172,11 +172,11 @@
      "any_weight": 16
     },
     "reorder": {
-     "relations_only": 16,
+     "relations_only": 15,
      "any_weight": 16
     },
     "motif_retro": {
-     "relations_only": 10,
+     "relations_only": 9,
      "any_weight": 16
     },
     "invert": {
@@ -185,7 +185,7 @@
     },
     "retrograde": {
      "relations_only": 3,
-     "any_weight": 8
+     "any_weight": 7
     }
    }
   },
@@ -230,20 +230,20 @@
     "T5>T6": {
      "lands": [
       "c",
-      "a",
-      "a",
-      "a",
+      "a'",
+      "a'",
+      "c",
       "a"
      ],
      "ok": [
       false,
-      true,
-      true,
-      true,
-      true
+      false,
+      false,
+      false,
+      false
      ],
-     "works": true,
-     "role_from": 0.25
+     "works": false,
+     "role_from": null
     },
     "T7>T8": {
      "lands": [
@@ -284,20 +284,20 @@
     "T11>T12": {
      "lands": [
       "a",
+      "a",
       "b",
       "b",
-      "b",
-      "b"
+      "c"
      ],
      "ok": [
       false,
+      false,
       true,
       true,
-      true,
-      true
+      false
      ],
      "works": true,
-     "role_from": 0.25
+     "role_from": 0.5
     },
     "T13>T14": {
      "lands": [
@@ -336,12 +336,12 @@
      "role_from": 0.75
     }
    },
-   "cross_working": 6,
+   "cross_working": 5,
    "relsim": {
-    "auc": 0.8802083333333334,
-    "analog_mean": 0.393148385527143,
-    "control_mean": 0.10279693946037527,
-    "role_best": 13
+    "auc": 0.8763020833333334,
+    "analog_mean": 0.37435845621817804,
+    "control_mean": 0.10221664368172538,
+    "role_best": 12
    },
    "theme": {
     "transpose": {
@@ -353,11 +353,11 @@
      "any_weight": 16
     },
     "ornament": {
-     "relations_only": 14,
+     "relations_only": 13,
      "any_weight": 16
     },
     "augment": {
-     "relations_only": 15,
+     "relations_only": 14,
      "any_weight": 16
     },
     "reorder": {
@@ -369,12 +369,12 @@
      "any_weight": 16
     },
     "invert": {
-     "relations_only": 8,
-     "any_weight": 8
+     "relations_only": 7,
+     "any_weight": 7
     },
     "retrograde": {
      "relations_only": 12,
-     "any_weight": 13
+     "any_weight": 14
     }
    }
   },
@@ -419,20 +419,20 @@
     "T5>T6": {
      "lands": [
       "c",
-      "a",
+      "c",
       "a",
       "a",
       "a"
      ],
      "ok": [
       false,
-      true,
+      false,
       true,
       true,
       true
      ],
      "works": true,
-     "role_from": 0.25
+     "role_from": 0.5
     },
     "T7>T8": {
      "lands": [
@@ -473,20 +473,20 @@
     "T11>T12": {
      "lands": [
       "a",
-      "b",
+      "a",
       "b",
       "b",
       "b"
      ],
      "ok": [
       false,
-      true,
+      false,
       true,
       true,
       true
      ],
      "works": true,
-     "role_from": 0.25
+     "role_from": 0.5
     },
     "T13>T14": {
      "lands": [
@@ -527,9 +527,9 @@
    },
    "cross_working": 8,
    "relsim": {
-    "auc": 0.9314236111111112,
-    "analog_mean": 0.6016125582867239,
-    "control_mean": 0.3654747292484768,
+    "auc": 0.9197048611111112,
+    "analog_mean": 0.5881256074592153,
+    "control_mean": 0.3675957113696226,
     "role_best": 24
    },
    "theme": {
@@ -563,7 +563,7 @@
     },
     "retrograde": {
      "relations_only": 3,
-     "any_weight": 7
+     "any_weight": 6
     }
    }
   },
@@ -662,20 +662,20 @@
     "T11>T12": {
      "lands": [
       "a",
-      "b",
+      "a",
       "b",
       "b",
       "b"
      ],
      "ok": [
       false,
-      true,
+      false,
       true,
       true,
       true
      ],
      "works": true,
-     "role_from": 0.25
+     "role_from": 0.5
     },
     "T13>T14": {
      "lands": [
@@ -716,9 +716,9 @@
    },
    "cross_working": 8,
    "relsim": {
-    "auc": 0.8667534722222222,
-    "analog_mean": 0.6505107950494944,
-    "control_mean": 0.4669065024836798,
+    "auc": 0.84375,
+    "analog_mean": 0.6423728509545631,
+    "control_mean": 0.4776731043385251,
     "role_best": 23
    },
    "theme": {
@@ -752,7 +752,7 @@
     },
     "retrograde": {
      "relations_only": 1,
-     "any_weight": 6
+     "any_weight": 5
     }
    }
   },
@@ -851,20 +851,20 @@
     "T11>T12": {
      "lands": [
       "a",
-      "b",
-      "b",
-      "a'",
-      "a'"
+      "a",
+      "a",
+      "a",
+      "a"
      ],
      "ok": [
       false,
-      true,
-      true,
+      false,
+      false,
       false,
       false
      ],
-     "works": true,
-     "role_from": 0.25
+     "works": false,
+     "role_from": null
     },
     "T13>T14": {
      "lands": [
@@ -888,7 +888,7 @@
      "lands": [
       "a'",
       "a'",
-      "a'",
+      "a''",
       "a''",
       "a''"
      ],
@@ -903,11 +903,11 @@
      "role_from": null
     }
    },
-   "cross_working": 1,
+   "cross_working": 0,
    "relsim": {
-    "auc": 0.5872395833333334,
-    "analog_mean": 0.12116790098524792,
-    "control_mean": 0.05645608419138246,
+    "auc": 0.6024305555555556,
+    "analog_mean": 0.11025976400538064,
+    "control_mean": 0.04070045677105372,
     "role_best": 6
    },
    "theme": {
@@ -1030,9 +1030,9 @@
    "edge": "a \u2192 a\u2032",
    "expected": "seq_up_1",
    "top": "seq_up_1",
-   "p_top": 0.9978395700454712,
+   "p_top": 0.32336339354515076,
    "second": "seq_up_2",
-   "p_expected": 0.9978395700454712,
+   "p_expected": 0.32336339354515076,
    "rank_expected": 1
   },
   {
