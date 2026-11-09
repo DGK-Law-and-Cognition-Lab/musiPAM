@@ -43,6 +43,21 @@ BART (Lu, Chen & Holyoak, 2012; Lu, Wu & Holyoak, 2019) has three properties wor
 
 The music version keeps all three. Music has one advantage over words: we can *generate* correctly labeled pairs without limit, because musical relations are operations we can carry out on a score.
 
+**The details**, from Lu, Ichien & Holyoak (2022), which describe the BART that PAM uses:
+
+- Each relation is learned from about 20 positive and 70 negative word pairs; PAM's BART knows 270 relations.
+- A pair's input is its two Word2Vec embeddings (600 dimensions), augmented with the same features reordered by the size of the difference between the two words (1,200 in all). Ranking by difference lines up features that play similar roles across pairs without knowing which features matter, which helps because embedding features are entangled.
+- Logistic regression with elastic-net regularization selects features; Bayesian logistic regression then estimates each relation's weights, with a contrast prior (the second word's weight starts as the negative of the first's).
+- PAM's edge vector is 540-dimensional: the 270 relation probabilities, plus 270 probabilities that the first word plays the relation's first role.
+- Relation vectors are compared by cosine, after raising them to the 5th power, which predicts human relation similarity better (Ichien et al., 2021).
+
+**How v0 differs, and what to add:**
+
+- *Inputs.* v0 classifies the pair code [a, b, b − a, |b − a|, a · b] of a symbolic motif code whose features are already disentangled (contour, rhythm, pitch classes), so ranking adds little there. Add BART's difference ranking for MERT and CLaMP 3 inputs, whose features are entangled like Word2Vec's.
+- *Estimation.* v0 uses L2-regularized logistic regression. Add elastic-net selection and the Bayesian contrast prior, so the method is BART's own.
+- *Direction.* v0 has no role vector. Direction is built into the inventory instead, as inverse pairs (augmentation and diminution, ornament and reduction, up and down).
+- *Power transform.* Tested on the musiPAM edges: it lowered analog-versus-control separation from 93% to 87% under our per-dimension standardization. Retest with PAM's own normalization.
+
 ## 3. The relation inventory
 
 The label set should come from music theory, not from our stimulus design, so that the relations aren't ours. Three standard sources cover it: Schoenberg's catalogue of motive variation (*Fundamentals of Musical Composition*, 1967), Caplin's formal functions (*Classical Form*, 1998), and Lewin's transformational theory (*Generalized Musical Intervals and Transformations*, 1987), which treats a relation between two musical objects as the transformation that maps one onto the other.
@@ -102,7 +117,7 @@ Positional relations (first, next, last) stay computed. They are trivial and nee
 4. **Listeners (Study 1c).** The model's relation similarity should predict listeners' relation-similarity ratings better than the computed relations and MERT differences. This is the test Ichien, Lu & Holyoak (2022) ran for words.
 5. **musiPAM itself.** As edge vectors: analog-versus-control separation (AUC), the eight cross-mappings, and finally the PAM fits for Studies 2 and 3.
 
-As with every model in the program, predictions are frozen before a study's registration. If music BART isn't ready when Study 1c is registered, 1c either registers the computed relations as primary and music BART as secondary, or waits.
+As with every model in the program, predictions are frozen before a study's registration. **Study 1c waits for music BART** (decided 2026-11-06): it is registered once the model, its weights and its predictions for the study's trials are frozen.
 
 ## 7. Risks, and how the design handles them
 
@@ -125,7 +140,7 @@ Code lives in `relations/`, next to `stimgen/`, and reuses `theory.py` and the t
 
 ## 9. Open decisions
 
-- **The inventory** (§3). D. Kamper, as the musician, should approve or trim it before any data is generated.
-- **Symbolic first?** Recommended: it is fast, exact and free of audio confounds, and it shows whether the approach works at all.
-- **Study 1c timing.** Does Study 1c wait for music BART, or register with the computed relations as primary?
+- **The inventory** (§3). D. Kamper, as the musician, approves or trims it after auditing `relations/examples/` by ear. *Open.*
+- **Symbolic first.** *Decided 2026-11-06:* the symbolic track comes first, then learned inputs.
+- **Study 1c timing.** *Decided 2026-11-06:* Study 1c waits for music BART.
 - **Compute.** A laptop is enough for Track A; Track B on audio may want Hoffman2.

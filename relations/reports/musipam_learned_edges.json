@@ -567,6 +567,195 @@
     }
    }
   },
+  "learned^5 + order": {
+   "cross": {
+    "T1>T3": {
+     "lands": [
+      "c",
+      "c",
+      "a",
+      "a",
+      "a"
+     ],
+     "ok": [
+      false,
+      false,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.5
+    },
+    "T2>T4": {
+     "lands": [
+      "a1",
+      "a1",
+      "a1",
+      "b",
+      "b"
+     ],
+     "ok": [
+      false,
+      false,
+      false,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.75
+    },
+    "T5>T6": {
+     "lands": [
+      "c",
+      "a",
+      "a",
+      "a",
+      "a"
+     ],
+     "ok": [
+      false,
+      true,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.25
+    },
+    "T7>T8": {
+     "lands": [
+      "b",
+      "c",
+      "a1",
+      "a1",
+      "a1"
+     ],
+     "ok": [
+      false,
+      false,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.5
+    },
+    "T9>T10": {
+     "lands": [
+      "b",
+      "b",
+      "c",
+      "c",
+      "c"
+     ],
+     "ok": [
+      false,
+      false,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.5
+    },
+    "T11>T12": {
+     "lands": [
+      "a",
+      "b",
+      "b",
+      "b",
+      "b"
+     ],
+     "ok": [
+      false,
+      true,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.25
+    },
+    "T13>T14": {
+     "lands": [
+      "b",
+      "a''",
+      "a''",
+      "a''",
+      "a''"
+     ],
+     "ok": [
+      false,
+      true,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.25
+    },
+    "T15>T16": {
+     "lands": [
+      "a'",
+      "a'",
+      "b",
+      "b",
+      "b"
+     ],
+     "ok": [
+      false,
+      false,
+      true,
+      true,
+      true
+     ],
+     "works": true,
+     "role_from": 0.5
+    }
+   },
+   "cross_working": 8,
+   "relsim": {
+    "auc": 0.8667534722222222,
+    "analog_mean": 0.6505107950494944,
+    "control_mean": 0.4669065024836798,
+    "role_best": 23
+   },
+   "theme": {
+    "transpose": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "mode": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "ornament": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "augment": {
+     "relations_only": 16,
+     "any_weight": 16
+    },
+    "reorder": {
+     "relations_only": 8,
+     "any_weight": 16
+    },
+    "motif_retro": {
+     "relations_only": 5,
+     "any_weight": 16
+    },
+    "invert": {
+     "relations_only": 14,
+     "any_weight": 14
+    },
+    "retrograde": {
+     "relations_only": 1,
+     "any_weight": 6
+    }
+   }
+  },
   "raw differences": {
    "cross": {
     "T1>T3": {

@@ -117,8 +117,9 @@ A theme that fails is revised or replaced and re-normed (n ≥ 20) before any ma
 
 1. Pairs sharing a relation type are rated more similar than pairs with different relation types.
 2. Ratings follow the standardized relation-vector similarity, beyond the similarity of the motifs involved.
+3. The learned relation model predicts the ratings better than the computed relations and better than MERT difference vectors.
 
-**Model link.** This is the musical counterpart of validating BART's relation vectors against human relation similarity (Ichien, Lu & Holyoak, 2022). It is the step that licenses the relation half of PAM.
+**Model link.** This is the musical counterpart of validating BART's relation vectors against human relation similarity (Ichien, Lu & Holyoak, 2022). It is the step that licenses the relation half of PAM. **It waits for the learned relation model** (decided 2026-11-06), which is frozen with its predictions before registration.
 
 ## Study 2 — Theme ↔ variation mapping
 
@@ -161,7 +162,7 @@ The behavioral studies don't depend on any model. The models are the competing *
 
    The learned code is essential to the argument. PAM maps over Word2Vec and visiPAM over learned visual embeddings. If musiPAM used only features chosen by the people who built the stimuli, a reviewer could call the result circular. MERT embeds the audio participants actually hear, with no knowledge of the design.
 2. **Relation (edge) representations.** The computed symbolic relation vectors, and learned relations from MERT, starting with difference vectors (A′ − A). A trained relation model, a "music BART", is the step after that. Its plan is in [RELATION_MODEL.md](RELATION_MODEL.md), and a first version, trained on folk tunes, is in `relations/`: as musiPAM's edges it already separates analogs from controls better than the hand-built relations. B. Yang's Word2Vec experience maps directly onto this step.
-3. **Mapping.** The lab's PAM code (H. Lu). The brute-force design check stands in for it until then.
+3. **Mapping.** The lab's PAM code (H. Lu). The brute-force design check stands in for it until then. It is essentially the "exhaustive search" model that Lu, Ichien & Holyoak (2022) compared PAM against, and PAM did better because of a step the proxy lacks (see below).
 
 **MERT results on all 16 themes (2026-11-06; `stimuli/reports/design_check_mert.md`):**
 
@@ -171,6 +172,13 @@ The behavioral studies don't depend on any model. The models are the competing *
 - **Raw MERT difference vectors do not capture musical relations.** As relation vectors they leave analogs and controls indistinguishable (AUC 52%). Learned relations therefore need a trained relation model, as BART was trained for words; the plan is in [RELATION_MODEL.md](RELATION_MODEL.md).
 
 So the symbolic and learned codes make genuinely different predictions, which is what makes the preregistered comparisons informative.
+
+### What PAM and visiPAM actually do (checked against the papers, 2026-11-06)
+
+- **PAM** (Lu, Ichien & Holyoak, 2022). Nodes are Word2Vec embeddings. Edges are BART relation vectors: the probabilities that a word pair instantiates each of 270 learned relations, plus 270 probabilities for which word plays the first role (540 dimensions). Similarities are cosines; BART vectors are raised to the 5th power first ("winners take most"). The node and edge similarity matrices are normalized bistochastically (Cour et al., 2006), which down-weights items that are similar to everything. The mapping is a soft assignment found by graduated assignment (Gold & Rangarajan, 1996), annealed over 500 iterations toward one-to-one. A weight α multiplies the node term: 0.1 for word triplets, 1 for texts.
+- **PAM on cross-mapping.** The paper simulates Gentner & Toupin's (1986) story cross-mapping, the paradigm of our Study 3. It captures children's relational shift by α alone: α = 2 for 4–6-year-olds and α = 1 for 8–10-year-olds. This is the precedent for our prediction that musicians and non-musicians differ in relation weight.
+- **visiPAM** (Webb et al., 2023). Nodes are learned embeddings of object parts (iBOT for images, a DGCNN for 3D point clouds). Edges are *computed* spatial relations: angular distance and relative position, plus whether parts touch. Mapping is PAM, with α written as a convex weight (α = 1 nodes only, α = 0 edges only; α = 0.9 in the main experiments). Human item-level responses were best predicted with both nodes and edges.
+- **What this means for musiPAM.** Our current setup (learned or symbolic motif nodes, computed relation edges) is visiPAM's design. A learned relation model on top is PAM's design. Our design check's weight w is visiPAM's α turned around (w = 1 − α). Two things to adopt: the bistochastic normalization (the step that made PAM beat exhaustive search) and the soft graduated assignment. Both come with the lab's code: visiPAM's model code is available on request (its analysis code and data are at github.com/taylorwwebb/visiPAM), and the PAM paper says its code will be released. **Ask H. Lu for the PAM code** rather than re-implementing it.
 
 ### Which learned models
 
@@ -198,7 +206,7 @@ Licenses matter for the public repository. The CC BY-NC models' embedding arrays
 
 1. **Stimulus bank.** Done for the 16 themes (2026-11-06): composed, design-checked, MERT-embedded. Still open: the four spares and motif-level clips for Studies 1b and 1c.
 2. **Study 0.** Then run power simulations (`simr` / `mixedpower`) and finalize the Study 1 preregistrations.
-3. **Studies 1a, 1b and 1c.** Separate samples, which can run in parallel.
+3. **Studies 1a, 1b and 1c.** Separate samples. 1a and 1b can run as soon as Study 0 is done; 1c waits for the learned relation model to be frozen (decided 2026-11-06), because its main test compares that model with the computed relations and MERT.
 4. **Study 2.**
 5. **Study 3.**
 
@@ -211,4 +219,4 @@ Drafts live in [`../prereg/`](../prereg). They are drafts until registered. The 
 ## Later in the dissertation (not yet planned in detail)
 
 - **Production.** Given a theme, its variation, and a new theme, choose or construct the analogous variation of the new theme (an A : B :: C : ? task).
-- **Cross-modal.** Map visual analogs (visiPAM stimuli) and musical analogs in the same participants, to test whether one mapping mechanism serves both.
+- **Cross-modal.** Map visual analogs (visiPAM stimuli) and musical analogs in the same participants, to test whether one mapping mechanism serves both. Weinberger et al. (2022) are the closest precedent: with lines-to-sounds, lines-to-words and words-to-sounds analogies, people mapped second-order relations across modalities, and one factor explained performance on all of them.

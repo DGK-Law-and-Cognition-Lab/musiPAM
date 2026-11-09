@@ -10,6 +10,8 @@ Variants compared:
     computed            the 16 hand-built relation features (the current design)
     learned             the learned relation profile (26 relations)
     learned + order     the learned profile plus the 3 positional features (first, next, previous)
+    learned^5 + order   the same, with the profile raised to the 5th power first, as PAM does with
+                        BART vectors ("winners take most"; Lu, Ichien & Holyoak, 2022)
     raw differences     motif-code differences (B - A), the untrained baseline
 
 Writes reports/musipam_learned_edges.md (+ .json) and reports/musipam_edge_profiles.csv,
@@ -57,22 +59,25 @@ def main() -> int:
     base = {(r["theme"], r["condition"]): json.loads((STIMULI / r["graph"]).read_text()) for r in rows}
 
     variants = {"computed": base}
-    learned, ordered, raw = {}, {}, {}
+    learned, ordered, powered, raw = {}, {}, {}, {}
     profiles_out = []
     for r in rows:
         key, sid = (r["theme"], r["condition"]), r["stim_id"]
         g = base[key]
         x = codes(motifs[sid])
-        for v in (learned, ordered, raw):
+        for v in (learned, ordered, powered, raw):
             v[key] = copy.deepcopy(g)
-        for e_l, e_o, e_r in zip(learned[key]["edges"], ordered[key]["edges"], raw[key]["edges"]):
+        for e_l, e_o, e_p, e_r in zip(learned[key]["edges"], ordered[key]["edges"], powered[key]["edges"],
+                                      raw[key]["edges"]):
             i, j = e_l["i"], e_l["j"]
             prof = model.profile(pair_code(x[i][None, :], x[j][None, :]))[0]
             e_l["r"] = prof.tolist()
             e_o["r"] = prof.tolist() + list(e_o["r"][:3])
+            e_p["r"] = (prof ** 5).tolist() + list(e_p["r"][:3])
             e_r["r"] = (x[j] - x[i]).tolist()
             profiles_out.append([sid, i, j, g["nodes"][i]["label"], g["nodes"][j]["label"]] + [round(float(p), 4) for p in prof])
-    variants.update({"learned": learned, "learned + order": ordered, "raw differences": raw})
+    variants.update({"learned": learned, "learned + order": ordered, "learned^5 + order": powered,
+                     "raw differences": raw})
 
     results = {v: evaluate(G) for v, G in variants.items()}
     designed = designed_edges(learned, names)

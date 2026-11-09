@@ -46,19 +46,20 @@ The built relation is the model's top choice for 21 of 28 designed edges.
 | computed | 8/8 | T1→T3 0.5, T2→T4 0.75, T5→T6 0.25, T7→T8 0.75, T9→T10 1, T11→T12 0.25, T13→T14 0.25, T15→T16 0.5 | 86% | 23/24 |
 | learned | 6/8 | T1→T3 –, T2→T4 0.75, T5→T6 0.25, T7→T8 0.75, T9→T10 –, T11→T12 0.25, T13→T14 0.25, T15→T16 0.75 | 88% | 13/24 |
 | learned + order | 8/8 | T1→T3 0.5, T2→T4 0.75, T5→T6 0.25, T7→T8 0.5, T9→T10 0.5, T11→T12 0.25, T13→T14 0.25, T15→T16 0.5 | 93% | 24/24 |
+| learned^5 + order | 8/8 | T1→T3 0.5, T2→T4 0.75, T5→T6 0.25, T7→T8 0.5, T9→T10 0.5, T11→T12 0.25, T13→T14 0.25, T15→T16 0.5 | 87% | 23/24 |
 | raw differences | 1/8 | T1→T3 –, T2→T4 –, T5→T6 –, T7→T8 –, T9→T10 –, T11→T12 0.25, T13→T14 –, T15→T16 – | 59% | 6/24 |
 
 ## Theme → variation: themes (of 16) whose mapping relations alone recover
 
-| Condition | computed | learned | learned + order | raw differences |
-|---|---|---|---|---|
-| transpose | 16 | 16 | 16 | 16 |
-| mode | 16 | 13 | 16 | 16 |
-| ornament | 16 | 14 | 16 | 16 |
-| augment | 16 | 15 | 16 | 16 |
-| reorder | 16 | 16 | 9 | 16 |
-| motif_retro | 10 | 16 | 6 | 16 |
-| invert | 10 | 8 | 12 | 0 |
-| retrograde | 3 | 12 | 3 | 10 |
+| Condition | computed | learned | learned + order | learned^5 + order | raw differences |
+|---|---|---|---|---|---|
+| transpose | 16 | 16 | 16 | 16 | 16 |
+| mode | 16 | 13 | 16 | 16 | 16 |
+| ornament | 16 | 14 | 16 | 16 | 16 |
+| augment | 16 | 15 | 16 | 16 | 16 |
+| reorder | 16 | 16 | 9 | 8 | 16 |
+| motif_retro | 10 | 16 | 6 | 5 | 16 |
+| invert | 10 | 8 | 12 | 14 | 0 |
+| retrograde | 3 | 12 | 3 | 1 | 10 |
 
 Motif-only matching (w = 0) is the same in every row, since only the edges change.

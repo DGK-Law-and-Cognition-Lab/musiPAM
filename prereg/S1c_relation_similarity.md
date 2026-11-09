@@ -15,7 +15,11 @@
 - **H1.** Two motif pairs related by the same transformation are rated more similar than two pairs related by different transformations, with the base motifs always different between the two pairs.
 - **H2.** Ratings increase with the similarity of the two pairs' standardized relation vectors, over and above the similarity of the motifs involved.
 
+- **H3.** The learned relation model (music BART; `relations/`) predicts ratings better than the computed relation vectors and better than MERT difference vectors. This is the comparison Ichien, Lu & Holyoak (2022) made for semantic relations, where BART outperformed difference-vector models.
+
 **Research question RQ1.** Do MERT difference vectors (A2 − A1) predict ratings as well as the computed symbolic relation vectors?
+
+**Timing (decided 2026-11-06).** This study is registered only after the learned relation model is frozen: its code commit, weights and trial-level predictions are hashed into `predictions/` before registration. Studies 1a and 1b don't wait for it.
 
 ## 2. Design plan
 
@@ -25,7 +29,7 @@
 
 **Study design.**
 
-- **Relation types.** Ten: identity, a step higher, a step lower, inversion, retrograde, augmentation, ornamentation, mode change, fragmentation (the motif's head repeated in rising sequence), and contrast (an unrelated motif).
+- **Relation types.** Ten: identity, a step higher, a step lower, inversion, retrograde, augmentation, ornamentation, mode change, fragmentation (the motif's head repeated in rising sequence), and contrast (an unrelated motif). All ten are relations the learned model was trained on (`repeat`, `seq_up_1`, `seq_down_1`, `inversion`, `retrograde`, `augmentation`, `ornament`, `mode_change`, `fragment`, `unrelated`), but on folk-tune motifs only: the 16 base motifs here are new to it. *DECISION: add two relation types outside the trained inventory (for example, liquidation and metric displacement), to test whether the model generalizes to relations it was never taught, as BART does for words.*
 - **Instances.** Each relation is applied to 16 base motifs, the opening motif of each theme, giving 160 instance pairs (A1 → A2).
 - **Trials.** Two instances with different base motifs. They are either same-relation (20 per participant, 2 per relation type) or different-relation (44 per participant, spread over all 45 type pairs across lists). *DECISION: counts.*
 - **Trial.** A1, A2, a 1.5 s pause, then B1, B2, followed by "How similar is the change from the first motif to the second, to the change from the third motif to the fourth?" (1–7).
@@ -56,7 +60,8 @@
 
 - **Rsim**: the cosine of the two instances' standardized symbolic relation vectors;
 - **Nsim**: the mean key-relative similarity of A1 with B1 and A2 with B2;
-- **Rsim_mert**: the cosine of the MERT difference vectors.
+- **Rsim_mert**: the cosine of the MERT difference vectors;
+- **Rsim_bart**: the cosine of the two instances' relation vectors from the frozen learned relation model.
 
 ## 5. Analysis plan
 
@@ -64,9 +69,10 @@
 
 - **H1.** `rating ~ same_relation + (1 + same_relation | participant) + (1 | relation_type_pair) + (1 | base_motif_pair)`. H1 is supported if β > 0.
 - **H2.** `rating ~ Rsim + Nsim + (1 + Rsim | participant) + (1 | relation_type_pair)`. H2 is supported if β_Rsim > 0.
+- **H3.** Fit the H2 model three times, with Rsim_bart, Rsim and Rsim_mert as the relation predictor. H3 is supported if the Rsim_bart model has the lowest AIC and the best cross-validated log-likelihood (10-fold, folds by participant). *DECISION: a minimum ΔAIC.*
 - **RQ1.** Replace Rsim with Rsim_mert; compare by ΔAIC and cross-validated log-likelihood.
 
-**Inference.** α = .05, two-sided; Holm correction across H1 and H2.
+**Inference.** α = .05, two-sided; Holm correction across H1 and H2. H3 is a model comparison and is reported with its ΔAIC and cross-validated log-likelihoods.
 
 **Data exclusion.** The common exclusions apply, plus a mean catch-trial rating below 5.0.
 
