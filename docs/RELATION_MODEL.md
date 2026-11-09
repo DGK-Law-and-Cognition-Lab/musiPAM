@@ -20,7 +20,7 @@ The code is in [`../relations/`](../relations) (run instructions in its README).
 | musiPAM design check, learned relations + position | all 8 cross-mappings; analogs vs controls 93%; 24/24 aligned by role | hand-built relations: 8/8, 86%, 23/24 |
 | musiPAM design check, raw differences | 1/8 cross-mappings; 59% | — |
 
-Learned relations, from a model that never saw the stimuli, separate analogs from controls better than the relations we built by hand. The main open problem is chromaticism: in minor keys the stimuli's harmony-driven raised 6ths and 7ths make some sequences look like real transpositions (T14, T15). Training on harmonic-minor variants should fix that. The motif code underneath is still ours, so the next step is Track A on MERT and CLaMP 3 inputs. Reports: `relations/reports/track_a_symbolic.md` and `relations/reports/musipam_learned_edges.md`.
+Learned relations, from a model that never saw the stimuli, separate analogs from controls better than the relations we built by hand. Under the lab's PAM itself (`v2/pam/`), they map all 24 same-skeleton theme pairs by role, against 19 with the computed relations. The main open problem is chromaticism: in minor keys the stimuli's harmony-driven raised 6ths and 7ths make some sequences look like real transpositions (T14, T15). Training on harmonic-minor variants should fix that. The motif code underneath is still ours, so the next step is Track A on MERT and CLaMP 3 inputs. Reports: `relations/reports/track_a_symbolic.md` and `relations/reports/musipam_learned_edges.md`.
 
 ## 1. The problem
 

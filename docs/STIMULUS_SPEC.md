@@ -180,6 +180,8 @@ These are computed from the score, as visiPAM computed spatial relations. A lear
    - Reordering is matched at every weight in every theme (see "A correction to the original grid" in §3).
    - Reversing the motif order breaks relation-only matching (w = 1) in six themes, all rounded or chain (T10, T11, T12, T13, T14, T16). In sentences and periods the true mapping survives at every weight.
 
+**PAM itself** (`pam/reports/pam_check.md`, 2026-11-09). The lab's PAM, run on the same graphs, is stricter than the exhaustive matcher above. With relations alone it maps every cross-mapping probe to its role match, but only 6 of the 8 pairs switch to the look-alike as motif weight rises. T5 → T6 and T11 → T12 don't switch: their role matches are nearly as similar to the probe as the look-alikes (0.67 vs 0.76, and 0.73 vs 0.82, key-relative code). PAM's normalization discounts a motif that is similar to every candidate, so a look-alike has to stand out clearly. Making those two role matches less like their probes is the next design fix.
+
 **Learned motif codes** (`reports/design_check_mert.md`). The same matcher with motifs coded by MERT-v1-95M embeddings of the audio:
 
 - MERT is robust to timbre and tempo (all 16 themes match at w = 0). It codes pitch absolutely: tritone transposition breaks object-only matching in all 16, and relations repair it.
@@ -240,8 +242,9 @@ A SHA-256 hash of every WAV file is recorded in `manifest.csv`. Builds are deter
 ## 9. Next steps
 
 1. **Audition T4–T16** (D. Kamper): familiarity ("nothing resembles"), naturalness, and whether each look-alike sounds like its probe. Edit `themes.py` directly; the whole set rebuilds in about 20 minutes, or 35 seconds without audio.
-2. **Spares.** Compose one more theme per skeleton for Study 0's selection.
-3. **Motif-level clips** for Studies 1b and 1c, rendered from the same pipeline.
-4. **Muse Sounds.** Try route 1 in §5, then route 2.
-5. **Pilot** with three measures: naturalness and familiarity ratings, boundary tapping, and a first Study 1a run.
-6. **Models.** Replace the design-check proxy with the lab's PAM code (H. Lu). Add the second learned code (see STUDY_PLAN.md, "Which learned models").
+2. **Sharpen T5 → T6 and T11 → T12** for PAM: make T6.a and T12.b less similar to their probes, so that motif weight can pull the mapping to the look-alike.
+3. **Spares.** Compose one more theme per skeleton for Study 0's selection.
+4. **Motif-level clips** for Studies 1b and 1c, rendered from the same pipeline.
+5. **Muse Sounds.** Try route 1 in §5, then route 2.
+6. **Pilot** with three measures: naturalness and familiarity ratings, boundary tapping, and a first Study 1a run.
+7. **Models.** PAM now runs on the stimuli (`pam/`); add the second learned code (see STUDY_PLAN.md, "Which learned models").
