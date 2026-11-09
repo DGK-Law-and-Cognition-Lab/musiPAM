@@ -1,0 +1,57 @@
+[
+ {
+  "file": "jspsych.js",
+  "url": "https://unpkg.com/jspsych@7.3.4/dist/index.browser.min.js",
+  "sha256": "2b5a14d24b4d34eae6fcdfa13fe5f16df4ec05751c1f69b6e88e063270fff664"
+ },
+ {
+  "file": "jspsych.css",
+  "url": "https://unpkg.com/jspsych@7.3.4/css/jspsych.css",
+  "sha256": "fa82c872674d17a559d9a8930b4ad23dfaa51bbc8f51c3261c119b2eb164ec09"
+ },
+ {
+  "file": "plugin-preload.js",
+  "url": "https://unpkg.com/@jspsych/plugin-preload@1.1.3/dist/index.browser.min.js",
+  "sha256": "22010ec41d4d9cf2f14598f8a37022e8ca101ab5fa398d1e0edae8abd7b8671d"
+ },
+ {
+  "file": "plugin-browser-check.js",
+  "url": "https://unpkg.com/@jspsych/plugin-browser-check@1.0.3/dist/index.browser.min.js",
+  "sha256": "0ff6c7706798ce26a7c37b4f78b53eaf8eec215ec03e94153ceba3798d427238"
+ },
+ {
+  "file": "plugin-fullscreen.js",
+  "url": "https://unpkg.com/@jspsych/plugin-fullscreen@1.2.1/dist/index.browser.min.js",
+  "sha256": "e6ed4958e1531bcd11956b7bda6f4da11ba477104efaa5cde3aab5fa944b7882"
+ },
+ {
+  "file": "plugin-html-button-response.js",
+  "url": "https://unpkg.com/@jspsych/plugin-html-button-response@1.2.0/dist/index.browser.min.js",
+  "sha256": "6dd56bc86f538a3f60f2745cf1ce5286f17d983be218ab5095c3c491950a6d43"
+ },
+ {
+  "file": "plugin-audio-keyboard-response.js",
+  "url": "https://unpkg.com/@jspsych/plugin-audio-keyboard-response@1.1.3/dist/index.browser.min.js",
+  "sha256": "e255add7ab35a033678c030bc9eccf16e0a80b8f9daf51c0564f1ed444e9e7af"
+ },
+ {
+  "file": "plugin-audio-button-response.js",
+  "url": "https://unpkg.com/@jspsych/plugin-audio-button-response@1.2.0/dist/index.browser.min.js",
+  "sha256": "1bf1d051d29a1aba8aa4fb2e828024d58fae315496da17de5cbff00661da55c1"
+ },
+ {
+  "file": "plugin-survey-html-form.js",
+  "url": "https://unpkg.com/@jspsych/plugin-survey-html-form@1.0.3/dist/index.browser.min.js",
+  "sha256": "d8037e8e0c54f2ef5d3b846fb6cca3b0b4d4e167c5d35e8f534e39c714f7b18d"
+ },
+ {
+  "file": "plugin-call-function.js",
+  "url": "https://unpkg.com/@jspsych/plugin-call-function@1.1.3/dist/index.browser.min.js",
+  "sha256": "b8e500739ed8d939b17ce0ebc1c6eb83e64a0b2e1a442b15fee4f51f7cbc7404"
+ },
+ {
+  "file": "jspsych-7-pavlovia-2022.1.1.js",
+  "url": "https://lib.pavlovia.org/jspsych-7-pavlovia-2022.1.1.js",
+  "sha256": "0fbc65a353bcbc70e1148685a22b1c7064c11ce2fd2251030b141a998cb4ba74"
+ }
+]

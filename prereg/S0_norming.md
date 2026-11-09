@@ -26,9 +26,11 @@ This study applies fixed retention criteria to every theme.
 
 **Study design.** Every participant hears every melody in three blocks, with the block order counterbalanced across participants (Latin square):
 
-- **Familiarity.** "Have you heard this melody before?" (yes / no / not sure), then "How familiar is it?" (1 = not at all, 7 = very).
+- **Familiarity.** "Had you heard this melody before today?" (yes / no / not sure), then "Before today, how familiar was this melody to you?" (1 = not at all, 7 = very). The block instructions add: do not count hearing it earlier in this study.
 - **Naturalness.** "How natural does this sound as a piece of music?" (1–7). Then "How much do you like it?" (1–7, exploratory).
 - **Segmentation.** After one complete listening, a second listening during which the participant presses the space bar "each time a new musical idea begins". A practice melody is used first.
+
+*DECISION: block order.* Under the Latin square, two thirds of participants rate familiarity only after hearing every melody once or twice in the session. That inflates the new themes' familiarity but not the anchors' (already near ceiling), so it works against criterion 1 (Section 5) and adds order variance. The alternative runs familiarity first for everyone and counterbalances naturalness and segmentation (two orders). The experiment code implements the Latin square; switching is a one-line change (`ORDERS` in `experiments/study0/experiment.js`).
 
 **Randomization.** Melody order is randomized within each block.
 
@@ -52,7 +54,8 @@ This study applies fixed retention criteria to every theme.
 **Stimuli.**
 
 - **Composed themes.** All composed themes (the identity versions of 16 main themes and 4 spares) from musiPAM stimulus set *vX.Y* (*Zenodo DOI at registration*).
-- **Familiarity anchors.** Four public-domain melodies rendered through the same pipeline: Ode to Joy, Greensleeves, Frère Jacques, Amazing Grace. *DECISION: final anchor list.*
+- **Familiarity anchors.** Four public-domain melodies rendered through the same pipeline: Ode to Joy, Greensleeves, Frère Jacques, Amazing Grace. Each excerpt starts at the tune's beginning and ends on the tonic (excerpts and arrangements: `stimgen/musipam_stim/anchors.py`). *DECISION: final anchor list.*
+- **Practice melody.** Twinkle, Twinkle, Little Star (public domain), heard once before each block. It is also replayed in the attention checks, so no rated melody is heard an extra time.
 
 **Measured variables.** Recognition (yes / no / not sure), familiarity (1–7), naturalness (1–7), liking (1–7), and key-press times in the segmentation block (s, relative to audio onset).
 
@@ -78,7 +81,7 @@ This study applies fixed retention criteria to every theme.
 
 **Replacement rule.** A theme that fails is revised or replaced. It must then pass the same criteria in a new sample of at least 20 participants before entering any main study. Each skeleton must end with four retained realizations, and spares fill in first.
 
-**Data exclusion.** The common exclusions apply (README). In addition, a participant who makes no key press on more than half of the segmentation trials is excluded from the segmentation indices only.
+**Data exclusion.** The common exclusions apply (README). Catch trials: each rating block contains one instructed-response item (the practice melody, then "answer 6 on both scales" or "answer 'Not sure' and 2"). *DECISION: threshold (proposal: exclude a participant who fails both).* In addition, a participant who makes no key press on more than half of the segmentation trials is excluded from the segmentation indices only.
 
 **Missing data.** Items with missing responses are dropped per participant; there is no imputation.
 

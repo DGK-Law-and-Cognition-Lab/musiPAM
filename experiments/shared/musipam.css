@@ -1,0 +1,42 @@
+/* musiPAM experiments: shared styles on top of jsPsych's own stylesheet. */
+:root {
+  --ink: #1d2433;
+  --muted: #5a6273;
+  --rule: #d5dae3;
+  --accent: #2a5bd7;
+  --wash: #eef2f8;
+  --warn: #9a3412;
+}
+body { color: var(--ink); background: #ffffff; }
+.jspsych-display-element { font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.5; }
+.page { max-width: 46rem; margin: 0 auto; text-align: left; }
+.page h1 { font-size: 1.6rem; margin: 0 0 0.8rem; }
+.page h2 { font-size: 1.3rem; margin: 0 0 0.6rem; }
+.page p { margin: 0 0 0.8rem; }
+.todo { background: #fff4e5; border-left: 4px solid var(--warn); padding: 0.5rem 0.8rem; color: var(--warn); font-size: 0.95rem; }
+.note { color: var(--muted); font-size: 0.9rem; font-weight: 400; }
+.listening { font-size: 1.2rem; color: var(--muted); }
+.listening .icon { display: inline-block; width: 0.8rem; height: 0.8rem; border-radius: 50%; background: var(--accent); margin-right: 0.5rem; animation: pulse 1.2s ease-in-out infinite; }
+@keyframes pulse { 0%, 100% { opacity: 0.25; } 50% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .listening .icon { animation: none; } }
+
+/* forms */
+.form { display: grid; gap: 1rem; }
+fieldset.q { border: 0; padding: 0; margin: 0 0 1.4rem; text-align: left; }
+fieldset.q legend { font-weight: 600; margin-bottom: 0.5rem; padding: 0; }
+.scale7 { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 0.4rem; max-width: 30rem; }
+.scale7 .pt { display: grid; justify-items: center; gap: 0.2rem; padding: 0.45rem 0; border: 1px solid var(--rule); border-radius: 6px; cursor: pointer; }
+.scale7 .pt:has(input:checked) { border-color: var(--accent); background: var(--wash); }
+.scale7 input { margin: 0; }
+.ends { display: flex; justify-content: space-between; max-width: 30rem; color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+.opts { display: flex; flex-wrap: wrap; gap: 0.5rem 1.2rem; }
+.opt { cursor: pointer; }
+label.sel { display: grid; gap: 0.3rem; text-align: left; }
+label.sel select, label.sel input, label.sel textarea { font: inherit; padding: 0.35rem 0.5rem; border: 1px solid var(--rule); border-radius: 6px; max-width: 34rem; }
+
+/* tapping (segmentation) */
+.tap-wrap { display: grid; justify-items: center; gap: 1rem; }
+.tap-dot { width: 4rem; height: 4rem; border-radius: 50%; background: var(--wash); border: 2px solid var(--rule); transition: background 60ms; }
+.tap-dot.on { background: var(--accent); border-color: var(--accent); }
+.tap-count { color: var(--muted); font-size: 0.95rem; }
+kbd { border: 1px solid var(--rule); border-bottom-width: 2px; border-radius: 4px; padding: 0.05rem 0.4rem; font-size: 0.9em; background: #fafbfc; }

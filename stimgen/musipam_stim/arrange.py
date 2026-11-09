@@ -256,9 +256,12 @@ def build_score(s: Stim, parts=("melody", "accomp"), annotate: bool = True) -> s
                 te.placement = "above"
                 mel.insert(t, te)
             for n in seg.notes:
-                nn = note.Note(copy.deepcopy(n.p), quarterLength=n.dur)
-                nn.volume.velocity = _metric_velocity(t, s.meter, 84)
-                mel.insert(t, nn)
+                if n.p is None:  # a rest (only the anchor melodies have them: see anchors.py)
+                    mel.insert(t, note.Rest(quarterLength=n.dur))
+                else:
+                    nn = note.Note(copy.deepcopy(n.p), quarterLength=n.dur)
+                    nn.volume.velocity = _metric_velocity(t, s.meter, 84)
+                    mel.insert(t, nn)
                 t += n.dur
         sc.insert(0, mel)
     if "accomp" in parts:
@@ -300,6 +303,7 @@ def _fill_rests(p: stream.Part, total: float) -> None:
 def _metadata(s: Stim):
     from music21 import metadata
     md = metadata.Metadata()
-    md.title = f"musiPAM {s.theme_id} — {s.condition}"
-    md.composer = "musiPAM stimulus pipeline (v2)"
+    # anchors.py sets its own title and credit (a public-domain tune, arranged by the pipeline)
+    md.title = s.notes_meta.get("title", f"musiPAM {s.theme_id} — {s.condition}")
+    md.composer = s.notes_meta.get("composer", "musiPAM stimulus pipeline (v2)")
     return md

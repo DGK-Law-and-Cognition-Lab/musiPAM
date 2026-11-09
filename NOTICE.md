@@ -20,6 +20,14 @@ The motif embeddings are computed with **MERT-v1-95M** (Li et al., 2024; https:/
 
 The stimuli are built with music21, NumPy, SciPy, pyloudnorm, soundfile, FluidSynth and ffmpeg, each under its own license.
 
+## Experiment libraries
+
+The experiments in `experiments/` run on jsPsych 7.3.4 (de Leeuw, 2015; https://www.jspsych.org) and its plugins, and save data with the Pavlovia jsPsych plugin (version 2022.1.1, Ilixa Ltd.). Both are MIT-licensed. Neither is stored here: `experiments/build.py` downloads the versions pinned in `experiments/shared/libs.json` and checks their SHA-256 hashes.
+
+## Anchor melodies
+
+`stimuli/anchors/` holds arrangements of public-domain melodies: "Ode to Joy" (Beethoven), "Frère Jacques" and "Greensleeves" (traditional), "Amazing Grace" (the hymn tune "New Britain"), and "Twinkle, Twinkle, Little Star" ("Ah! vous dirai-je, maman"). The arrangements come from the same pipeline as the themes and are CC BY 4.0, like the rest of `stimuli/`.
+
 ## PAM
 
 `pam/pam.py` is a Python port of `TestMapping_PAMfunc.m` from the PAM code of Hongjing Lu, Nicholas Ichien and Keith J. Holyoak, included with the authors' permission. It reproduces the MATLAB original to machine precision (`pam/validate.py`). If you use it, cite:

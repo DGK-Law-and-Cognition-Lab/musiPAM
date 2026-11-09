@@ -10,6 +10,12 @@ data/
 Data/
 *.qsf
 
+# Experiments: built folders, the downloaded-library cache, and private study settings
+# (config.local.js holds the SONA credit token; it must never be committed).
+experiments/dist/
+experiments/vendor/
+config.local.js
+
 # Python / OS
 __pycache__/
 *.pyc

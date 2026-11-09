@@ -66,7 +66,7 @@ The 4 × 4 grid balances both directions of generalization: across skeletons, so
 
 **Tasks** (three blocks, order counterbalanced):
 
-1. **Familiarity.** "Have you heard this melody before?" (yes / no / unsure), then a 1–7 familiarity rating.
+1. **Familiarity.** "Had you heard this melody before today?" (yes / no / not sure), then a 1–7 rating of familiarity before today.
 2. **Naturalness.** "How natural does this sound as a piece of music?" (1–7), plus liking (exploratory).
 3. **Segmentation.** On a second listening, press a key whenever a new musical idea begins.
 
@@ -207,7 +207,7 @@ Licenses matter for the public repository. The CC BY-NC models' embedding arrays
 ## Order and preregistration workflow
 
 1. **Stimulus bank.** Done for the 16 themes (2026-11-06): composed, design-checked, MERT-embedded. Still open: the four spares and motif-level clips for Studies 1b and 1c.
-2. **Study 0.** Then run power simulations (`simr` / `mixedpower`) and finalize the Study 1 preregistrations.
+2. **Study 0.** The experiment is built and tested locally (2026-11-09: `experiments/study0`, with the anchor and practice melodies rendered). Before data collection it needs the IRB consent and debrief text, the SONA/Prolific settings, and the prereg's open DECISIONs, including block order. Then run power simulations (`simr` / `mixedpower`) and finalize the Study 1 preregistrations.
 3. **Studies 1a, 1b and 1c.** Separate samples. 1a and 1b can run as soon as Study 0 is done; 1c waits for the learned relation model to be frozen (decided 2026-11-06), because its main test compares that model with the computed relations and MERT.
 4. **Study 2.**
 5. **Study 3.**
