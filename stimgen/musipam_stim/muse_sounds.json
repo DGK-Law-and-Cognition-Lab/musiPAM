@@ -1,0 +1,253 @@
+{
+ "_comment": "Muse Sounds instrument assignments for the musiPAM renderer (render.py). Copied from the audiosettings.json of v2/render_test/muse_sounds_setup.mscz, where the four instruments were assigned in MuseScore 4's Mixer; David approved the A/B renders by ear on 2026-11-09. 'pinned' fingerprints the installed libraries so that a Muse Hub update cannot silently change the audio (render.check_muse).",
+ "instruments": {
+  "clarinet": {
+   "label": "Clarinet 1 (Berlin Woodwinds, Orchestral Tools)",
+   "muse_uid": "2008",
+   "vendor": "Orchestral Tools",
+   "pack": "Berlin Woodwinds",
+   "name": "Clarinet 1",
+   "files": "Berlin Woodwinds/Berlin Woodwinds Clarinet 1/Berlin Woodwinds Clarinet 1",
+   "pinned": {
+    "spx_sha256": "3697856520a8c3e9651ad7b957f474dcabc23e186d2794e5b5184632186eb15a",
+    "sts_bytes": 178306684
+   },
+   "track": {
+    "in": {
+     "resourceMeta": {
+      "attributes": {
+       "museCategory": "Berlin Woodwinds",
+       "museName": "Clarinet 1",
+       "musePack": "Berlin Woodwinds",
+       "museUID": "2008",
+       "museVendorName": "Orchestral Tools",
+       "playbackSetupData": ""
+      },
+      "hasNativeEditorSupport": false,
+      "id": "2008",
+      "type": "muse_sampler_sound_pack",
+      "vendor": "MuseSounds"
+     },
+     "unitConfiguration": {}
+    },
+    "out": {
+     "auxSends": [
+      {
+       "active": true,
+       "signalAmount": 0.30000001192092896
+      },
+      {
+       "active": true,
+       "signalAmount": 0.30000001192092896
+      }
+     ],
+     "balance": 0,
+     "fxChain": {},
+     "volumeDb": 0
+    },
+    "soloMuteState": {
+     "mute": false,
+     "solo": false
+    }
+   }
+  },
+  "violin": {
+   "label": "Violin 1 (Berlin Strings First Chairs, Orchestral Tools)",
+   "muse_uid": "2401",
+   "vendor": "Orchestral Tools",
+   "pack": "Berlin Strings First Chairs",
+   "name": "Violin 1",
+   "files": "Berlin Strings First Chairs/Berlin Strings First Chairs Solo Violin 1/Berlin Strings First Chairs Solo Violin 1",
+   "pinned": {
+    "spx_sha256": "dc2ef17b779f5de214c90a0e60f77b235a1d9ace4665a9122b899820d4c33fba",
+    "sts_bytes": 201424092
+   },
+   "track": {
+    "in": {
+     "resourceMeta": {
+      "attributes": {
+       "museCategory": "Berlin Strings First Chairs",
+       "museName": "Violin 1",
+       "musePack": "Berlin Strings First Chairs",
+       "museUID": "2401",
+       "museVendorName": "Orchestral Tools",
+       "playbackSetupData": ""
+      },
+      "hasNativeEditorSupport": false,
+      "id": "2401",
+      "type": "muse_sampler_sound_pack",
+      "vendor": "MuseSounds"
+     },
+     "unitConfiguration": {}
+    },
+    "out": {
+     "auxSends": [
+      {
+       "active": true,
+       "signalAmount": 0.30000001192092896
+      },
+      {
+       "active": true,
+       "signalAmount": 0.30000001192092896
+      }
+     ],
+     "balance": 0,
+     "fxChain": {},
+     "volumeDb": 0
+    },
+    "soloMuteState": {
+     "mute": false,
+     "solo": false
+    }
+   }
+  },
+  "piano": {
+   "label": "Concert Grand (Vienna Piano, Vienna Symphonic Library)",
+   "muse_uid": "15045",
+   "vendor": "Vienna Symphonic Library",
+   "pack": "Vienna Piano",
+   "name": "Concert Grand",
+   "files": "VSL Piano I/Concert Grand/Concert Grand",
+   "pinned": {
+    "spx_sha256": "a0bb87fc40c4278c3aa2383114a5fca77b72854bcb353393039ad08c5295bfad",
+    "sts_bytes": 1737671925
+   },
+   "track": {
+    "in": {
+     "resourceMeta": {
+      "attributes": {
+       "museCategory": "Vienna Piano",
+       "museName": "Concert Grand",
+       "musePack": "Vienna Piano",
+       "museUID": "15045",
+       "museVendorName": "Vienna Symphonic Library",
+       "playbackSetupData": ""
+      },
+      "hasNativeEditorSupport": false,
+      "id": "15045",
+      "type": "muse_sampler_sound_pack",
+      "vendor": "MuseSounds"
+     },
+     "unitConfiguration": {}
+    },
+    "out": {
+     "auxSends": [
+      {
+       "active": true,
+       "signalAmount": 0.30000001192092896
+      },
+      {
+       "active": true,
+       "signalAmount": 0.30000001192092896
+      }
+     ],
+     "balance": 0,
+     "fxChain": {},
+     "volumeDb": 0
+    },
+    "soloMuteState": {
+     "mute": false,
+     "solo": false
+    }
+   }
+  },
+  "harp": {
+   "label": "Harp (Vienna Harp, Vienna Symphonic Library)",
+   "muse_uid": "15067",
+   "vendor": "Vienna Symphonic Library",
+   "pack": "Vienna Harp",
+   "name": "Harp",
+   "files": "VSL Harp/Harp/Harp",
+   "pinned": {
+    "spx_sha256": "8ceaab1b4abfae60539fd8187725f773ee986ff713307b5cbab7e00d5c90ae55",
+    "sts_bytes": 1188017436
+   },
+   "track": {
+    "in": {
+     "resourceMeta": {
+      "attributes": {
+       "museCategory": "Vienna Harp",
+       "museName": "Harp",
+       "musePack": "Vienna Harp",
+       "museUID": "15067",
+       "museVendorName": "Vienna Symphonic Library",
+       "playbackSetupData": ""
+      },
+      "hasNativeEditorSupport": false,
+      "id": "15067",
+      "type": "muse_sampler_sound_pack",
+      "vendor": "MuseSounds"
+     },
+     "unitConfiguration": {}
+    },
+    "out": {
+     "auxSends": [
+      {
+       "active": true,
+       "signalAmount": 0.30000001192092896
+      },
+      {
+       "active": true,
+       "signalAmount": 0.30000001192092896
+      }
+     ],
+     "balance": 0,
+     "fxChain": {},
+     "volumeDb": 0
+    },
+    "soloMuteState": {
+     "mute": false,
+     "solo": false
+    }
+   }
+  }
+ },
+ "aux": [
+  {
+   "out": {
+    "balance": 0,
+    "fxChain": {
+     "0": {
+      "active": true,
+      "chainOrder": 0,
+      "resourceMeta": {
+       "attributes": {},
+       "hasNativeEditorSupport": true,
+       "id": "Muse Reverb",
+       "type": "muse_plugin",
+       "vendor": "Muse"
+      },
+      "unitConfiguration": {}
+     }
+    },
+    "volumeDb": 0
+   },
+   "soloMuteState": {
+    "mute": false,
+    "solo": false
+   }
+  },
+  {
+   "out": {
+    "balance": 0,
+    "fxChain": {},
+    "volumeDb": 0
+   },
+   "soloMuteState": {
+    "mute": false,
+    "solo": false
+   }
+  }
+ ],
+ "master": {
+  "balance": 0,
+  "fxChain": {},
+  "volumeDb": 0
+ },
+ "pinned": {
+  "musescore": "MuseScore: Music Score Editor; Version 4.7.6; Build 96480d5",
+  "musesampler_version": "0.106.0",
+  "musesampler_sha256": "d271e62881613e795143848454d60a824bc5a404dbab88df83244211ecee3fb7",
+  "reference_wav_sha256": "efd894512c5e5116534f4e77c934477c56a3ad303ed30d4a0eb3a1aa3a6dfc5c"
+ }
+}

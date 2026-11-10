@@ -135,18 +135,19 @@ What stays fixed is everything else about the accompaniment:
 
 | Parameter | Value |
 |---|---|
-| Renderer | FluidSynth 2.4.3, MS Basic soundfont (pinned copy, hash-checked at every build), deterministic |
+| Renderer | Muse Sounds through MuseScore Studio 4.7.6's command line (MuseSampler 0.106.0). The versions and the instrument libraries are pinned and checked at every build; rendering is deterministic |
+| Instruments | Clarinet 1 (Berlin Woodwinds, Orchestral Tools) over Concert Grand (Vienna Piano, Vienna Symphonic Library). The timbre variation uses Violin 1 (Berlin Strings First Chairs, Orchestral Tools) and Harp (Vienna Harp, VSL). Every track sends 0.3 to MuseScore's Muse Reverb |
 | Mixing | Melody and accompaniment are rendered as separate stems; the melody is mixed **+6 LU** above the accompaniment, identically for every stimulus |
 | Loudness | Every file is normalized to **−20 LUFS** (all 176 measure −20.0) |
-| Peaks | −12.0 to −8.2 dBFS; no clipping, and no limiting was needed |
+| Peaks | −10.1 to −2.5 dBFS; no clipping, and no limiting was needed |
 | Timing | 100 ms of silence before the music; a 1.5 s tail with a 0.4 s fade; 44.1 kHz, 16-bit WAV, plus 192 kbps MP3 |
+| Onsets | Each stem's notes sound where the score puts them. The median offset of the audio's onsets from the score's is −21 to +36 ms for the melody and −6 to +5 ms for the accompaniment (spectral flux; checked at every build, `manifest.csv` columns `melody_onset_offset_ms` and `accomp_onset_offset_ms`) |
 
-**Sound quality is the weakest link.** MS Basic is a General MIDI bank: adequate for audition and piloting, not for data collection. Every stimulus goes through the same renderer, so an upgrade changes timbre for all stimuli equally.
+**How the rendering works.** For each stem, music21 writes MusicXML and MuseScore converts it to a MuseScore file. The build then writes the stem's instrument into that file's audio settings from `musipam_stim/muse_sounds.json`, which was copied from a score whose instruments were set in MuseScore's Mixer and approved by ear (D. Kamper, 2026-11-09). MuseScore exports the audio. One MuseScore process converts a batch of 22 stems and another renders it. Before rendering, the build compares MuseScore's version, the MuseSampler engine and the four instrument libraries with pinned fingerprints, and renders a fixed reference score (`musipam_stim/muse_reference.musicxml`, one bar per instrument) whose audio must match a pinned SHA-256. Renders were bit-identical across repeated runs and across batch compositions. `reports/renderer.json` records the renderer each build used.
 
-**Muse Sounds status (2026-11-06).** All four libraries the stimuli need are installed: VSL Woodwinds I (clarinet), VSL Piano I, VSL Strings I (violin) and VSL Harp. Command-line rendering does **not** use them yet: with the Muse Sounds profile active, MuseScore 4.7.6 produced audio identical to the basic soundfont (waveform correlation 1.0), and its track report still listed the basic soundfont for each part. Two routes remain:
+**Legato in the melody.** The Muse Sounds clarinet and violin connect their notes: each note starts on time but swells in over about 0.3 s while the previous note fades over about 0.4 s. So in a note's first few hundred milliseconds the previous pitch can still be the stronger one. Over the second half of each note, the written pitch is the strongest pitch for 97.7% of the 4,474 melody notes (FluidSynth: 99.5%). Most of the rest are short notes next to a long, louder neighbor, and they cluster in T7 (25) and T14 (15). Turning the reverb off does not change this, so it comes from the samples, not the room. It sounds like slurred playing; whether it blurs any melody is a question for the audition. Motif clips cut at the score's onsets (for MERT, and for Studies 1b and 1c) will carry a little of the previous motif's last note.
 
-1. Assign the Muse Sounds instruments once in the MuseScore app, save that file, and test whether command-line export honors explicitly assigned Muse Sounds. If it does, copy those playback settings into every generated score.
-2. If it doesn't, generate one long score per instrument pair (clarinet and piano for 160 stimuli, violin and harp for the 16 timbre versions) that holds those stimuli in sequence, separated by rests. Export each score's melody and accompaniment parts once from the app, and cut the stems at the known onsets. The existing stem mixing, loudness normalization and checks then run unchanged.
+**The free renderer.** `build.py --renderer fluidsynth` renders with FluidSynth 2.4.3 and MuseScore's General MIDI soundfont, MS Basic (pinned copy, hash-checked), the renderer of every build before 2026-11-09. It needs no proprietary software, but its audio differs from the released files.
 
 ## 6. Motif graphs and the design check
 
@@ -184,16 +185,16 @@ These are computed from the score, as visiPAM computed spatial relations. A lear
 
 **PAM itself** (`pam/reports/pam_check.md`, 2026-11-09). The lab's PAM, run on the same graphs, is stricter than the exhaustive matcher above: its normalization discounts a motif that is similar to every candidate, so a look-alike has to stand out clearly from the role match. After the T6 and T12 revisions (§2), PAM with relations alone maps every probe to its role match, and every pair switches to its look-alike as motif weight rises, at α = 0.5 to 4 depending on the pair (key-relative motifs, standardized computed relations). With the learned relations, all 24 same-skeleton pairs are mapped by role.
 
-**Learned motif codes** (`reports/design_check_mert.md`). The same matcher with motifs coded by MERT-v1-95M embeddings of the audio:
+**Learned motif codes** (`reports/design_check_mert.md`, rerun on the Muse Sounds audio 2026-11-09). The same matcher with motifs coded by MERT-v1-95M embeddings of the audio:
 
 - MERT is robust to timbre and tempo (all 16 themes match at w = 0). It codes pitch absolutely: tritone transposition breaks object-only matching in all 16, and relations repair it.
 - MERT barely registers note order. Retrograde matches at w = 0 in all 16 themes, because a time-averaged audio embedding of a motif changes little when the motif runs backwards.
-- With MERT motifs and the computed relations, every cross-mapping maps by role from w = 0.25. With motifs only, MERT sends the probe to a look-alike in 5 of the 8 pairs (T5 → T6, T9 → T10, T11 → T12, T13 → T14, T15 → T16). It ranks the look-alike first among the target's four motifs in only 2 pairs, because the look-alikes match in contour and rhythm while MERT weighs key, register and texture.
-- With relations taken as MERT difference vectors, nothing maps: analogs and controls are indistinguishable (AUC 55%). Learned relations need a trained relation model ([RELATION_MODEL.md](RELATION_MODEL.md)).
+- With MERT motifs and the computed relations, every cross-mapping maps by role from w = 0.25, except T9 → T10 (from w = 0.5); T2 → T4 maps by role even on motifs alone. With motifs only, MERT sends the probe to a look-alike in 4 of the 8 pairs (T5 → T6, T7 → T8, T9 → T10, T15 → T16). It ranks the look-alike first among the target's four motifs in only 3 pairs (T7 → T8, T9 → T10, T13 → T14), because the look-alikes match in contour and rhythm while MERT weighs key, register and texture. (With the earlier MS Basic audio: 5 pairs and 2 pairs.)
+- With relations taken as MERT difference vectors, nothing maps: analogs and controls are indistinguishable (AUC 54%). Learned relations need a trained relation model ([RELATION_MODEL.md](RELATION_MODEL.md)).
 
 ## 7. Validation (`reports/validation_report.md`)
 
-The build ran 2,184 automated checks with 0 errors. They confirm:
+The build ran 2,536 automated checks with 0 errors. They confirm:
 
 - whole bars;
 - motif boundaries fall on barlines;
@@ -203,7 +204,8 @@ The build ran 2,184 automated checks with 0 errors. They confirm:
 - there are no augmented seconds;
 - each transformation does exactly what it claims (exact tritone shift, negated diatonic intervals, exact reversal, structural tones keeping their onsets, and so on);
 - every designed relation in §2, including both properties of every cross-mapping, holds;
-- loudness, peak level and duration are as specified.
+- loudness, peak level and duration are as specified;
+- every stem's notes sound where the score puts them (median onset offset within 50 ms for the melody and 20 ms for the accompaniment).
 
 One note remains: T7's parallel-mode version keeps an A–G♭ step across a phrase boundary, where both chords require those pitches.
 
@@ -234,18 +236,20 @@ Every note is explicit in `stimgen/musipam_stim/themes.py`, and every transforma
 | scipy | 1.18.1 |
 | pyloudnorm | 0.2.0 |
 | soundfile | 0.14.0 |
-| FluidSynth | 2.4.3 |
-| MS Basic.sf3 | MuseScore_General v0.2; pinned copy, SHA-256 `5ea2375e8bd7d8e7…` (identical in MuseScore 4.5.1 and 4.7.6) |
+| MuseScore Studio | 4.7.6 (build 96480d5), command line, for rendering |
+| MuseSampler | 0.106.0 |
+| Muse Sounds | Berlin Woodwinds Clarinet 1 and Berlin Strings First Chairs Violin 1 (Orchestral Tools); Vienna Piano Concert Grand and Vienna Harp (Vienna Symphonic Library); via Muse Hub, fingerprints in `muse_sounds.json` |
+| FluidSynth | 2.4.3 (the free renderer) |
+| MS Basic.sf3 | MuseScore_General v0.2; pinned copy, SHA-256 `5ea2375e8bd7d8e7…` (the free renderer) |
 | ffmpeg | for MP3 encoding |
 | MERT-v1-95M | `m-a-p/MERT-v1-95M`, revision `12af15fe…`, for the learned motif codes only (`embed.py`, `requirements-models.txt`). Its weights are CC BY-NC 4.0 and are not redistributed here. |
 
-A SHA-256 hash of every WAV file is recorded in `manifest.csv`. Builds are deterministic: this build reproduced, byte for byte, the WAV files of the earlier 3-theme and 4-theme builds (33 and 44 files).
+A SHA-256 hash of every WAV file is recorded in `manifest.csv`. Builds are deterministic. With FluidSynth, the 16-theme build reproduced, byte for byte, the WAV files of the earlier 3-theme and 4-theme builds (33 and 44 files); with Muse Sounds, repeated renders and different batch compositions gave identical files.
 
 ## 9. Next steps
 
 1. **Audition T4–T16** (D. Kamper): familiarity ("nothing resembles"), naturalness, and whether each look-alike sounds like its probe. Edit `themes.py` directly; the whole set rebuilds in about 20 minutes, or 35 seconds without audio.
 2. **Spares.** Compose one more theme per skeleton for Study 0's selection.
 3. **Motif-level clips** for Studies 1b and 1c, rendered from the same pipeline.
-4. **Muse Sounds.** Try route 1 in §5, then route 2.
-5. **Pilot** with three measures: naturalness and familiarity ratings, boundary tapping, and a first Study 1a run.
-6. **Models.** PAM now runs on the stimuli (`pam/`); add the second learned code (see STUDY_PLAN.md, "Which learned models").
+4. **Pilot** with three measures: naturalness and familiarity ratings, boundary tapping, and a first Study 1a run.
+5. **Models.** PAM now runs on the stimuli (`pam/`); add the second learned code (see STUDY_PLAN.md, "Which learned models").

@@ -53,6 +53,8 @@ Then open <http://localhost:8765/?debug=1>.
 
 Each study gets its own Pavlovia project (a GitLab repository on gitlab.pavlovia.org). That gives each study its own data folder, piloting/running switch and recruitment link. A registered study's code also stays frozen while later studies change.
 
+Pavlovia charges for each completed session unless an institutional licence covers it. UCLA's licence covers the musiPAM studies (confirmed by D. Kamper, 2026-11-09), so no credits need to be bought or assigned.
+
 1. Create the project, e.g. `musipam/study-0-norming`. The existing `musipam/study-1` can be renamed or kept for Study 1.
 2. Clone it, copy the contents of `dist/study0/` into it, then commit and push.
 3. On the Pavlovia dashboard, set the project to **Piloting**. Pilot runs offer the data as a CSV download instead of saving it. Test the whole session, including the redirect.

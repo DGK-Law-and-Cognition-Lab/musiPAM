@@ -1,8 +1,19 @@
 # Third-party notices
 
-## Soundfont used to render the audio
+## Sample libraries used to render the audio
 
-The audio in `stimuli/` is rendered with **MS Basic.sf3**, which ships with MuseScore 4 and is MuseScore_General v0.2. It is shared under the MIT license. Its credits, which must accompany derivative works:
+The audio in `stimuli/` (the 176 stimuli and the Study 0 melodies in `stimuli/anchors/`) is rendered with **Muse Sounds** through MuseScore Studio 4.7.6 (MuseSampler 0.106.0):
+
+- Clarinet 1, from Berlin Woodwinds (Orchestral Tools);
+- Violin 1, from Berlin Strings First Chairs (Orchestral Tools);
+- Concert Grand, from Vienna Piano (Vienna Symphonic Library);
+- Harp, from Vienna Harp (Vienna Symphonic Library).
+
+The libraries are distributed free through Muse Hub (MuseScore Limited) under its end-user licence agreements. They license the sounds for use within musical compositions and recordings and forbid redistributing the sounds themselves. This repository holds only recordings of the musiPAM compositions and arrangements, never the samples. `stimgen/musipam_stim/muse_sounds.json` lists the instruments and the fingerprints the build checks.
+
+## Soundfont used by the free renderer
+
+Audio rendered before 2026-11-09, and audio built today with `stimgen/build.py --renderer fluidsynth`, uses **MS Basic.sf3**, which ships with MuseScore 4 and is MuseScore_General v0.2. It is shared under the MIT license. Its credits, which must accompany derivative works:
 
 - FluidR3 (original version) by Frank Wen. Copyright (c) 2000–02.
 - Mono conversion (FluidR3Mono) by Michael Cowgill. Copyright (c) 2014–17.
@@ -18,7 +29,7 @@ The motif embeddings are computed with **MERT-v1-95M** (Li et al., 2024; https:/
 
 ## Software
 
-The stimuli are built with music21, NumPy, SciPy, pyloudnorm, soundfile, FluidSynth and ffmpeg, each under its own license.
+The stimuli are built with music21, NumPy, SciPy, pyloudnorm, soundfile, MuseScore Studio (GPL-3.0; used as a separate program, not distributed here), FluidSynth and ffmpeg, each under its own license.
 
 ## Experiment libraries
 

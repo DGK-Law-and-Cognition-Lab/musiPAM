@@ -181,3 +181,15 @@ def check_audio(sid: str, stats, expected_s: float) -> list[Check]:
         Check(sid, "duration_as_expected", abs(stats.duration_s - expected_s) < 0.05,
               f"{stats.duration_s:.2f}s vs {expected_s:.2f}s"),
     ]
+
+
+# Largest tolerated median offset of a stem's onsets from the score. Sample-based instruments
+# with soft attacks (clarinet, violin) peak later than plucked or struck ones (piano, harp).
+ONSET_TOLERANCE_S = {"melody": 0.05, "accomp": 0.02}
+
+
+def check_alignment(sid: str, part: str, offset_s: float, n: int, strict: bool) -> Check:
+    """The rendered stem's notes start where the score says (median spectral-flux onset offset)."""
+    ok = n > 0 and abs(offset_s) <= ONSET_TOLERANCE_S[part]
+    return Check(sid, f"{part}_onsets_match_score", ok,
+                 f"median {offset_s * 1000:+.0f} ms over {n} onsets", "error" if strict else "info")

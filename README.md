@@ -35,12 +35,16 @@ The current set has **16 themes × 11 conditions = 176 stimuli**: four relationa
 
 WAV masters are not stored in git. The build is deterministic and regenerates them byte for byte; `manifest.csv` records each file's hash so any rebuild can be checked.
 
+The audio is rendered with **Muse Sounds** through MuseScore Studio's command line: a clarinet (Berlin Woodwinds, Orchestral Tools) over a concert grand (Vienna Symphonic Library), and in the timbre variation a violin (Berlin Strings First Chairs) and a harp (Vienna Harp). Melody and accompaniment are rendered as separate stems, mixed with the melody 6 LU above the accompaniment, and normalized to −20 LUFS.
+
 ```bash
 python3 -m venv ~/.venvs/musipam && ~/.venvs/musipam/bin/pip install -r stimgen/requirements.txt
 cd stimgen && ~/.venvs/musipam/bin/python build.py
 ```
 
-The build requires FluidSynth, ffmpeg, and the MS Basic soundfont from MuseScore 4 (`Contents/Resources/sound/MS Basic.sf3`), placed at `~/.venvs/musipam/soundfonts/`. The build checks the soundfont's hash. All musical content lives in `stimgen/musipam_stim/themes.py`. The build fails if an edit breaks a designed relation or makes a transformation inexact.
+The build requires ffmpeg, MuseScore Studio 4.7.6 and the four Muse Sounds instruments above, all free through [Muse Hub](https://www.musehub.com). Before rendering, it checks MuseScore, the MuseSampler engine and the instrument libraries against the fingerprints in `stimgen/musipam_stim/muse_sounds.json`, and renders a reference score that must match a pinned hash, so an update cannot silently change the audio. Without Muse Sounds, `build.py --renderer fluidsynth` renders with FluidSynth and MuseScore's MS Basic soundfont (`Contents/Resources/sound/MS Basic.sf3`, placed at `~/.venvs/musipam/soundfonts/`). That route uses free software only, but its audio differs from the released files.
+
+All musical content lives in `stimgen/musipam_stim/themes.py`. The build fails if an edit breaks a designed relation, makes a transformation inexact, or renders notes away from where the score puts them.
 
 **Learned embeddings.** `stimgen/embed.py` embeds every motif with the pretrained music transformer [MERT-v1-95M](https://huggingface.co/m-a-p/MERT-v1-95M), at a pinned revision. The embedding arrays are not stored here because MERT is licensed CC BY-NC 4.0; run the script to regenerate them. It needs `stimgen/requirements-models.txt`.
 
@@ -56,7 +60,7 @@ The themes were drafted with AI assistance (Anthropic Claude) to a written speci
 
 - **Code** (`stimgen/`, `relations/`, `experiments/`): MIT. See [LICENSE](LICENSE).
 - **Stimuli, documentation, reports and preregistrations** (`stimuli/`, `docs/`, `prereg/`, `relations/reports/`): CC BY 4.0. See [LICENSE-CC-BY-4.0.md](LICENSE-CC-BY-4.0.md). The relation model's training data come from folk-tune collections bundled with music21 and are not redistributed; `relations/build_corpus.py` regenerates them.
-- **Third-party credits** (the soundfont, MERT): see [NOTICE.md](NOTICE.md).
+- **Third-party credits** (the sample libraries, the soundfont, MERT, the experiment libraries, PAM): see [NOTICE.md](NOTICE.md).
 
 ## Citation
 

@@ -164,12 +164,12 @@ The behavioral studies don't depend on any model. The models are the competing *
 2. **Relation (edge) representations.** The computed symbolic relation vectors, and learned relations from MERT, starting with difference vectors (A′ − A). A trained relation model, a "music BART", is the step after that. Its plan is in [RELATION_MODEL.md](RELATION_MODEL.md), and a first version, trained on folk tunes, is in `relations/`: as musiPAM's edges it already separates analogs from controls better than the hand-built relations. B. Yang's Word2Vec experience maps directly onto this step.
 3. **Mapping.** The lab's PAM code ("PAM public", MATLAB), now running on the musiPAM stimuli in `v2/pam/` through a Python port that matches the original to machine precision. It replaces the brute-force design check, which was essentially the "exhaustive search" model the PAM paper compared against.
 
-**MERT results on all 16 themes (2026-11-06; `stimuli/reports/design_check_mert.md`):**
+**MERT results on all 16 themes (2026-11-06, rerun on the Muse Sounds audio 2026-11-09; `stimuli/reports/design_check_mert.md`):**
 
 - **As a motif code, MERT works within pieces.** It is robust to timbre and tempo changes, but it codes pitch absolutely: tritone transposition breaks object-only matching in all 16 themes, and relations repair it.
 - **MERT barely hears note order.** A retrograde matches its theme on motifs alone in all 16 themes, because a time-averaged audio embedding changes little when a motif runs backwards.
-- **MERT only partly hears the designed look-alikes.** It ranks the look-alike first among the target's four motifs in only 2 of the 8 pairs. The look-alikes match in contour and rhythm, while MERT weighs key, register and texture. Study 1b includes a manipulation check that listeners hear the look-alikes as similar before Study 3 relies on them.
-- **Raw MERT difference vectors do not capture musical relations.** As relation vectors they leave analogs and controls indistinguishable (AUC 55%). Learned relations therefore need a trained relation model, as BART was trained for words; the plan is in [RELATION_MODEL.md](RELATION_MODEL.md).
+- **MERT only partly hears the designed look-alikes.** It ranks the look-alike first among the target's four motifs in only 3 of the 8 pairs. The look-alikes match in contour and rhythm, while MERT weighs key, register and texture. Study 1b includes a manipulation check that listeners hear the look-alikes as similar before Study 3 relies on them.
+- **Raw MERT difference vectors do not capture musical relations.** As relation vectors they leave analogs and controls indistinguishable (AUC 54%). Learned relations therefore need a trained relation model, as BART was trained for words; the plan is in [RELATION_MODEL.md](RELATION_MODEL.md).
 
 So the symbolic and learned codes make genuinely different predictions, which is what makes the preregistered comparisons informative.
 

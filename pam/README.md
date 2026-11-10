@@ -25,6 +25,8 @@ The lab's Probabilistic Analogical Mapping model (Lu, Ichien & Holyoak, 2022), a
 
 ## Results (2026-11-09, after the T6 and T12 revisions)
 
+The MERT rows were recomputed on the Muse Sounds audio the same day; none of the figures below changed.
+
 | Motifs | Relations | Cross-mappings: role match by relations alone | ... and look-alike once motifs weigh more | Same-skeleton pairs mapped by role (α = 0) |
 |---|---|---|---|---|
 | key-relative | computed, standardized | 8/8 | 8/8 | 21/24 |

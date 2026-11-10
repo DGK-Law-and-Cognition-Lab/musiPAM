@@ -38,6 +38,10 @@ Use the same Python environment as `stimgen` (`~/.venvs/musipam`). From this fol
 ~/.venvs/musipam/bin/python examples.py
 ```
 
+```bash
+~/.venvs/musipam/bin/python audit_examples.py
+```
+
 | Step | What it does | Time |
 |---|---|---|
 | `build_corpus.py` | Cuts the Essen, O'Neill, Aird and Ryan collections into two-bar motifs | ~5 min |
@@ -45,6 +49,7 @@ Use the same Python environment as `stimgen` (`~/.venvs/musipam`). From this fol
 | `train_bart.py` | Track A: fits the relation model on the symbolic motif code and tests it → `reports/track_a_symbolic.md` | a few minutes |
 | `apply_musipam.py` | Uses the model's relation vectors as the edges of the 176 musiPAM stimuli and reruns the design check → `reports/musipam_learned_edges.md` | ~1 min |
 | `examples.py` | Writes one example per relation as MusicXML → `examples/` | seconds |
+| `audit_examples.py` | Reads each example back from its MusicXML, checks it against the relation's definition with independent rules, and scores it with the model → `examples/AUDIT.md` | seconds |
 
 Generated data and trained weights go to `~/musipam-data/relations` (set `MUSIPAM_REL_DATA` to move it). They stay outside Google Drive and out of git, because they are large, rebuildable, and derived from collections whose terms we haven't checked for redistribution.
 
@@ -59,7 +64,7 @@ relations/
 │   ├── features.py   the generic symbolic motif code and the pair encoding
 │   └── bart.py       the BART-style model (one logistic classifier per relation) and test helpers
 ├── reports/          results (committed)
-└── examples/         one MusicXML example per relation, for checking by ear
+└── examples/         one MusicXML example per relation, for checking by ear, and their audit (AUDIT.md)
 ```
 
 ## Changing the inventory
@@ -68,7 +73,7 @@ Every relation is a short function in `musipam_rel/relations.py`, listed in `REL
 
 ## Next steps
 
-1. **Audit the inventory by ear** (D. Kamper): open `examples/` in MuseScore.
+1. **Audit the inventory by ear** (D. Kamper). The rule-and-model audit is done (2026-11-09, [`examples/AUDIT.md`](examples/AUDIT.md)): all 26 examples match their definitions, and the model ranks the illustrated relation first in all 26. Whether each B is a fair, musical instance of its relation still needs a listener: open `examples/` in MuseScore, or play them on the audition page. Three points to judge by ear: `ornament` only ever adds passing tones in thirds and upper-neighbor figures at the ends of long notes; `octave_down`, `seq_down_2` and `seq_down_3` fall below the stimuli's melodic range at the examples' register; and `opening_kept` (p = 0.54) is the relation the model is least sure of, next to its close relative `consequent`.
 2. **Track A on learned motif codes.** Swap the symbolic code for MERT (render a subset of pairs to audio with stimgen's renderer) and for CLaMP 3's symbolic encoder. This asks which music models carry which relations.
 3. **Track B.** A small trained encoder over the notes of both motifs, for the relations Track A misses.
 4. **Natural test sets** beyond the within-tune search: fugue subjects and answers, theme-and-variation sets.

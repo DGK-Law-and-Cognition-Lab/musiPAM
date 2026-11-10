@@ -11,8 +11,8 @@ PAM is the lab's model (Lu, Ichien & Holyoak, 2022), run through a Python port o
 | key-relative motifs | learned relations | 8/8 | 7/8 | 73% / 64% / 56% | 24 / 23 / 6 of 24 |
 | key-relative motifs | learned relations, 5th power | 8/8 | 6/8 | 71% / 60% / 56% | 24 / 23 / 6 of 24 |
 | absolute-pitch motifs | computed relations (standardized) | 8/8 | 3/8 | 80% / 76% / 45% | 21 / 19 / 5 of 24 |
-| MERT motifs | computed relations (standardized) | 8/8 | 2/8 | 80% / 78% / 71% | 21 / 19 / 15 of 24 |
-| MERT motifs | learned relations, 5th power | 8/8 | 0/8 | 71% / 71% / 74% | 24 / 24 / 24 of 24 |
+| MERT motifs | computed relations (standardized) | 8/8 | 2/8 | 80% / 78% / 73% | 21 / 19 / 15 of 24 |
+| MERT motifs | learned relations, 5th power | 8/8 | 0/8 | 71% / 71% / 72% | 24 / 24 / 24 of 24 |
 
 ## key-relative motifs, computed relations (raw)
 
@@ -179,7 +179,7 @@ PAM is the lab's model (Lu, Ichien & Holyoak, 2022), run through a Python port o
 | augment | 16 | 16 | 16 | 16 | 16 | 16 |
 | reorder | 15 | 15 | 15 | 16 | 16 | 16 |
 | motif_retro | 11 | 11 | 12 | 12 | 13 | 13 |
-| invert | 7 | 7 | 7 | 7 | 5 | 5 |
+| invert | 7 | 7 | 7 | 7 | 6 | 5 |
 | retrograde | 2 | 2 | 2 | 2 | 4 | 7 |
 
 ## MERT motifs, learned relations, 5th power
@@ -201,11 +201,11 @@ PAM is the lab's model (Lu, Ichien & Holyoak, 2022), run through a Python port o
 
 | Condition | α = 0 | α = 0.25 | α = 0.5 | α = 1 | α = 2 | α = 4 |
 |---|---|---|---|---|---|---|
-| transpose | 16 | 16 | 16 | 16 | 16 | 16 |
+| transpose | 16 | 16 | 16 | 16 | 16 | 15 |
 | mode | 16 | 16 | 16 | 16 | 16 | 16 |
 | ornament | 16 | 16 | 16 | 16 | 16 | 16 |
 | augment | 16 | 16 | 16 | 16 | 16 | 16 |
-| reorder | 0 | 0 | 0 | 0 | 4 | 12 |
+| reorder | 0 | 0 | 0 | 0 | 2 | 12 |
 | motif_retro | 0 | 0 | 0 | 0 | 0 | 0 |
-| invert | 16 | 16 | 16 | 16 | 16 | 11 |
+| invert | 16 | 16 | 16 | 16 | 16 | 12 |
 | retrograde | 0 | 0 | 0 | 0 | 0 | 0 |

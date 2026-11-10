@@ -8509,7 +8509,7 @@
      true,
      true,
      true,
-     false,
+     true,
      false
     ],
     "T16>retrograde": [
@@ -8533,22 +8533,22 @@
      "n_analog": 24
     },
     "0.5": {
-     "auc": 0.8051215277777778,
+     "auc": 0.7981770833333334,
      "role_aligned": 21,
      "n_analog": 24
     },
     "1.0": {
-     "auc": 0.7764756944444444,
+     "auc": 0.7756076388888888,
      "role_aligned": 19,
      "n_analog": 24
     },
     "2.0": {
-     "auc": 0.7582465277777778,
-     "role_aligned": 18,
+     "auc": 0.7439236111111112,
+     "role_aligned": 17,
      "n_analog": 24
     },
     "4.0": {
-     "auc": 0.7113715277777778,
+     "auc": 0.7261284722222222,
      "role_aligned": 15,
      "n_analog": 24
     }
@@ -8610,7 +8610,7 @@
       7,
       7,
       7,
-      5,
+      6,
       5
      ],
      "retrograde": [
@@ -9033,7 +9033,7 @@
      false,
      false,
      false,
-     true,
+     false,
      true
     ],
     "T2>motif_retro": [
@@ -9450,7 +9450,7 @@
      true,
      true,
      true,
-     true
+     false
     ],
     "T9>mode": [
      true,
@@ -9801,7 +9801,7 @@
      false,
      false,
      false,
-     true,
+     false,
      true
     ],
     "T14>motif_retro": [
@@ -9818,7 +9818,7 @@
      true,
      true,
      true,
-     false
+     true
     ],
     "T14>retrograde": [
      false,
@@ -9964,27 +9964,27 @@
      "n_analog": 24
     },
     "0.25": {
-     "auc": 0.7105034722222222,
+     "auc": 0.7109375,
      "role_aligned": 24,
      "n_analog": 24
     },
     "0.5": {
-     "auc": 0.7105034722222222,
+     "auc": 0.7109375,
      "role_aligned": 24,
      "n_analog": 24
     },
     "1.0": {
-     "auc": 0.7092013888888888,
+     "auc": 0.7122395833333334,
      "role_aligned": 24,
      "n_analog": 24
     },
     "2.0": {
-     "auc": 0.7200520833333334,
+     "auc": 0.7178819444444444,
      "role_aligned": 24,
      "n_analog": 24
     },
     "4.0": {
-     "auc": 0.7378472222222222,
+     "auc": 0.7170138888888888,
      "role_aligned": 24,
      "n_analog": 24
     }
@@ -9999,7 +9999,7 @@
       16,
       16,
       16,
-      16
+      15
      ],
      "mode": [
       16,
@@ -10030,7 +10030,7 @@
       0,
       0,
       0,
-      4,
+      2,
       12
      ],
      "motif_retro": [
@@ -10047,7 +10047,7 @@
       16,
       16,
       16,
-      11
+      12
      ],
      "retrograde": [
       0,
