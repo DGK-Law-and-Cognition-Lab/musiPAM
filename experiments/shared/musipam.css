@@ -1,42 +1,127 @@
-/* musiPAM experiments: shared styles on top of jsPsych's own stylesheet. */
+/* musiPAM experiments. The look follows the page design of the lab's earlier Pavlovia studies: a white card on a light page, Georgia type, a thin progress bar, blue buttons
+   bottom right, answer options as bordered rows or boxes. jsPsych's own stylesheet loads first;
+   the rules below restyle its elements to match. */
 :root {
-  --ink: #1d2433;
-  --muted: #5a6273;
-  --rule: #d5dae3;
-  --accent: #2a5bd7;
-  --wash: #eef2f8;
-  --warn: #9a3412;
+  --primary: #2c3e50; --accent: #3498db; --accent-dark: #2980b9; --bg: #f8f9fa; --card: #fff;
+  --border: #dee2e6; --text: #212529; --muted: #6c757d; --error: #dc3545; --success: #16a34a;
+  --hover: #f0f4ff; --selected: #e8f0fe; --info: #eff6ff; --info-border: #bfdbfe;
 }
-body { color: var(--ink); background: #ffffff; }
-.jspsych-display-element { font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.5; }
-.page { max-width: 46rem; margin: 0 auto; text-align: left; }
-.page h1 { font-size: 1.6rem; margin: 0 0 0.8rem; }
-.page h2 { font-size: 1.3rem; margin: 0 0 0.6rem; }
-.page p { margin: 0 0 0.8rem; }
-.todo { background: #fff4e5; border-left: 4px solid var(--warn); padding: 0.5rem 0.8rem; color: var(--warn); font-size: 0.95rem; }
-.note { color: var(--muted); font-size: 0.9rem; font-weight: 400; }
-.listening { font-size: 1.2rem; color: var(--muted); }
-.listening .icon { display: inline-block; width: 0.8rem; height: 0.8rem; border-radius: 50%; background: var(--accent); margin-right: 0.5rem; animation: pulse 1.2s ease-in-out infinite; }
-@keyframes pulse { 0%, 100% { opacity: 0.25; } 50% { opacity: 1; } }
-@media (prefers-reduced-motion: reduce) { .listening .icon { animation: none; } }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: Georgia, "Times New Roman", serif; background: var(--bg); color: var(--text); line-height: 1.7; min-height: 100vh; }
+.container { max-width: 780px; margin: 0 auto; padding: 40px 24px; }
 
-/* forms */
-.form { display: grid; gap: 1rem; }
-fieldset.q { border: 0; padding: 0; margin: 0 0 1.4rem; text-align: left; }
-fieldset.q legend { font-weight: 600; margin-bottom: 0.5rem; padding: 0; }
-.scale7 { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 0.4rem; max-width: 30rem; }
-.scale7 .pt { display: grid; justify-items: center; gap: 0.2rem; padding: 0.45rem 0; border: 1px solid var(--rule); border-radius: 6px; cursor: pointer; }
-.scale7 .pt:has(input:checked) { border-color: var(--accent); background: var(--wash); }
-.scale7 input { margin: 0; }
-.ends { display: flex; justify-content: space-between; max-width: 30rem; color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
-.opts { display: flex; flex-wrap: wrap; gap: 0.5rem 1.2rem; }
-.opt { cursor: pointer; }
-label.sel { display: grid; gap: 0.3rem; text-align: left; }
-label.sel select, label.sel input, label.sel textarea { font: inherit; padding: 0.35rem 0.5rem; border: 1px solid var(--rule); border-radius: 6px; max-width: 34rem; }
+/* ---- loading screen (before jsPsych starts) */
+#loading-screen { position: fixed; inset: 0; background: var(--bg); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 16px; z-index: 9999; color: var(--muted); }
+.spinner { width: 40px; height: 40px; border: 4px solid #e9ecef; border-top-color: var(--accent); border-radius: 50%; animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
 
-/* tapping (segmentation) */
-.tap-wrap { display: grid; justify-items: center; gap: 1rem; }
-.tap-dot { width: 4rem; height: 4rem; border-radius: 50%; background: var(--wash); border: 2px solid var(--rule); transition: background 60ms; }
+/* ---- jsPsych inside the page container: the content area is the card */
+.container .jspsych-display-element { display: block; height: auto; min-height: 0; overflow: visible; font-family: inherit; font-size: 1rem; line-height: 1.7; color: var(--text); }
+.container .jspsych-content-wrapper { display: block; margin: 0; width: 100%; }
+.container .jspsych-content { max-width: none; margin: 0; text-align: left; background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 40px 36px; box-shadow: 0 2px 8px rgba(0, 0, 0, .06); }
+.container .jspsych-content p { margin: 0 0 14px; }
+
+/* ---- progress bar */
+.container #jspsych-progressbar-container { background: none; border: 0; padding: 0; margin: 0 0 20px; line-height: 0; text-align: left; }
+.container #jspsych-progressbar-container span { display: none; }
+.container #jspsych-progressbar-outer { display: block; width: 100%; height: 6px; margin: 0; background: #e9ecef; border-radius: 3px; overflow: hidden; box-shadow: none; }
+.container #jspsych-progressbar-inner { height: 100%; background: var(--accent); border-radius: 3px; transition: width .3s ease; }
+
+/* ---- type */
+h1 { font-size: 1.5rem; color: var(--primary); margin: 0 0 20px; padding-bottom: 10px; border-bottom: 2px solid var(--accent); line-height: 1.3; }
+h2 { font-size: 1.2rem; color: var(--primary); margin: 0 0 16px; line-height: 1.35; }
+.center-text { text-align: center; }
+.center-text h1 { border: 0; text-align: center; font-size: 1.6rem; }
+.lead { font-size: 1.1rem; }
+.hint, .note { color: var(--muted); font-size: .92rem; }
+.question-text { font-weight: bold; color: var(--primary); margin-bottom: 12px; }
+a { color: var(--accent); }
+kbd { font-family: inherit; border: 1px solid var(--border); border-bottom-width: 2px; border-radius: 4px; padding: 0 6px; background: #fafbfc; font-size: .92em; }
+
+/* ---- boxes */
+.instruction-box { background: var(--info); border: 1px solid var(--info-border); border-radius: 6px; padding: 16px 20px; margin: 16px 0; font-size: .95rem; }
+.debrief-text { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 20px; margin: 16px 0; }
+.consent-box { margin: 24px 0; padding: 16px 20px; border: 1px solid var(--border); border-radius: 6px; }
+.part-header { background: linear-gradient(135deg, #1e3a5f, #2c5282); color: #fff; padding: 18px 24px; border-radius: 8px; margin-bottom: 24px; text-align: center; }
+.part-header .part-label { font-size: .85rem; text-transform: uppercase; letter-spacing: .12em; opacity: .8; margin-bottom: 4px; }
+.part-header .part-name { font-size: 1.6rem; font-weight: bold; letter-spacing: .02em; line-height: 1.3; }
+.todo { background: #fff4e5; border-left: 4px solid #9a3412; padding: 8px 12px; color: #9a3412; font-size: .95rem; }
+.completion-code { display: inline-block; font-family: "Courier New", monospace; font-size: 1.6rem; font-weight: bold; letter-spacing: .12em; background: #f0f4f8; border: 2px dashed var(--accent); border-radius: 8px; padding: 12px 28px; margin: 12px 0; color: var(--primary); user-select: text; }
+
+/* ---- buttons: jsPsych's, styled as the house "Next" button */
+.container .jspsych-btn { display: inline-block; padding: 12px 32px; background: var(--accent); color: #fff; border: none; border-radius: 6px; font-family: inherit; font-size: 1rem; line-height: 1.4; cursor: pointer; transition: background .15s; margin: 0; white-space: normal; }
+.container .jspsych-btn:hover { background: var(--accent-dark); color: #fff; border: none; }
+.container .jspsych-btn:disabled, .container .jspsych-btn:disabled:hover { background: #bdc3c7; color: #fff; cursor: not-allowed; }
+.container .jspsych-btn.secondary { background: var(--card); color: var(--primary); border: 1px solid var(--border); }
+.container .jspsych-btn.secondary:hover { background: var(--hover); border-color: var(--accent); }
+#jspsych-html-button-response-btngroup, #jspsych-audio-button-response-btngroup, .btn-row { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 12px; margin-top: 24px; }
+.jspsych-html-button-response-button, .jspsych-audio-button-response-button { margin: 0 !important; display: block !important; }
+#jspsych-survey-html-form-next { display: block; margin: 24px 0 0 auto; }
+#jspsych-fullscreen-btn { display: block; margin: 20px auto 0; }
+/* audio-button-response puts its buttons before the prompt; show the prompt first */
+.container .jspsych-content.audio-page { display: flex; flex-direction: column; }
+.audio-page #jspsych-audio-button-response-btngroup { order: 2; }
+/* answer buttons (headphone check): options, not "Next" */
+.choice-trial #jspsych-audio-button-response-btngroup { justify-content: center; }
+.choice-trial .jspsych-btn { background: var(--card); color: var(--primary); border: 1px solid var(--border); min-width: 9rem; }
+.choice-trial .jspsych-btn:hover { background: var(--hover); border-color: var(--accent); color: var(--primary); }
+.choice-trial .jspsych-btn:disabled { background: #f1f3f5; color: #adb5bd; border-color: var(--border); }
+
+/* ---- answer options: radio-option rows, scale-option boxes */
+.form-group { margin-bottom: 24px; }
+.radio-group { margin: 12px 0; }
+.radio-option { display: block; padding: 12px 16px; margin: 8px 0; border: 1px solid var(--border); border-radius: 6px; cursor: pointer; transition: all .15s; line-height: 1.6; }
+.radio-option:hover { background: var(--hover); border-color: var(--accent); }
+.radio-option:has(input:checked) { background: var(--selected); border-color: var(--accent); }
+.radio-option input { margin-right: 10px; transform: scale(1.1); }
+.scale-group { display: flex; justify-content: space-between; gap: 6px; margin: 12px 0 8px; }
+.scale-option { flex: 1; text-align: center; padding: 12px 4px; border: 1px solid var(--border); border-radius: 6px; cursor: pointer; transition: all .15s; font-size: .85rem; line-height: 1.35; display: flex; align-items: center; justify-content: center; }
+.scale-option:hover { background: var(--hover); border-color: var(--accent); }
+.scale-option:has(input:checked) { background: var(--selected); border-color: var(--accent); font-weight: bold; }
+.scale-option input { position: absolute; opacity: 0; pointer-events: none; }
+.scale-option:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
+.container input[type="text"], .container input[type="number"], .container textarea { width: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: 6px; font-family: inherit; font-size: 1rem; line-height: 1.6; transition: border-color .15s; background: #fff; color: var(--text); }
+.container input[type="number"] { max-width: 200px; }
+.container input:focus, .container textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(52, 152, 219, .15); }
+.container textarea { min-height: 110px; resize: vertical; }
+.error-msg { display: none; color: var(--error); font-size: .9rem; margin-top: 8px; }
+.form-group.unanswered .error-msg { display: block; }
+.form-group.unanswered .radio-group, .form-group.unanswered .scale-group { border-radius: 8px; box-shadow: 0 0 0 3px rgba(220, 53, 69, .15); }
+.form-group.unanswered input[type="text"], .form-group.unanswered input[type="number"], .form-group.unanswered textarea { border-color: var(--error); }
+.item-head { font-size: 1.15rem; font-weight: bold; color: var(--primary); margin-bottom: 16px; }
+
+/* ---- listening */
+.listening { font-size: 1.15rem; color: var(--primary); text-align: center; padding: 48px 0; margin: 0; }
+.listening .icon { display: inline-block; width: .8rem; height: .8rem; border-radius: 50%; background: var(--accent); margin-right: .6rem; animation: pulse 1.2s ease-in-out infinite; vertical-align: middle; }
+@keyframes pulse { 0%, 100% { opacity: .25; } 50% { opacity: 1; } }
+
+/* ---- tapping (segmentation) */
+.tap-wrap { display: grid; justify-items: center; gap: 1rem; padding: 24px 0; text-align: center; }
+.tap-wrap .listening { padding: 0; }
+.tap-dot { width: 4rem; height: 4rem; border-radius: 50%; background: #f0f4f8; border: 2px solid var(--border); transition: background 60ms; }
 .tap-dot.on { background: var(--accent); border-color: var(--accent); }
-.tap-count { color: var(--muted); font-size: 0.95rem; }
-kbd { border: 1px solid var(--rule); border-bottom-width: 2px; border-radius: 4px; padding: 0.05rem 0.4rem; font-size: 0.9em; background: #fafbfc; }
+.tap-count { color: var(--muted); font-size: .95rem; }
+
+/* ---- reading task (moving-window self-paced reading) */
+.spr-display { font-family: "Courier New", Courier, monospace; font-size: 1.4rem; color: var(--primary); min-height: 80px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border); border-radius: 8px; padding: 30px 24px; background: var(--card); margin: 20px 40px; line-height: 1.8; text-align: center; letter-spacing: .02em; user-select: none; -webkit-user-select: none; white-space: pre-wrap; }
+.spr-display.done { color: var(--success); }
+
+/* ---- captcha */
+.captcha-img { display: block; width: 100%; max-width: 600px; margin: 20px auto; border: 1px solid var(--border); border-radius: 6px; }
+.trap { color: var(--card); font-size: 1px; line-height: 1px; margin: 0; user-select: none; -webkit-user-select: none; }
+#captcha-status { color: var(--muted); margin-top: 16px; }
+#captcha-status.ok { color: var(--success); }
+
+/* ---- preload message */
+#jspsych-loading-progress-bar-container { width: 100%; max-width: 420px; height: 6px; margin: 16px auto 0; background: #e9ecef; border-radius: 3px; overflow: hidden; }
+#jspsych-loading-progress-bar { height: 100%; background: var(--accent); }
+
+@media (max-width: 600px) {
+  .container { padding: 16px 12px; }
+  .container .jspsych-content { padding: 24px 18px; }
+  .scale-group { flex-wrap: wrap; }
+  .scale-option { flex: 0 0 calc(33% - 4px); }
+  .spr-display { margin: 20px 0; }
+}
+@media (prefers-reduced-motion: reduce) { .listening .icon, .spinner { animation: none; } }

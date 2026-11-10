@@ -26,10 +26,17 @@ Each file follows the field structure of the **OSF Preregistration** template (S
 - **Musical background.** Gold-MSI Musical Training subscale (7 items; Müllensiefen et al., 2014), plus years of formal training and current weekly practice.
 - **Common exclusions.**
   - failed catch trials (study-specific thresholds);
-  - answering "no" to "Did you complete this study seriously? (Your answer will not affect your credit.)";
+  - answering "No, I did not complete this study seriously" to "Did you complete this study seriously throughout (without responding randomly)?";
   - completion time under 50% of the median;
   - a repeat participation (only the first session is kept);
-  - audio playback failures on more than 10% of trials.
+  - audio playback failures on more than 10% of trials;
+  - checks for automated or AI-assisted responding (added 2026-11-10; the same checks as the lab's earlier Pavlovia studies, implemented in `experiments/shared/musipam.js`):
+    - a median word time below 150 ms on either sentence of the moving-window reading task;
+    - failing the task check ("What is your task in this study?") twice;
+    - `navigator.webdriver` true (the browser was under automated control);
+    - *DECISION:* answering "Yes" to "Did you use any AI tool (such as ChatGPT, Claude, or similar) to help answer any of the questions in this study?" (proposal: exclude).
+
+    Sessions stopped by the image captcha's hidden instruction, or by an automated browser's user agent, end before consent and leave no data.
 
   Excluded participants are replaced until the target N is reached.
 - **Analysis software.** R ≥ 4.4 (`lme4`, `ordinal`, `emmeans`, `simr`). Model similarities are computed in Python by the `stimgen` generator at the frozen commit; PAM uses the Lu lab implementation.

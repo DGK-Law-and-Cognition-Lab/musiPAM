@@ -113,6 +113,8 @@ def build(study: str) -> Path:
         if f.name != "config.template.js":
             shutil.copy(f, out / f.name)
     shutil.copy(HERE / "shared" / "musipam.css", out / "musipam.css")
+    for f in (HERE / "shared").glob("*.png"):  # captcha.png (the image captcha)
+        shutil.copy(f, out / f.name)
     for f in src.iterdir():
         if f.is_file() and f.name != "config.local.js" and not f.name.startswith("."):
             shutil.copy(f, out / f.name)

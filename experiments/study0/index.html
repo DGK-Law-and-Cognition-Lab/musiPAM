@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Listening study</title>
+  <title>Listening to Music</title>
   <!-- lib/: jsPsych 7.3.4, its 1.x plugins and the Pavlovia plugin, pinned in shared/libs.json -->
   <link rel="stylesheet" href="lib/jspsych.css">
   <link rel="stylesheet" href="musipam.css">
@@ -20,9 +20,12 @@
   <script src="lib/jspsych-7-pavlovia-2022.1.1.js"></script>
   <script src="config.js"></script>
   <script src="plugin-audio-tap.js"></script>
+  <script src="plugin-reading-window.js"></script>
   <script src="musipam.js"></script>
 </head>
 <body>
+  <div id="loading-screen"><div class="spinner"></div><p>Loading experiment...</p></div>
+  <div class="container" id="experimentContainer" hidden><div id="jspsych-target"></div></div>
   <script src="experiment.js"></script>
 </body>
 </html>
