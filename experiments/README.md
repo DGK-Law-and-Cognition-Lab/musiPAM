@@ -127,10 +127,10 @@ At the end of a session:
 ## Before any data collection
 
 - [x] IRB-approved consent form linked (`consentUrl`), with its contact.
-- [ ] The debrief text (`DEBRIEF` in `study0/experiment.js`) checked against what the IRB approved.
+- [x] The debrief text (`DEBRIEF` in `study0/experiment.js`) approved (D. Kamper, 2026-11-18).
 - [ ] `studyTitle` matched to the SONA listing; `sonaCreditUrl` (and the Prolific codes, if used) filled in; one complete pilot run per recruitment source, through the redirect.
 - [ ] Gold-MSI item wording checked against the official v1.0 English form (`goldMSI()`).
-- [ ] The preregistration's open DECISIONs resolved, including the part order, the anchor list and the exclusions for the automated-participant checks (`../prereg/S0_norming.md`).
+- [ ] The preregistration's open DECISIONs resolved, including the part order and the anchor list (`../prereg/S0_norming.md`). The exclusions for the automated-participant checks, including AI use, are decided (`../prereg/README.md`).
 
 ## Data
 

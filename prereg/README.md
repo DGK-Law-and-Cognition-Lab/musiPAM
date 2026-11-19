@@ -34,7 +34,7 @@ Each file follows the field structure of the **OSF Preregistration** template (S
     - a median word time below 150 ms on either sentence of the moving-window reading task;
     - failing the task check ("What is your task in this study?") twice;
     - `navigator.webdriver` true (the browser was under automated control);
-    - *DECISION:* answering "Yes" to "Did you use any AI tool (such as ChatGPT, Claude, or similar) to help answer any of the questions in this study?" (proposal: exclude).
+    - answering "Yes" to "Did you use any AI tool (such as ChatGPT, Claude, or similar) to help answer any of the questions in this study?" (decided by D. Kamper, 2026-11-18).
 
     Sessions stopped by the image captcha's hidden instruction, or by an automated browser's user agent, end before consent and leave no data.
 

@@ -207,7 +207,7 @@ Licenses matter for the public repository. The CC BY-NC models' embedding arrays
 ## Order and preregistration workflow
 
 1. **Stimulus bank.** Done for the 16 themes (2026-11-06): composed, design-checked, MERT-embedded. Still open: the four spares and motif-level clips for Studies 1b and 1c.
-2. **Study 0.** The experiment is built and tested locally (2026-11-09: `experiments/study0`, with the anchor and practice melodies rendered; restyled to the lab's house design and given its checks for automated participants on 2026-11-10, with the IRB-approved consent form linked). Before data collection it needs the SONA/Prolific settings, a check of the debrief text, and the prereg's open DECISIONs, including block order and the AI-use exclusion. Then run power simulations (`simr` / `mixedpower`) and finalize the Study 1 preregistrations.
+2. **Study 0.** The experiment is built and tested locally (2026-11-09: `experiments/study0`, with the anchor and practice melodies rendered; restyled to the lab's house design and given its checks for automated participants on 2026-11-10, with the IRB-approved consent form linked). Before data collection it needs the SONA credit URL (D. Kamper is getting it), the Prolific codes if Prolific is used, and the prereg's open DECISIONs, including block order. The debrief and the AI-use exclusion were settled on 2026-11-18. Then run power simulations (`simr` / `mixedpower`) and finalize the Study 1 preregistrations.
 3. **Studies 1a, 1b and 1c.** Separate samples. 1a and 1b can run as soon as Study 0 is done; 1c waits for the learned relation model to be frozen (decided 2026-11-06), because its main test compares that model with the computed relations and MERT.
 4. **Study 2.**
 5. **Study 3.**
